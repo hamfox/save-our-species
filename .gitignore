@@ -13,6 +13,7 @@ Pods/
 .idea
 **/node_modules/*
 **/.firebaserc
+GoogleService-Info.plist
 
 ### Firebase Patch ###
 .runtimeconfig.json
