@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		47A630072358426000BE9DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A630062358426000BE9DCA /* Assets.xcassets */; };
 		47A6300A2358426000BE9DCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A630092358426000BE9DCA /* Preview Assets.xcassets */; };
 		47A6300D2358426000BE9DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A6300B2358426000BE9DCA /* LaunchScreen.storyboard */; };
+		47C0E355235847E000B00A61 /* Xcode.app in Resources */ = {isa = PBXBuildFile; fileRef = 47C0E354235847E000B00A61 /* Xcode.app */; };
+		47C0E35723584E3A00B00A61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C0E35623584E3600B00A61 /* GoogleService-Info.plist */; };
 		C572E76A2562DA90B811BCD7 /* Pods_save_our_species.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F117704EB557FAB0025B46BB /* Pods_save_our_species.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		47A630092358426000BE9DCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47A6300C2358426000BE9DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A6300E2358426000BE9DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47C0E354235847E000B00A61 /* Xcode.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Xcode.app; path = ../../../../Downloads/Xcode.app; sourceTree = "<group>"; };
+		47C0E35623584E3600B00A61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE0045768E7ED2E536D8EC55 /* Pods-save-our-species.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-save-our-species.debug.xcconfig"; path = "Target Support Files/Pods-save-our-species/Pods-save-our-species.debug.xcconfig"; sourceTree = "<group>"; };
 		C37CE7403FA941C0A9329C60 /* Pods-save-our-species.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-save-our-species.release.xcconfig"; path = "Target Support Files/Pods-save-our-species/Pods-save-our-species.release.xcconfig"; sourceTree = "<group>"; };
 		F117704EB557FAB0025B46BB /* Pods_save_our_species.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_save_our_species.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +75,9 @@
 		47A62FFF2358425D00BE9DCA /* save-our-species */ = {
 			isa = PBXGroup;
 			children = (
+				47C0E354235847E000B00A61 /* Xcode.app */,
 				47A630002358425D00BE9DCA /* AppDelegate.swift */,
+				47C0E35623584E3600B00A61 /* GoogleService-Info.plist */,
 				47A630022358425D00BE9DCA /* SceneDelegate.swift */,
 				47A630042358425D00BE9DCA /* ContentView.swift */,
 				47A630062358426000BE9DCA /* Assets.xcassets */,
@@ -96,7 +102,6 @@
 				BE0045768E7ED2E536D8EC55 /* Pods-save-our-species.debug.xcconfig */,
 				C37CE7403FA941C0A9329C60 /* Pods-save-our-species.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -162,7 +167,9 @@
 			files = (
 				47A6300D2358426000BE9DCA /* LaunchScreen.storyboard in Resources */,
 				47A6300A2358426000BE9DCA /* Preview Assets.xcassets in Resources */,
+				47C0E35723584E3A00B00A61 /* GoogleService-Info.plist in Resources */,
 				47A630072358426000BE9DCA /* Assets.xcassets in Resources */,
+				47C0E355235847E000B00A61 /* Xcode.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
