@@ -1,5 +1,5 @@
 //
-//  ClientViewController.swift
+//  ReportViewController.swift
 //  save-our-species
 //
 //  Created by DSCommons on 10/23/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClientViewController: UIViewController {
+class ReportViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +16,8 @@ class ClientViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var ClientViewLabel: UILabel!
+    @IBOutlet weak var ReportLabel: UILabel!
     
-    @IBOutlet weak var ReportButton: UIButton!
     /*
     // MARK: - Navigation
 

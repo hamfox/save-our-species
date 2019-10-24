@@ -95,6 +95,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKN-gD-SUJ">
+                                <rect key="frame" x="164" y="640" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="report"/>
+                                <connections>
+                                    <segue destination="MyH-SZ-KIL" kind="show" id="LK6-PY-73J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pFf-dT-1Sf"/>
@@ -102,11 +110,40 @@
                     <navigationItem key="navigationItem" id="wU2-be-sX5"/>
                     <connections>
                         <outlet property="ClientViewLabel" destination="9IM-8p-QkW" id="elh-N5-PnQ"/>
+                        <outlet property="ReportButton" destination="cKN-gD-SUJ" id="6Fv-NR-yrx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA7-RL-a29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1742.0289855072465" y="128.57142857142856"/>
+        </scene>
+        <!--Report View Controller-->
+        <scene sceneID="2Am-10-AhH">
+            <objects>
+                <viewController id="MyH-SZ-KIL" customClass="ReportViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ve-w2-7Fe" customClass="Report">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Report Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLM-dg-khO">
+                                <rect key="frame" x="152" y="119" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8rh-mL-H2C"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eBl-Fm-Xm0"/>
+                    <connections>
+                        <outlet property="ReportLabel" destination="ZLM-dg-khO" id="P3x-lI-C9Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2552" y="135"/>
         </scene>
     </scenes>
 </document>
