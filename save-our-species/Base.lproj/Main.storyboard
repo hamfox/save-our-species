@@ -103,6 +103,14 @@
                                     <segue destination="MyH-SZ-KIL" kind="show" id="LK6-PY-73J"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEG-h6-7Qc">
+                                <rect key="frame" x="141" y="757" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="report screen"/>
+                                <connections>
+                                    <segue destination="Sjh-Jy-eHa" kind="show" id="lyR-3g-0vc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pFf-dT-1Sf"/>
@@ -111,6 +119,7 @@
                     <connections>
                         <outlet property="ClientViewLabel" destination="9IM-8p-QkW" id="elh-N5-PnQ"/>
                         <outlet property="ReportButton" destination="cKN-gD-SUJ" id="6Fv-NR-yrx"/>
+                        <outlet property="ReportScreenButton" destination="hEG-h6-7Qc" id="Rz2-Oo-1oP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA7-RL-a29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -144,6 +153,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2552" y="135"/>
+        </scene>
+        <!--Recent Reports View Controller-->
+        <scene sceneID="e29-hH-byr">
+            <objects>
+                <viewController id="Sjh-Jy-eHa" customClass="RecentReportsViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nUG-3V-nBo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent Reports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgS-xK-490">
+                                <rect key="frame" x="149" y="163" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sfC-nP-wOJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pxs-Io-TEZ"/>
+                    <connections>
+                        <outlet property="RecentReportsLabel" destination="rgS-xK-490" id="X0t-i5-Ee1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dc-lq-Qck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3354" y="136"/>
         </scene>
     </scenes>
 </document>
