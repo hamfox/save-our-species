@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var LoginLabel: UILabel!
     
+    @IBOutlet weak var ClientButton: UIButton!
     /*
     // MARK: - Navigation
 
