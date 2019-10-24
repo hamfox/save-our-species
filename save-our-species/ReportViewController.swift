@@ -18,6 +18,8 @@ class ReportViewController: UIViewController {
     
     @IBOutlet weak var ReportLabel: UILabel!
     
+    @IBAction func UploadButton(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 
