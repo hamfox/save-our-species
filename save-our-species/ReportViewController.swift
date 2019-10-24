@@ -20,6 +20,12 @@ class ReportViewController: UIViewController {
     
     @IBAction func UploadButton(_ sender: UIButton) {
     }
+    @IBAction func LocationButton(_ sender: UIButton) {
+    }
+    @IBAction func descrField(_ sender: UITextField) {
+    }
+    @IBAction func cameraButton(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 
