@@ -16,9 +16,10 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var LoginLabel: UILabel!
     
     @IBOutlet weak var ClientButton: UIButton!
+    @IBAction func userField(_ sender: UITextField) {
+    }
     /*
     // MARK: - Navigation
 
