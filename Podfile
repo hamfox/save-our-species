@@ -8,6 +8,8 @@ target 'save-our-species' do
   # Pods for save-our-species
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
 end
