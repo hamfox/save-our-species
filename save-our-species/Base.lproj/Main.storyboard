@@ -30,6 +30,14 @@
                                     <segue destination="eG1-9s-IJy" kind="show" id="qps-Ci-mWX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-27-etS">
+                                <rect key="frame" x="100" y="663" width="131" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Report"/>
+                                <connections>
+                                    <segue destination="MyH-SZ-KIL" kind="show" id="1hf-sq-c7L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -37,6 +45,7 @@
                     <connections>
                         <outlet property="HomeLabel" destination="pKH-Mp-QtL" id="zZV-a4-cZ7"/>
                         <outlet property="LoginButton" destination="j5O-D2-jQE" id="JIW-xP-ZmP"/>
+                        <outlet property="ReportButton" destination="MyB-27-etS" id="YXf-Fi-xhp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -183,4 +192,7 @@
             <point key="canvasLocation" x="3354" y="136"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1hf-sq-c7L"/>
+    </inferredMetricsTieBreakers>
 </document>

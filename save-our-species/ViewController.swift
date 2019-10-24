@@ -18,5 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var HomeLabel: UILabel!
     @IBOutlet weak var LoginButton: UIButton!
     
+    @IBOutlet weak var ReportButton: UIButton!
 }
 
