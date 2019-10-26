@@ -10,10 +10,18 @@ import UIKit
 
 class ReportViewController: UIViewController {
 
+    let reportService = ReportService()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addReport(reportText: "foobar")
+    }
+    
+    func addReport(reportText: String) {
+       reportService.addToList(reportDescription: reportText, completion: { (status) in
+            if status {
+                print("Status", status)
+            }
+        })
     }
     
     @IBOutlet weak var ReportLabel: UILabel!
@@ -35,5 +43,4 @@ class ReportViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
