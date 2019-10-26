@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47174FBA2365058D00AB6C20 /* ReportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47174FB92365058D00AB6C20 /* ReportsModel.swift */; };
 		473305F9236148270015EF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305F8236148270015EF38 /* AppDelegate.swift */; };
 		473305FB236148270015EF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305FA236148270015EF38 /* SceneDelegate.swift */; };
 		473305FD236148270015EF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305FC236148270015EF38 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47174FB92365058D00AB6C20 /* ReportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsModel.swift; sourceTree = "<group>"; };
 		473305F5236148270015EF38 /* save-our-species.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "save-our-species.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473305F8236148270015EF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473305FA236148270015EF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				6F63F22D236245F900E2AF4E /* GoogleService-Info.plist */,
 				473305F8236148270015EF38 /* AppDelegate.swift */,
+				47174FB92365058D00AB6C20 /* ReportsModel.swift */,
 				473305FA236148270015EF38 /* SceneDelegate.swift */,
 				473305FC236148270015EF38 /* ViewController.swift */,
 				6F2F51D4236158F800163F21 /* ClientViewController.swift */,
@@ -227,6 +230,7 @@
 				6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */,
 				473305F9236148270015EF38 /* AppDelegate.swift in Sources */,
 				6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */,
+				47174FBA2365058D00AB6C20 /* ReportsModel.swift in Sources */,
 				6F2F51D923615B6700163F21 /* RecentReportsViewController.swift in Sources */,
 				473305FB236148270015EF38 /* SceneDelegate.swift in Sources */,
 			);
