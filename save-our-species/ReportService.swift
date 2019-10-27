@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseFirestoreSwift
  
 class ReportService {
     let db = Firestore.firestore()

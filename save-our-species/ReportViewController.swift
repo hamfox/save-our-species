@@ -17,12 +17,12 @@ class ReportViewController: UIViewController {
     }
     
     func addReport(reportText: String) {
-       reportService.addToList(reportDescription: reportText, completion: { (status) in
+        reportService.addToList(reportDescription: reportText, completion: { (status) in
             if status {
                 print("Status", status)
-            }
-        })
+            }})
     }
+
     
     @IBOutlet weak var ReportLabel: UILabel!
     
