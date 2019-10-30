@@ -19,10 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //make button rounded
         //this code doesn't make the borders rounded
-        LoginButton.layer.cornerRadius = 20
+        LoginButton.layer.cornerRadius = 10
         LoginButton.clipsToBounds = true
         
-        ReportButton.layer.cornerRadius = 20
+        ReportButton.layer.cornerRadius = 10
         ReportButton.clipsToBounds = true
         
         
