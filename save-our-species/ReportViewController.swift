@@ -10,10 +10,14 @@ import UIKit
 
 class ReportViewController: UIViewController {
 
+    @IBOutlet weak var ReportLabel: UILabel!
+
     let reportService = ReportService()
+    var textDescription = String()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        addReport(reportText: "foobar")
     }
     
     func addReport(reportText: String) {
@@ -22,18 +26,22 @@ class ReportViewController: UIViewController {
                 print("Status", status)
             }})
     }
-
-    
-    @IBOutlet weak var ReportLabel: UILabel!
     
     @IBAction func UploadButton(_ sender: UIButton) {
+        addReport(reportText: textDescription)
     }
     @IBAction func LocationButton(_ sender: UIButton) {
     }
     @IBAction func descrField(_ sender: UITextField) {
+        let textDescription = sender.text
     }
     @IBAction func cameraButton(_ sender: UIButton) {
     }
+    
+
+ 
+    
+
     /*
     // MARK: - Navigation
 
