@@ -9,6 +9,13 @@
 import UIKit
 
 class ReportViewController: UIViewController {
+    
+    //Buttons
+    @IBAction func UploadButton(_ sender: UIButton) {}
+    
+    //Buttons with images
+    @IBAction func LocationButton(_ sender: UIButton) {}
+    @IBAction func cameraButton(_ sender: UIButton) {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +25,11 @@ class ReportViewController: UIViewController {
     
     @IBOutlet weak var ReportLabel: UILabel!
     
-    @IBAction func UploadButton(_ sender: UIButton) {
-    }
-    @IBAction func LocationButton(_ sender: UIButton) {
-    }
+   
     @IBAction func descrField(_ sender: UITextField) {
+        
     }
-    @IBAction func cameraButton(_ sender: UIButton) {
-    }
+
     /*
     // MARK: - Navigation
 
