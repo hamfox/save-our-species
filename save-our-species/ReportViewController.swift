@@ -11,7 +11,9 @@ import UIKit
 class ReportViewController: UIViewController {
     
     //Buttons
-    @IBAction func UploadButton(_ sender: UIButton) {}
+    @IBAction func UploadButton(_ sender: UIButton) {
+        addReport(reportText: descriptionTextField.text!)
+    }
     
     //Buttons with images
     @IBAction func LocationButton(_ sender: UIButton) {}
@@ -38,16 +40,6 @@ class ReportViewController: UIViewController {
     // Actions
     @IBAction func textFieldEditingChanged(_ sender: UITextField) {
         print(sender.text!)
-    }
-    @IBAction func UploadButton(_ sender: UIButton) {
-        addReport(reportText: descriptionTextField.text!)
-    }
-    @IBAction func LocationButton(_ sender: UIButton) {
-    }
-    @IBAction func descrField(_ sender: UITextField) {
-        
-    }
-    @IBAction func cameraButton(_ sender: UIButton) {
     }
 
 
