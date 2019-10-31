@@ -82,6 +82,56 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="iN8-Wx-nMP">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="V8V-Nn-D0k" customClass="MapViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i8o-nt-d6o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-V2-OFh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <outlet property="delegate" destination="V8V-Nn-D0k" id="Tr9-ae-raZ"/>
+                                </connections>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="mXC-4F-Z0D">
+                                <rect key="frame" x="187" y="408" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Kz-4S-pMl"/>
+                                    <constraint firstAttribute="width" constant="40" id="iev-fp-Xgn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude/latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-aw-kgJ">
+                                <rect key="frame" x="138" y="862" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zzV-V2-OFh" firstAttribute="leading" secondItem="O1s-Zl-aoe" secondAttribute="leading" id="0Uq-uL-dDG"/>
+                            <constraint firstItem="mXC-4F-Z0D" firstAttribute="centerX" secondItem="i8o-nt-d6o" secondAttribute="centerX" id="2QG-w6-raz"/>
+                            <constraint firstItem="zzV-V2-OFh" firstAttribute="top" secondItem="O1s-Zl-aoe" secondAttribute="top" id="JGT-Qh-Slk"/>
+                            <constraint firstItem="O1s-Zl-aoe" firstAttribute="bottom" secondItem="zzV-V2-OFh" secondAttribute="bottom" id="d38-Nm-Esv"/>
+                            <constraint firstItem="mXC-4F-Z0D" firstAttribute="centerY" secondItem="i8o-nt-d6o" secondAttribute="centerY" constant="-20" id="gWU-FW-RF8"/>
+                            <constraint firstItem="O1s-Zl-aoe" firstAttribute="trailing" secondItem="zzV-V2-OFh" secondAttribute="trailing" id="rB3-Aa-Zdv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1s-Zl-aoe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tc5-Ef-Rkb"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="C4t-aw-kgJ" id="smB-zz-Y4J"/>
+                        <outlet property="mapView" destination="zzV-V2-OFh" id="MWb-s4-F5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dym-Te-mxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="893"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="vhu-87-wqK">
             <objects>
@@ -245,6 +295,8 @@
                                 <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upload"/>
                                 <connections>
+                                    <action selector="LocationButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="j6V-3g-rED"/>
+                                    <segue destination="V8V-Nn-D0k" kind="show" id="dBe-EE-WJN"/>
                                     <action selector="UploadButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="FCX-qO-7bi"/>
                                 </connections>
                             </button>
@@ -347,10 +399,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pin" width="16" height="46"/>
         <image name="camera.circle" catalog="system" width="64" height="60"/>
         <image name="location.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LK6-PY-73J"/>
+        <segue reference="1hf-sq-c7L"/>
     </inferredMetricsTieBreakers>
 </document>

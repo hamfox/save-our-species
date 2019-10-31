@@ -15,9 +15,13 @@ class RecentReportsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
 
-    @IBOutlet weak var RecentReportsLabel: UILabel!
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
