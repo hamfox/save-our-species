@@ -17,18 +17,39 @@ class ReportViewController: UIViewController {
     @IBAction func LocationButton(_ sender: UIButton) {}
     @IBAction func cameraButton(_ sender: UIButton) {}
 
+    @IBOutlet weak var ReportLabel: UILabel!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    
+    let reportService = ReportService()
+    
+    // Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var ReportLabel: UILabel!
+    func addReport(reportText: String) {
+        reportService.addToList(reportDescription: reportText, completion: { (status) in
+            if status {
+                print("Status", status)
+                print("Text", reportText)
+            }})
+    }
     
-   
+    // Actions
+    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
+        print(sender.text!)
+    }
+    @IBAction func UploadButton(_ sender: UIButton) {
+        addReport(reportText: descriptionTextField.text!)
+    }
+    @IBAction func LocationButton(_ sender: UIButton) {
+    }
     @IBAction func descrField(_ sender: UITextField) {
         
     }
+    @IBAction func cameraButton(_ sender: UIButton) {
+    }
+
 
     /*
     // MARK: - Navigation
@@ -39,5 +60,4 @@ class ReportViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

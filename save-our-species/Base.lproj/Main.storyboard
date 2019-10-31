@@ -300,22 +300,19 @@
                                     <action selector="UploadButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="FCX-qO-7bi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQN-wK-94E">
-                                <rect key="frame" x="200" y="330.5" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="TzP-4w-fL7"/>
-                                    <constraint firstAttribute="width" constant="80" id="cLt-iv-Wfl"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIh-o9-WAy">
-                                <rect key="frame" x="200" y="151.5" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="dkw-id-NbS"/>
-                                    <constraint firstAttribute="width" constant="80" id="siK-s5-kkZ"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter description of STRANDING" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-AU-SLv">
+                                <rect key="frame" x="38" y="238" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="descrField:" destination="MyH-SZ-KIL" eventType="editingDidEnd" id="ZMo-92-wVq"/>
+                                    <action selector="textFieldEditingChanged:" destination="MyH-SZ-KIL" eventType="editingChanged" id="cX8-HF-H8L"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIh-o9-WAy">
+                                <rect key="frame" x="159" y="741.5" width="81" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="camera.circle" catalog="system"/>
                                 <connections>
                                     <action selector="cameraButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="hqU-Bb-i8v"/>
@@ -353,6 +350,8 @@
                     <navigationItem key="navigationItem" id="eBl-Fm-Xm0"/>
                     <connections>
                         <outlet property="ReportLabel" destination="ZLM-dg-khO" id="P3x-lI-C9Y"/>
+                        <outlet property="descriptionTextField" destination="ZSr-AU-SLv" id="JRI-I2-hc6"/>
+                        <outletCollection property="descriptionTextField" destination="ZSr-AU-SLv" collectionClass="NSMutableArray" id="GD2-de-SO3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
