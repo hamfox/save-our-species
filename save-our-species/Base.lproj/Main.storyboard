@@ -308,9 +308,6 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="LocationButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="j6V-3g-rED"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIh-o9-WAy">
                                 <rect key="frame" x="200" y="151.5" width="80" height="80"/>
