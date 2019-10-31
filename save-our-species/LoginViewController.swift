@@ -9,15 +9,19 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    //Button
+    @IBOutlet weak var ClientButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Make Button Round
+        ClientButton.layer.cornerRadius = 10
+        ClientButton.clipsToBounds = true
 
         // Do any additional setup after loading the view.
     }
-    
-    
-    @IBOutlet weak var ClientButton: UIButton!
+
     @IBAction func userField(_ sender: UITextField) {
     }
     /*

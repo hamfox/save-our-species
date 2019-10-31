@@ -9,15 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //Labels
+    @IBOutlet weak var HomeLabel: UILabel!
+    //Buttons
+    @IBOutlet weak var LoginButton: UIButton!
+    @IBOutlet weak var ReportButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //make button rounded
+        //this code doesn't make the borders rounded
+        LoginButton.layer.cornerRadius = 10
+        LoginButton.clipsToBounds = true
+        
+        ReportButton.layer.cornerRadius = 10
+        ReportButton.clipsToBounds = true
+        
+        
+        
+        
+        
+        
     }
-
-    @IBOutlet weak var HomeLabel: UILabel!
-    @IBOutlet weak var LoginButton: UIButton!
-    
-    @IBOutlet weak var ReportButton: UIButton!
 }
 

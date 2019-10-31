@@ -9,6 +9,13 @@
 import UIKit
 
 class ReportViewController: UIViewController {
+    
+    //Buttons
+    @IBAction func UploadButton(_ sender: UIButton) {}
+    
+    //Buttons with images
+    @IBAction func LocationButton(_ sender: UIButton) {}
+    @IBAction func cameraButton(_ sender: UIButton) {}
 
     @IBOutlet weak var ReportLabel: UILabel!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -38,13 +45,11 @@ class ReportViewController: UIViewController {
     @IBAction func LocationButton(_ sender: UIButton) {
     }
     @IBAction func descrField(_ sender: UITextField) {
+        
     }
     @IBAction func cameraButton(_ sender: UIButton) {
     }
-    
-  
- 
-    
+
 
     /*
     // MARK: - Navigation
