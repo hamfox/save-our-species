@@ -11,11 +11,11 @@ import UIKit
 class ReportViewController: UIViewController {
 
     @IBOutlet weak var ReportLabel: UILabel!
-
-    let reportService = ReportService()
-    var textDescription = String()
-
+    @IBOutlet weak var descriptionTextField: UITextField!
     
+    let reportService = ReportService()
+    
+    // Functions
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,21 +24,25 @@ class ReportViewController: UIViewController {
         reportService.addToList(reportDescription: reportText, completion: { (status) in
             if status {
                 print("Status", status)
+                print("Text", reportText)
             }})
     }
     
+    // Actions
+    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
+        print(sender.text!)
+    }
     @IBAction func UploadButton(_ sender: UIButton) {
-        addReport(reportText: textDescription)
+        addReport(reportText: descriptionTextField.text!)
     }
     @IBAction func LocationButton(_ sender: UIButton) {
     }
     @IBAction func descrField(_ sender: UITextField) {
-        let textDescription = sender.text
     }
     @IBAction func cameraButton(_ sender: UIButton) {
     }
     
-
+  
  
     
 

@@ -172,6 +172,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="descrField:" destination="MyH-SZ-KIL" eventType="editingDidEnd" id="ZMo-92-wVq"/>
+                                    <action selector="textFieldEditingChanged:" destination="MyH-SZ-KIL" eventType="editingChanged" id="cX8-HF-H8L"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIh-o9-WAy">
@@ -197,6 +198,8 @@
                     <navigationItem key="navigationItem" id="eBl-Fm-Xm0"/>
                     <connections>
                         <outlet property="ReportLabel" destination="ZLM-dg-khO" id="P3x-lI-C9Y"/>
+                        <outlet property="descriptionTextField" destination="ZSr-AU-SLv" id="JRI-I2-hc6"/>
+                        <outletCollection property="descriptionTextField" destination="ZSr-AU-SLv" collectionClass="NSMutableArray" id="GD2-de-SO3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
