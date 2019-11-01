@@ -9,11 +9,17 @@
 import UIKit
 
 class RecentReportsViewController: UIViewController {
+    let reportsService = ReportService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        getAllReports()
+    }
+    
+    func getAllReports() {
+        reportsService.getList(completion: { (status, reports) in
+            print(status)
+        })
     }
 
     
