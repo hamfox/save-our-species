@@ -360,29 +360,10 @@
                     <view key="view" contentMode="scaleToFill" id="nUG-3V-nBo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Reports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgS-xK-490">
-                                <rect key="frame" x="120.66666666666669" y="96" width="119" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="119" id="qKq-Le-Qkt"/>
-                                    <constraint firstAttribute="height" constant="21" id="rnU-gw-rFj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="rgS-xK-490" firstAttribute="top" secondItem="sfC-nP-wOJ" secondAttribute="top" constant="52" id="L3j-TH-BaF"/>
-                            <constraint firstItem="rgS-xK-490" firstAttribute="centerX" secondItem="sfC-nP-wOJ" secondAttribute="centerX" constant="-7.5" id="tNO-ib-vzM"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sfC-nP-wOJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pxs-Io-TEZ"/>
-                    <connections>
-                        <outlet property="RecentReportsLabel" destination="rgS-xK-490" id="X0t-i5-Ee1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dc-lq-Qck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
