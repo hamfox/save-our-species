@@ -353,22 +353,6 @@
             </objects>
             <point key="canvasLocation" x="2548.125" y="134.1549295774648"/>
         </scene>
-        <!--Recent Reports View Controller-->
-        <scene sceneID="e29-hH-byr">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Sjh-Jy-eHa" customClass="RecentReportsViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nUG-3V-nBo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="sfC-nP-wOJ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Pxs-Io-TEZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0dc-lq-Qck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3354" y="136"/>
-        </scene>
         <!--Reports Table View Controller-->
         <scene sceneID="d14-01-B7v">
             <objects>
@@ -396,7 +380,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7Q-fU-qV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4219" y="141"/>
+            <point key="canvasLocation" x="3364" y="137"/>
         </scene>
     </scenes>
     <resources>
