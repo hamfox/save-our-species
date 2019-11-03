@@ -13,6 +13,21 @@ import FirebaseFirestoreSwift
 class ReportService {
     let db = Firestore.firestore()
     
+    func getList(completion: @escaping (Bool, [ReportModel]) -> ()){
+        var reports = [ReportModel]()
+        db.collection("reports").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(false, reports)
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                    }
+                    completion(true, reports)
+                }
+        }
+    }
+    
     func addToList(reportDescription: String, completion: @escaping (Bool) -> ()) {
         var ref: DocumentReference? = nil
 
