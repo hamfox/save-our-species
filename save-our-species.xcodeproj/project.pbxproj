@@ -16,7 +16,7 @@
 		47330600236148270015EF38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473305FE236148270015EF38 /* Main.storyboard */; };
 		473306022361482D0015EF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473306012361482D0015EF38 /* Assets.xcassets */; };
 		473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473306032361482D0015EF38 /* LaunchScreen.storyboard */; };
-		47BF869723624C2D007AC8DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47BF869623624C2D007AC8DD /* GoogleService-Info.plist */; };
+		47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */; };
 		6F2F51D3236156CA00163F21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D2236156CA00163F21 /* LoginViewController.swift */; };
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
@@ -37,7 +37,7 @@
 		473306012361482D0015EF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		473306042361482D0015EF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		473306062361482D0015EF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47BF869623624C2D007AC8DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
 		6F2F51D2236156CA00163F21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +104,7 @@
 				473306012361482D0015EF38 /* Assets.xcassets */,
 				473306032361482D0015EF38 /* LaunchScreen.storyboard */,
 				473306062361482D0015EF38 /* Info.plist */,
+				47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */,
 			);
 			path = "save-our-species";
 			sourceTree = "<group>";
@@ -243,6 +244,7 @@
 				47174FBC2365087600AB6C20 /* ReportService.swift in Sources */,
 				6F2F51D923615B6700163F21 /* RecentReportsViewController.swift in Sources */,
 				473305FB236148270015EF38 /* SceneDelegate.swift in Sources */,
+				47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
