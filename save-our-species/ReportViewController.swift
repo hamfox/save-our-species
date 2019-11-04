@@ -30,7 +30,7 @@ class ReportViewController: UIViewController {
     }
     
     func addReport(reportText: String) {
-        reportService.addToList(reportDescription: reportText, completion: { (status) in
+        reportService.addToList(description: reportText, completion: { (status) in
             if status {
                 print("Status", status)
                 print("Text", reportText)

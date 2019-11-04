@@ -11,46 +11,70 @@ import UIKit
 class ReportsTableViewController: UITableViewController {
     let reportsService = ReportService()
 
-    var reports = [ReportModelDescription]()
+    // MARK: Properties
+    var reports = [Report]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getAllReports()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
     
+    func loadSampleReports() {
+        /*
+        let photo1 = UIImage(named: "gerald.jpg")
+        let photo2 = UIImage(named: "gerald.jpg")
+        */
+        
+        guard let report1 = Report(description: "foobar") else {
+            fatalError("Unable to instantiate report1")
+        }
+        
+        guard let report2 = Report(description: "foobar2") else {
+            fatalError("Unable to instantiate report2")
+        }
+        
+        reports += [report1,report2]
+
+    }
+    
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
-            print(status)
+            for report in reports {
+                self.reports.append(report)
+            }
+            
+            self.tableView.reloadData()
         })
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return reports.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cellIdentifier = "ReportTableViewCell"
 
-        // Configure the cell...
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ReportTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of ReportsTableViewCell.")
+        }
+        
+        let report = reports[indexPath.row]
+        
+        /*
+        cell.timestampLabel.text = report.timestamp
+        cell.photoImageView.image = report.photo
+        */
+        
+        cell.descriptionPreviewLabel.text = report.description
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
