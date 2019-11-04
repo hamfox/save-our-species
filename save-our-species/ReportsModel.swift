@@ -6,20 +6,17 @@
 //  Copyright © 2019 MarineVP. All rights reserved.
 //
 
-import Foundation
+import UIKit
  
-public struct ReportModelDescription {
-    var reportDescription: String
- 
-    init(reportDescription: String){
-        self.reportDescription = reportDescription
-    }
-}
- 
-class ReportModel {
-    var report: ReportModelDescription
+class Report {
+    
+    var description: String
+    var timestamp: String
+    var photo: UIImage?
      
-    init(report: ReportModelDescription) {
-        self.report = ReportModelDescription(reportDescription: report.reportDescription)
+    init?(description: String, timestamp: String, photo: UIImage?) {
+        self.description = description
+        self.timestamp = timestamp
+        self.photo = photo
     }
 }
