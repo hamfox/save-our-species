@@ -175,14 +175,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-17-ape">
+                                <rect key="frame" x="138" y="563" width="100" height="30"/>
+                                <state key="normal" title="Google Sign In"/>
+                                <connections>
+                                    <action selector="GoogleSignInTapped:" destination="eG1-9s-IJy" eventType="touchUpInside" id="tV1-Xq-Ip9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0oe-XJ-0tZ" firstAttribute="top" secondItem="xmd-9R-7X4" secondAttribute="bottom" constant="52" id="5db-cB-w8S"/>
+                            <constraint firstItem="aEi-17-ape" firstAttribute="top" secondItem="9Ci-Ad-hh4" secondAttribute="top" constant="519" id="L5k-Yy-YvN"/>
                             <constraint firstItem="xmd-9R-7X4" firstAttribute="centerX" secondItem="9Ci-Ad-hh4" secondAttribute="centerX" id="OEA-xn-FmD"/>
                             <constraint firstItem="Y8m-MH-tUP" firstAttribute="centerX" secondItem="9Ci-Ad-hh4" secondAttribute="centerX" id="QVy-h4-8wu"/>
                             <constraint firstItem="xmd-9R-7X4" firstAttribute="centerY" secondItem="9Ci-Ad-hh4" secondAttribute="centerY" constant="-5" id="ccf-dn-21W"/>
+                            <constraint firstItem="9Ci-Ad-hh4" firstAttribute="trailing" secondItem="aEi-17-ape" secondAttribute="trailing" constant="137" id="dRF-eO-cax"/>
                             <constraint firstItem="xmd-9R-7X4" firstAttribute="top" secondItem="Y8m-MH-tUP" secondAttribute="bottom" constant="20" id="hRt-Az-GBa"/>
+                            <constraint firstItem="9Ci-Ad-hh4" firstAttribute="bottom" secondItem="aEi-17-ape" secondAttribute="bottom" constant="185" id="pxC-98-G6S"/>
+                            <constraint firstItem="aEi-17-ape" firstAttribute="leading" secondItem="9Ci-Ad-hh4" secondAttribute="leading" constant="138" id="tqh-GN-gbE"/>
                             <constraint firstItem="0oe-XJ-0tZ" firstAttribute="centerX" secondItem="9Ci-Ad-hh4" secondAttribute="centerX" id="vLA-4I-WCG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ci-Ad-hh4"/>

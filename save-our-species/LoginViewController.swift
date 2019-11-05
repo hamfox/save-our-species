@@ -7,31 +7,28 @@
 //
 
 import UIKit
+import FirebaseUI
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
-    //Button
-    @IBOutlet weak var ClientButton: UIButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Make Button Round
         ClientButton.layer.cornerRadius = 10
         ClientButton.clipsToBounds = true
+        
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
 
-        // Do any additional setup after loading the view.
+          // TODO(developer) Configure the sign-in button look/feel
+          // ...
     }
-
+    @IBAction func GoogleSignInTapped(_ sender: UIButton) {
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    @IBOutlet weak var ClientButton: UIButton!
     @IBAction func userField(_ sender: UITextField) {
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
