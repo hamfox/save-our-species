@@ -26,4 +26,6 @@ class dataPassingTestViewController: UIViewController {
     var latValue: Double?
     
 
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+    }
 }
