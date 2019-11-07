@@ -588,43 +588,7 @@
                     <view key="view" contentMode="scaleToFill" id="Bdx-2i-97t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-CJ-iZG">
-                                <rect key="frame" x="20" y="82" width="374" height="726"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gerald.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qWM-oG-1Ul">
-                                        <rect key="frame" x="67" y="70" width="240" height="206"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-F6-Kz9">
-                                        <rect key="frame" x="67" y="313" width="225" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6wW-Zf-GD2">
-                                        <rect key="frame" x="67" y="431" width="240" height="240"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </mapView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timestamp Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9as-Pk-Pfh">
-                                        <rect key="frame" x="67" y="19" width="225" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="PMW-pY-wOB"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="y5X-eW-Ipk"/>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="W9U-CJ-iZG" firstAttribute="leading" secondItem="91Z-kc-ZAk" secondAttribute="leading" id="ZCa-Cv-gkC"/>
-                            <constraint firstItem="91Z-kc-ZAk" firstAttribute="trailing" secondItem="W9U-CJ-iZG" secondAttribute="trailing" id="j8q-oW-tqQ"/>
-                            <constraint firstItem="W9U-CJ-iZG" firstAttribute="top" secondItem="91Z-kc-ZAk" secondAttribute="top" constant="20" id="v2w-Ld-eUV"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="91Z-kc-ZAk"/>
                     </view>
                     <navigationItem key="navigationItem" id="x14-sK-1TB"/>
