@@ -24,6 +24,8 @@ class LoginViewController: UIViewController {
           // TODO(developer) Configure the sign-in button look/feel
           // ...
     }
+    
+    
     @IBAction func GoogleSignInTapped(_ sender: UIButton) {
         GIDSignIn.sharedInstance().signIn()
     }
