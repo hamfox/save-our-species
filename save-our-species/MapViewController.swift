@@ -20,6 +20,23 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
+    //setting up to send data
+    @IBAction func reportButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "sendData", sender: self)
+    }
+    
+    //function that sends the data
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "sendData"){
+                let displayVC = segue.destination as! dataPassingTestViewController
+                let centerCoords = getCenterLocation(for: mapView)
+                let longitude = centerCoords.coordinate.longitude
+                displayVC.longValue = longitude
+                let latitude = centerCoords.coordinate.latitude
+                displayVC.latValue = latitude
+        }
+    }
+    
     
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
