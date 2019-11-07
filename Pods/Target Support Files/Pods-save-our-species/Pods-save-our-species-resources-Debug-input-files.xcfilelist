@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-save-our-species/Pods-save-our-species-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle
+${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle
