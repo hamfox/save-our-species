@@ -72,6 +72,12 @@ PODS:
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
+  - FirebaseUI/Auth (8.3.1):
+    - Firebase/Auth (~> 6.0)
+    - GoogleUtilities/UserDefaults
+  - FirebaseUI/Google (8.3.1):
+    - FirebaseUI/Auth
+    - GoogleSignIn (~> 5.0)
   - GoogleAppMeasurement (6.1.5):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -185,6 +191,7 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 1c7ed32c09d6b0148034e035d0c07783ca45bac3
   FirebaseFirestoreSwift: 0437bb10d83f8161a9131da1739998254c78fdf5
   FirebaseInstanceID: ebd2ea79ee38db0cb5f5167b17a0d387e1cc7b6e
+  FirebaseUI: 826359d83af7cd76bfe0d43a8aab11eabac65558
   GoogleAppMeasurement: 037f46d1d8ae8b312720f1042585ab961a1289e3
   GoogleDataTransport: 166f9b9f82cbf60a204e8fe2daa9db3e3ec1fb15
   GoogleDataTransportCCTSupport: f6ab1962e9dc05ab1fb938b795e5b310209edeec
