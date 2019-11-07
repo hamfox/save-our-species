@@ -14,9 +14,9 @@ class Report {
     /*
     var timestamp: String
     var photo: UIImage?
-    var location: Int
     */
-    
+    var latitude: String
+    var longitude: String
     init?(description: String) {
         self.description = description
     }
