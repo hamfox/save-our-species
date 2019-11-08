@@ -17,7 +17,20 @@ class ReportsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getAllReports()
+        
+        //reportTableToClientView
+        //Add naviagtion from login page back to home page by swiping to the right
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
+        rightSwipe.direction = .right
+        view.addGestureRecognizer(rightSwipe)
+        
+        
     }
+    
+    //Handle swipes function
+      @objc func handleSwipes(sender:UISwipeGestureRecognizer){
+          performSegue(withIdentifier: "reportTableToClientView", sender: self)
+      }
 
     // MARK: - Table view data source
     
