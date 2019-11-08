@@ -27,7 +27,18 @@ class ReportViewController: UIViewController {
     // Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //reportToDataPassing
+        //Add naviagtion from login page back to home page by swiping to the right
+               let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
+               rightSwipe.direction = .right
+               view.addGestureRecognizer(rightSwipe)
     }
+    
+    //Handle swipes function
+       @objc func handleSwipes(sender:UISwipeGestureRecognizer){
+           performSegue(withIdentifier: "reportToDataPassing", sender: self)
+       }
     
     func addReport(reportText: String) {
         reportService.addToList(description: reportText, completion: { (status) in
