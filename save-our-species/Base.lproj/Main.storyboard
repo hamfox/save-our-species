@@ -462,10 +462,10 @@
             </objects>
             <point key="canvasLocation" x="2505" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="Y66-pT-r4h">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="hqT-6r-0j8" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hqT-6r-0j8" customClass="CameraViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpo-bW-uFt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,13 +485,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-Ii-SrY">
+                                <rect key="frame" x="117" y="391" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Upload From Library"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xoz-Jx-qWI" appends="YES" id="Fkt-jQ-6se"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="thW-i5-Opf"/>
                     </view>
                     <navigationItem key="navigationItem" id="0yG-R1-usm"/>
+                    <connections>
+                        <outlet property="uploadFromLibraryButton" destination="c6P-Ii-SrY" id="OBh-n1-pRi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwH-XD-QxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Xoz-Jx-qWI">
+                    <connections>
+                        <action selector="uploadFromLibraryTapped:" destination="hqT-6r-0j8" id="nse-Pj-EF4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3265" y="879"/>
         </scene>
@@ -559,6 +576,6 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vfs-GS-SpZ"/>
+        <segue reference="pV8-Vm-WHW"/>
     </inferredMetricsTieBreakers>
 </document>
