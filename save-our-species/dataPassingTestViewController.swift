@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class dataPassingTestViewController: UIViewController {
 
@@ -19,11 +20,33 @@ class dataPassingTestViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var longValue: Double?
+    var latValue: Double?
+    
+    
     @IBOutlet weak var longLabel: UILabel!
     @IBOutlet weak var latLabel: UILabel!
     
-    var longValue: Double?
-    var latValue: Double?
+    
+    @IBAction func getDirections(_ sender: Any) {
+        let regionDistance: CLLocationDistance = 1000
+        let latitude = latValue!
+        let longitude = longValue!
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center), MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)]
+        
+        let placeMark = MKPlacemark(coordinate: coordinates)
+        let mapItem = MKMapItem(placemark: placeMark)
+        mapItem.name = "Stranding Location"
+        mapItem.openInMaps(launchOptions: options)
+        
+    }
+    
+    
+    
+    
     
 
     @IBAction func nextButtonPressed(_ sender: UIButton) {
