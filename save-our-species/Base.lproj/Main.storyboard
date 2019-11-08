@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-Mp-QtL">
-                                <rect key="frame" x="164.66666666666666" y="400.66666666666669" width="46" height="21"/>
+                                <rect key="frame" x="164.66666666666666" y="351.66666666666669" width="46" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="J5N-Bp-DxD"/>
                                     <constraint firstAttribute="height" constant="21" id="USD-mb-IGD"/>
@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5O-D2-jQE">
-                                <rect key="frame" x="73.666666666666686" y="538" width="228" height="36"/>
+                                <rect key="frame" x="73.666666666666686" y="489" width="228" height="36"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="BZn-uS-MM0"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-27-etS">
-                                <rect key="frame" x="73.666666666666686" y="483" width="228" height="36"/>
+                                <rect key="frame" x="73.666666666666686" y="434" width="228" height="36"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
@@ -72,6 +72,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gTj-9h-o3z"/>
                     <connections>
                         <outlet property="HomeLabel" destination="pKH-Mp-QtL" id="zZV-a4-cZ7"/>
                         <outlet property="LoginButton" destination="j5O-D2-jQE" id="JIW-xP-ZmP"/>
@@ -255,6 +256,7 @@
                     <navigationItem key="navigationItem" id="smS-hj-Ota"/>
                     <connections>
                         <outlet property="ClientButton" destination="0oe-XJ-0tZ" id="gEG-KI-pTR"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginToHome" id="nEG-NU-44h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wF6-Ny-fAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -457,6 +459,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="CZ0-D0-dty"/>
+                    <connections>
+                        <segue destination="7Ac-ZC-va2" kind="show" identifier="reportTableToClientView" id="C4x-Y6-WQ7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7Q-fU-qV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -559,6 +564,7 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="C4x-Y6-WQ7"/>
         <segue reference="vfs-GS-SpZ"/>
     </inferredMetricsTieBreakers>
 </document>
