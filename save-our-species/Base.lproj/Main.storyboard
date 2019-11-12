@@ -367,18 +367,6 @@
                                     <action selector="UploadButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="FCX-qO-7bi"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter description of STRANDING" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-AU-SLv">
-                                <rect key="frame" x="52.666666666666657" y="317.66666666666669" width="270" height="187"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="187" id="jQu-qR-tZD"/>
-                                    <constraint firstAttribute="width" constant="270" id="ubl-Su-A59"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="descrField:" destination="MyH-SZ-KIL" eventType="editingDidEnd" id="ZMo-92-wVq"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-bw-gkS">
                                 <rect key="frame" x="171" y="581" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -387,30 +375,49 @@
                                     <segue destination="hqT-6r-0j8" kind="show" id="NhF-Fu-9pE"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="onDrag" text="This is a multi-line textfield Box." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-8R-SbR">
+                                <rect key="frame" x="123" y="207" width="109" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88646052549244314" green="0.9952294787216287" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Description Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stC-eQ-eCQ">
+                                <rect key="frame" x="99" y="165" width="183" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ZSr-AU-SLv" firstAttribute="centerY" secondItem="8rh-mL-H2C" secondAttribute="centerY" id="5wc-uw-YOr"/>
                             <constraint firstItem="ZLM-dg-khO" firstAttribute="top" secondItem="8rh-mL-H2C" secondAttribute="top" constant="76" id="6qy-n7-8su"/>
                             <constraint firstItem="8rh-mL-H2C" firstAttribute="bottom" secondItem="iNn-UE-eVy" secondAttribute="bottom" constant="64" id="77D-pb-DLL"/>
-                            <constraint firstAttribute="top" secondItem="ZSr-AU-SLv" secondAttribute="bottom" constant="30.5" id="NHy-07-dv1"/>
                             <constraint firstItem="ZLM-dg-khO" firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="X9V-Op-2il"/>
                             <constraint firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="myu-Kr-dDr"/>
-                            <constraint firstItem="ZSr-AU-SLv" firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="pL4-pr-wdj"/>
                             <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="iNn-UE-eVy" secondAttribute="trailing" constant="72" id="uhV-XN-8Qa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8rh-mL-H2C"/>
                     </view>
                     <navigationItem key="navigationItem" id="eBl-Fm-Xm0"/>
                     <connections>
+                        <outlet property="DirectionLabel" destination="stC-eQ-eCQ" id="QIJ-FF-6JZ"/>
+                        <outlet property="RepDescrpBox" destination="TOP-8R-SbR" id="jcE-ht-75Q"/>
                         <outlet property="ReportLabel" destination="ZLM-dg-khO" id="P3x-lI-C9Y"/>
-                        <outlet property="descriptionTextField" destination="ZSr-AU-SLv" id="JRI-I2-hc6"/>
                         <segue destination="X9b-GA-CGs" kind="show" identifier="reportToDataPassing" id="vkG-0m-OY1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="879"/>
+            <point key="canvasLocation" x="2504.8000000000002" y="878.57142857142856"/>
         </scene>
         <!--Reports Table View Controller-->
         <scene sceneID="d14-01-B7v">
