@@ -42,6 +42,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         
     }
+    
     /*
     // MARK: - Navigation
 
