@@ -477,15 +477,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-z1-GjM">
-                                <rect key="frame" x="171" y="595" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="buttonNext:" destination="hqT-6r-0j8" eventType="touchUpInside" id="x9b-3Z-51N"/>
-                                    <segue destination="8li-Lr-Hra" kind="show" id="EYD-OJ-nEb"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
                                 <rect key="frame" x="137" y="125" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -493,19 +484,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
+                                <rect key="frame" x="16" y="221.66666666666663" width="343" height="379"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vxy-iE-GRk" appends="YES" id="hK5-pF-c8u"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-z1-GjM">
+                                <rect key="frame" x="171.66666666666666" y="635.66666666666663" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="buttonNext:" destination="hqT-6r-0j8" eventType="touchUpInside" id="x9b-3Z-51N"/>
+                                    <segue destination="8li-Lr-Hra" kind="show" id="EYD-OJ-nEb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="J0n-rc-KoK"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="centerY" secondItem="thW-i5-Opf" secondAttribute="centerY" id="KHk-9b-OMY"/>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="35" id="YQP-7I-EQk"/>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="mbv-b2-rNx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="thW-i5-Opf"/>
                     </view>
                     <navigationItem key="navigationItem" id="0yG-R1-usm"/>
                     <connections>
                         <outlet property="cameraViewLabel" destination="rKh-g1-vMI" id="Fau-gf-KeW"/>
+                        <outlet property="photoImageView" destination="QAP-GX-4ET" id="Mvx-hR-ReW"/>
                         <segue destination="MyH-SZ-KIL" kind="show" identifier="cameraToReport" id="eh5-8h-Qoz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwH-XD-QxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vxy-iE-GRk">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="hqT-6r-0j8" id="Fcb-pw-Jwh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3265" y="879"/>
+            <point key="canvasLocation" x="3264.8000000000002" y="878.57142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="to4-gj-GwR">
@@ -568,10 +586,11 @@
     </scenes>
     <resources>
         <image name="Pin" width="16" height="46"/>
+        <image name="chonkboi" width="320" height="240"/>
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rdn-8h-XhT"/>
+        <segue reference="eh5-8h-Qoz"/>
         <segue reference="C4x-Y6-WQ7"/>
         <segue reference="vkG-0m-OY1"/>
         <segue reference="m2n-jo-5Dg"/>
