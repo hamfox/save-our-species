@@ -484,7 +484,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
                                 <rect key="frame" x="16" y="221.66666666666663" width="343" height="379"/>
                                 <gestureRecognizers/>
                                 <connections>
