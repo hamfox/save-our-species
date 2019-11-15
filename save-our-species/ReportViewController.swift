@@ -10,9 +10,13 @@ import UIKit
 
 class ReportViewController: UIViewController {
     
+    @IBOutlet weak var DirectionLabel: UILabel!
+    @IBOutlet weak var RepDescrpBox: UITextView!
+    
     //Buttons
     @IBAction func UploadButton(_ sender: UIButton) {
-        addReport(reportText: descriptionTextField.text!)
+    //    addReport(reportText: descriptionTextField.text!)
+        addReport(reportText: RepDescrpBox.text!)
     }
     
     //Buttons with images
@@ -28,6 +32,8 @@ class ReportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        RepDescrpBox.layer.borderColor=UIColor.brown.cgColor
+            //UIcolor.brown.cgColor
         //reportToDataPassing
         //Add naviagtion from login page back to home page by swiping to the right
                let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
@@ -49,10 +55,9 @@ class ReportViewController: UIViewController {
     }
     
     // Actions
-    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
-        print(sender.text!)
-    }
-
+//    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
+//       print(sender.text!)
+//    }
 
     /*
     // MARK: - Navigation
