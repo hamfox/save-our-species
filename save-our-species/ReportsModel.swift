@@ -11,15 +11,19 @@ import UIKit
 class Report {
     
     var description: String
+    var latitude: Double
+    var longitude: Double
+    
     /*
     var timestamp: String
     var photo: UIImage?
-    var latitude: String
-    var longitude: String
     */
     
-    init?(description: String) {
+    
+    init?(description: String, latitude: Double, longitude: Double ) {
         self.description = description
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }
 
