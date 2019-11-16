@@ -25,5 +25,17 @@ class Report {
         self.latitude = latitude
         self.longitude = longitude
     }
+    
+    func setDescription(description: String){
+        self.description = description
+    }
+    
+    func setLongitude(longitude: Double){
+        self.longitude = longitude
+    }
+    
+    func setLatitude(latitude: Double){
+        self.latitude = latitude
+    }
 }
 

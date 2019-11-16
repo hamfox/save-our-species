@@ -27,10 +27,22 @@ class ReportViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     
     let reportService = ReportService()
+    var longValue: Double? = 0
+    var latValue: Double? = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "sendDescription"){
+            
+        }
+    }
     
     // Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("LONG: ", longValue)
+        print("LAT:", latValue)
+
         
         RepDescrpBox.layer.borderColor=UIColor.brown.cgColor
             //UIcolor.brown.cgColor
@@ -39,6 +51,8 @@ class ReportViewController: UIViewController {
                let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
                rightSwipe.direction = .right
                view.addGestureRecognizer(rightSwipe)
+        
+        
     }
     
     //Handle swipes function

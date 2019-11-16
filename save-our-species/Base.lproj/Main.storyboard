@@ -117,6 +117,7 @@
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <action selector="reportButton:" destination="V8V-Nn-D0k" eventType="touchUpInside" id="v80-e5-xZQ"/>
+                                    <segue destination="MyH-SZ-KIL" kind="show" identifier="sendLocation" id="aBt-sI-kKf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,58 +136,11 @@
                     <connections>
                         <outlet property="addressLabel" destination="C4t-aw-kgJ" id="smB-zz-Y4J"/>
                         <outlet property="mapView" destination="zzV-V2-OFh" id="MWb-s4-F5v"/>
-                        <segue destination="X9b-GA-CGs" kind="show" identifier="sendData" id="jBp-KK-bbr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dym-Te-mxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="880"/>
-        </scene>
-        <!--Data Passing Test View Controller-->
-        <scene sceneID="Lyy-iE-Cxn">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="X9b-GA-CGs" customClass="dataPassingTestViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KTR-Od-UH4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Long" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3X-cx-i1I">
-                                <rect key="frame" x="38" y="204" width="315" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0N-d6-uUz">
-                                <rect key="frame" x="38" y="262" width="306" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHN-VN-riR">
-                                <rect key="frame" x="179" y="697" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="X9b-GA-CGs" eventType="touchUpInside" id="YZ5-Iu-mCi"/>
-                                    <segue destination="MyH-SZ-KIL" kind="show" id="Rdn-8h-XhT"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="uBl-ur-llC"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="4KW-54-But"/>
-                    <connections>
-                        <outlet property="latLabel" destination="k0N-d6-uUz" id="rLs-9Q-9Hf"/>
-                        <outlet property="longLabel" destination="A3X-cx-i1I" id="c2m-gb-bT2"/>
-                        <segue destination="V8V-Nn-D0k" kind="show" identifier="dataPassingToMapView" id="m2n-jo-5Dg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tj4-0N-cda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1742" y="879"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="vhu-87-wqK">
@@ -372,7 +326,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="hqT-6r-0j8" kind="show" id="NhF-Fu-9pE"/>
+                                    <segue destination="hqT-6r-0j8" kind="show" identifier="sendDescription" id="NhF-Fu-9pE"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="onDrag" text="This is a multi-line textfield Box." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-8R-SbR">
@@ -412,7 +366,6 @@
                         <outlet property="DirectionLabel" destination="stC-eQ-eCQ" id="QIJ-FF-6JZ"/>
                         <outlet property="RepDescrpBox" destination="TOP-8R-SbR" id="jcE-ht-75Q"/>
                         <outlet property="ReportLabel" destination="ZLM-dg-khO" id="P3x-lI-C9Y"/>
-                        <segue destination="X9b-GA-CGs" kind="show" identifier="reportToDataPassing" id="vkG-0m-OY1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -578,9 +531,8 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rdn-8h-XhT"/>
+        <segue reference="aBt-sI-kKf"/>
         <segue reference="C4x-Y6-WQ7"/>
-        <segue reference="vkG-0m-OY1"/>
-        <segue reference="m2n-jo-5Dg"/>
+        <segue reference="vfs-GS-SpZ"/>
     </inferredMetricsTieBreakers>
 </document>
