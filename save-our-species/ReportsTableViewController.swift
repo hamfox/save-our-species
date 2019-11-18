@@ -34,24 +34,6 @@ class ReportsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
-    func loadSampleReports() {
-        /*
-        let photo1 = UIImage(named: "gerald.jpg")
-        let photo2 = UIImage(named: "gerald.jpg")
-        */
-        
-        guard let report1 = Report(description: "foobar") else {
-            fatalError("Unable to instantiate report1")
-        }
-        
-        guard let report2 = Report(description: "foobar2") else {
-            fatalError("Unable to instantiate report2")
-        }
-        
-        reports += [report1,report2]
-
-    }
-    
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
             for report in reports {
