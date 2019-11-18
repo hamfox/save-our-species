@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		47174FBA2365058D00AB6C20 /* ReportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47174FB92365058D00AB6C20 /* ReportsModel.swift */; };
 		47174FBC2365087600AB6C20 /* ReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47174FBB2365087600AB6C20 /* ReportService.swift */; };
-		47174FBE2365107500AB6C20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47174FBD2365107500AB6C20 /* GoogleService-Info.plist */; };
 		473305F9236148270015EF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305F8236148270015EF38 /* AppDelegate.swift */; };
 		473305FB236148270015EF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305FA236148270015EF38 /* SceneDelegate.swift */; };
 		473305FD236148270015EF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305FC236148270015EF38 /* ViewController.swift */; };
@@ -19,6 +18,7 @@
 		47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */; };
 		47E73697236FC8280026AF22 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E73696236FC8280026AF22 /* ReportTableViewCell.swift */; };
 		47E73699236FC9240026AF22 /* gerald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E73698236FC9230026AF22 /* gerald.jpg */; };
+		6F09FF4023832A6C000CA08A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F09FF3F23832A6C000CA08A /* GoogleService-Info.plist */; };
 		6F2F51D3236156CA00163F21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D2236156CA00163F21 /* LoginViewController.swift */; };
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
@@ -31,7 +31,6 @@
 /* Begin PBXFileReference section */
 		47174FB92365058D00AB6C20 /* ReportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsModel.swift; sourceTree = "<group>"; };
 		47174FBB2365087600AB6C20 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
-		47174FBD2365107500AB6C20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		473305F5236148270015EF38 /* save-our-species.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "save-our-species.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473305F8236148270015EF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473305FA236148270015EF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
 		47E73696236FC8280026AF22 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		47E73698236FC9230026AF22 /* gerald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gerald.jpg; sourceTree = "<group>"; };
+		6F09FF3F23832A6C000CA08A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6F2F51D2236156CA00163F21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -96,10 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				47E73698236FC9230026AF22 /* gerald.jpg */,
-				47174FBD2365107500AB6C20 /* GoogleService-Info.plist */,
 				473305F8236148270015EF38 /* AppDelegate.swift */,
 				47174FB92365058D00AB6C20 /* ReportsModel.swift */,
 				473305FA236148270015EF38 /* SceneDelegate.swift */,
+				6F09FF3F23832A6C000CA08A /* GoogleService-Info.plist */,
 				473305FC236148270015EF38 /* ViewController.swift */,
 				6F2F51D4236158F800163F21 /* ClientViewController.swift */,
 				473305FE236148270015EF38 /* Main.storyboard */,
@@ -189,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */,
-				47174FBE2365107500AB6C20 /* GoogleService-Info.plist in Resources */,
 				47E73699236FC9240026AF22 /* gerald.jpg in Resources */,
+				6F09FF4023832A6C000CA08A /* GoogleService-Info.plist in Resources */,
 				473306022361482D0015EF38 /* Assets.xcassets in Resources */,
 				47330600236148270015EF38 /* Main.storyboard in Resources */,
 			);

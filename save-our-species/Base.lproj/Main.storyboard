@@ -477,35 +477,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
-                                <rect key="frame" x="137" y="125" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
+                                <rect key="frame" x="137" y="130.66666666666666" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
-                                <rect key="frame" x="16" y="221.66666666666663" width="343" height="379"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="vxy-iE-GRk" appends="YES" id="hK5-pF-c8u"/>
-                                </connections>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-z1-GjM">
-                                <rect key="frame" x="171.66666666666666" y="635.66666666666663" width="32" height="30"/>
+                                <rect key="frame" x="171.66666666666666" y="640.66666666666663" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="buttonNext:" destination="hqT-6r-0j8" eventType="touchUpInside" id="x9b-3Z-51N"/>
                                     <segue destination="8li-Lr-Hra" kind="show" id="EYD-OJ-nEb"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
+                                <rect key="frame" x="15" y="221.66666666666663" width="345" height="379"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vxy-iE-GRk" appends="YES" id="hK5-pF-c8u"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="top" secondItem="rKh-g1-vMI" secondAttribute="bottom" constant="70" id="1co-9p-Mot"/>
                             <constraint firstItem="QAP-GX-4ET" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="J0n-rc-KoK"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="15" id="JLa-kG-r9a"/>
                             <constraint firstItem="QAP-GX-4ET" firstAttribute="centerY" secondItem="thW-i5-Opf" secondAttribute="centerY" id="KHk-9b-OMY"/>
                             <constraint firstItem="ZHi-z1-GjM" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="35" id="YQP-7I-EQk"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="QAP-GX-4ET" secondAttribute="trailing" constant="15" id="lxM-xO-vgf"/>
                             <constraint firstItem="ZHi-z1-GjM" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="mbv-b2-rNx"/>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="40" id="qAl-MR-amp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="thW-i5-Opf"/>
                     </view>
@@ -586,7 +589,7 @@
     </scenes>
     <resources>
         <image name="Pin" width="16" height="46"/>
-        <image name="chonkboi" width="320" height="240"/>
+        <image name="chonkboi" width="640" height="480"/>
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
