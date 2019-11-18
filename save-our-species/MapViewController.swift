@@ -39,7 +39,7 @@ class MapViewController: UIViewController {
     
     
     let locationManager = CLLocationManager()
-    let regionInMeters: Double = 10000
+    let regionInMeters: Double = 750
     var previousLocation: CLLocation?
     
     func setupLocationManager() {

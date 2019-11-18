@@ -22,6 +22,7 @@
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
 		6F357BD1237612DD00EB83B5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F357BD0237612DD00EB83B5 /* CameraViewController.swift */; };
+		6F66673F23832884008C11DA /* LogoMakr_26B5E7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F66673E23832884008C11DA /* LogoMakr_26B5E7.png */; };
 		6F7B0FB32374A22C0037995F /* dataPassingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B0FB22374A22C0037995F /* dataPassingTestViewController.swift */; };
 		6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA519DC2363742E0062A85B /* MapViewController.swift */; };
 		6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */; };
@@ -46,6 +47,7 @@
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		6F357BD0237612DD00EB83B5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6F66673E23832884008C11DA /* LogoMakr_26B5E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoMakr_26B5E7.png; path = ../../Downloads/LogoMakr_26B5E7.png; sourceTree = "<group>"; };
 		6F7B0FB22374A22C0037995F /* dataPassingTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPassingTestViewController.swift; sourceTree = "<group>"; };
 		6FA519DC2363742E0062A85B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				473306012361482D0015EF38 /* Assets.xcassets */,
 				473306032361482D0015EF38 /* LaunchScreen.storyboard */,
 				473306062361482D0015EF38 /* Info.plist */,
+				6F66673E23832884008C11DA /* LogoMakr_26B5E7.png */,
 				47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */,
 				47E73696236FC8280026AF22 /* ReportTableViewCell.swift */,
 			);
@@ -188,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F66673F23832884008C11DA /* LogoMakr_26B5E7.png in Resources */,
 				473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */,
 				47E73699236FC9240026AF22 /* gerald.jpg in Resources */,
 				6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */,
