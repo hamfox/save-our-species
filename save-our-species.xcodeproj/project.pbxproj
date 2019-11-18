@@ -9,32 +9,29 @@
 /* Begin PBXBuildFile section */
 		47174FBA2365058D00AB6C20 /* ReportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47174FB92365058D00AB6C20 /* ReportsModel.swift */; };
 		47174FBC2365087600AB6C20 /* ReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47174FBB2365087600AB6C20 /* ReportService.swift */; };
+		47174FBE2365107500AB6C20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47174FBD2365107500AB6C20 /* GoogleService-Info.plist */; };
 		473305F9236148270015EF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305F8236148270015EF38 /* AppDelegate.swift */; };
 		473305FB236148270015EF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305FA236148270015EF38 /* SceneDelegate.swift */; };
 		473305FD236148270015EF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473305FC236148270015EF38 /* ViewController.swift */; };
 		47330600236148270015EF38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473305FE236148270015EF38 /* Main.storyboard */; };
 		473306022361482D0015EF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473306012361482D0015EF38 /* Assets.xcassets */; };
 		473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473306032361482D0015EF38 /* LaunchScreen.storyboard */; };
-<<<<<<< HEAD
 		478465EB2374D6DC0048D924 /* ReportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478465EA2374D6DC0048D924 /* ReportDetailViewController.swift */; };
-=======
-		47991FB323832AFA0036609A /* ReportConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */; };
->>>>>>> master
 		47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */; };
 		47E73697236FC8280026AF22 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E73696236FC8280026AF22 /* ReportTableViewCell.swift */; };
 		47E73699236FC9240026AF22 /* gerald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E73698236FC9230026AF22 /* gerald.jpg */; };
 		6F2F51D3236156CA00163F21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D2236156CA00163F21 /* LoginViewController.swift */; };
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
-		6F357BD1237612DD00EB83B5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F357BD0237612DD00EB83B5 /* CameraViewController.swift */; };
+		6F7B0FB32374A22C0037995F /* dataPassingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B0FB22374A22C0037995F /* dataPassingTestViewController.swift */; };
 		6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA519DC2363742E0062A85B /* MapViewController.swift */; };
-		6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */; };
 		AB57F4E9CF8505516B8D3F1F /* Pods_save_our_species.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED29304EAAEABEE0ADD090EE /* Pods_save_our_species.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47174FB92365058D00AB6C20 /* ReportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsModel.swift; sourceTree = "<group>"; };
 		47174FBB2365087600AB6C20 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
+		47174FBD2365107500AB6C20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		473305F5236148270015EF38 /* save-our-species.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "save-our-species.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473305F8236148270015EF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473305FA236148270015EF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,20 +40,15 @@
 		473306012361482D0015EF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		473306042361482D0015EF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		473306062361482D0015EF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		478465EA2374D6DC0048D924 /* ReportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailViewController.swift; sourceTree = "<group>"; };
-=======
-		47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportConfirmationViewController.swift; sourceTree = "<group>"; };
->>>>>>> master
 		47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
 		47E73696236FC8280026AF22 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		47E73698236FC9230026AF22 /* gerald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gerald.jpg; sourceTree = "<group>"; };
 		6F2F51D2236156CA00163F21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
-		6F357BD0237612DD00EB83B5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6F7B0FB22374A22C0037995F /* dataPassingTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataPassingTestViewController.swift; sourceTree = "<group>"; };
 		6FA519DC2363742E0062A85B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		853708C1A12F8F23D8DDC573 /* Pods-save-our-species.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-save-our-species.release.xcconfig"; path = "Target Support Files/Pods-save-our-species/Pods-save-our-species.release.xcconfig"; sourceTree = "<group>"; };
 		CB9446BF1FF96F016BE9F5EA /* Pods-save-our-species.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-save-our-species.debug.xcconfig"; path = "Target Support Files/Pods-save-our-species/Pods-save-our-species.debug.xcconfig"; sourceTree = "<group>"; };
 		ED29304EAAEABEE0ADD090EE /* Pods_save_our_species.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_save_our_species.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,18 +96,15 @@
 			isa = PBXGroup;
 			children = (
 				47E73698236FC9230026AF22 /* gerald.jpg */,
+				47174FBD2365107500AB6C20 /* GoogleService-Info.plist */,
 				473305F8236148270015EF38 /* AppDelegate.swift */,
 				47174FB92365058D00AB6C20 /* ReportsModel.swift */,
 				473305FA236148270015EF38 /* SceneDelegate.swift */,
 				473305FC236148270015EF38 /* ViewController.swift */,
-<<<<<<< HEAD
 				478465EA2374D6DC0048D924 /* ReportDetailViewController.swift */,
-=======
-				6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */,
->>>>>>> master
 				6F2F51D4236158F800163F21 /* ClientViewController.swift */,
 				473305FE236148270015EF38 /* Main.storyboard */,
-				6F357BD0237612DD00EB83B5 /* CameraViewController.swift */,
+				6F7B0FB22374A22C0037995F /* dataPassingTestViewController.swift */,
 				6FA519DC2363742E0062A85B /* MapViewController.swift */,
 				6F2F51D2236156CA00163F21 /* LoginViewController.swift */,
 				6F2F51D623615A4E00163F21 /* ReportViewController.swift */,
@@ -125,7 +114,6 @@
 				473306062361482D0015EF38 /* Info.plist */,
 				47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */,
 				47E73696236FC8280026AF22 /* ReportTableViewCell.swift */,
-				47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */,
 			);
 			path = "save-our-species";
 			sourceTree = "<group>";
@@ -201,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */,
+				47174FBE2365107500AB6C20 /* GoogleService-Info.plist in Resources */,
 				47E73699236FC9240026AF22 /* gerald.jpg in Resources */,
-				6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */,
 				473306022361482D0015EF38 /* Assets.xcassets in Resources */,
 				47330600236148270015EF38 /* Main.storyboard in Resources */,
 			);
@@ -276,19 +264,14 @@
 			files = (
 				6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */,
 				6F2F51D3236156CA00163F21 /* LoginViewController.swift in Sources */,
-				47991FB323832AFA0036609A /* ReportConfirmationViewController.swift in Sources */,
 				473305FD236148270015EF38 /* ViewController.swift in Sources */,
 				6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */,
-				6F357BD1237612DD00EB83B5 /* CameraViewController.swift in Sources */,
 				473305F9236148270015EF38 /* AppDelegate.swift in Sources */,
 				6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */,
 				47174FBA2365058D00AB6C20 /* ReportsModel.swift in Sources */,
 				47174FBC2365087600AB6C20 /* ReportService.swift in Sources */,
-<<<<<<< HEAD
 				6F7B0FB32374A22C0037995F /* dataPassingTestViewController.swift in Sources */,
 				478465EB2374D6DC0048D924 /* ReportDetailViewController.swift in Sources */,
-=======
->>>>>>> master
 				473305FB236148270015EF38 /* SceneDelegate.swift in Sources */,
 				47E73697236FC8280026AF22 /* ReportTableViewCell.swift in Sources */,
 				47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */,

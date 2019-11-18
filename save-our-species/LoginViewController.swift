@@ -23,11 +23,6 @@ class LoginViewController: UIViewController {
 
           // TODO(developer) Configure the sign-in button look/feel
           // ...
-        
-        //Add naviagtion from login page back to home page by swiping to the right
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
-        rightSwipe.direction = .right
-        view.addGestureRecognizer(rightSwipe)
     }
     
     
@@ -37,10 +32,5 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var ClientButton: UIButton!
     @IBAction func userField(_ sender: UITextField) {
-    }
-    
-    //Handle swipes function
-    @objc func handleSwipes(sender:UISwipeGestureRecognizer){
-        performSegue(withIdentifier: "loginToHome", sender: self)
     }
 }

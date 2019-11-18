@@ -17,22 +17,27 @@ class ReportsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getAllReports()
-        
-        //reportTableToClientView
-        //Add naviagtion from login page back to home page by swiping to the right
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
-        rightSwipe.direction = .right
-        view.addGestureRecognizer(rightSwipe)
-        
-        
     }
-    
-    //Handle swipes function
-      @objc func handleSwipes(sender:UISwipeGestureRecognizer){
-          performSegue(withIdentifier: "reportTableToClientView", sender: self)
-      }
 
     // MARK: - Table view data source
+    
+    func loadSampleReports() {
+        /*
+        let photo1 = UIImage(named: "gerald.jpg")
+        let photo2 = UIImage(named: "gerald.jpg")
+        */
+        
+        guard let report1 = Report(description: "foobar") else {
+            fatalError("Unable to instantiate report1")
+        }
+        
+        guard let report2 = Report(description: "foobar2") else {
+            fatalError("Unable to instantiate report2")
+        }
+        
+        reports += [report1,report2]
+
+    }
     
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
