@@ -27,6 +27,17 @@ class CameraViewController: UIViewController {
         print("LAT: ", latValue)
         print("DESCRIPTION: ",descriptionText)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "sendPhoto"){
+            let displayVC = segue.destination as! ReportConfirmationViewController
+
+            displayVC.latValue = latValue
+            displayVC.longValue = longValue
+            displayVC.descriptionText = descriptionText
+        }
+    }
+
           
     //Handle swipes function
     @objc func handleSwipes(sender:UISwipeGestureRecognizer){
@@ -34,18 +45,4 @@ class CameraViewController: UIViewController {
     }
     
     @IBOutlet weak var cameraViewLabel: UILabel!
-    @IBAction func buttonNext(_ sender: Any) {
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

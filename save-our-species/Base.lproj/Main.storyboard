@@ -438,15 +438,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-z1-GjM">
-                                <rect key="frame" x="171" y="595" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="buttonNext:" destination="hqT-6r-0j8" eventType="touchUpInside" id="x9b-3Z-51N"/>
-                                    <segue destination="8li-Lr-Hra" kind="show" id="EYD-OJ-nEb"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
                                 <rect key="frame" x="137" y="125" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -454,6 +445,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-nm-EWb">
+                                <rect key="frame" x="164" y="635" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="8li-Lr-Hra" kind="show" identifier="sendPhoto" id="iVd-s8-C5f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="thW-i5-Opf"/>
@@ -466,12 +465,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwH-XD-QxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3265" y="879"/>
+            <point key="canvasLocation" x="3264.8000000000002" y="878.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Report Confirmation View Controller-->
         <scene sceneID="to4-gj-GwR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8li-Lr-Hra" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8li-Lr-Hra" customClass="ReportConfirmationViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYB-fK-vUf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -532,7 +531,6 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NhF-Fu-9pE"/>
         <segue reference="eh5-8h-Qoz"/>
         <segue reference="C4x-Y6-WQ7"/>
         <segue reference="vfs-GS-SpZ"/>
