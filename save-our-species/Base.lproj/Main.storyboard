@@ -326,6 +326,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="nextButtonPressed:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="Q0A-YI-Fr4"/>
                                     <segue destination="hqT-6r-0j8" kind="show" identifier="sendDescription" id="NhF-Fu-9pE"/>
                                 </connections>
                             </button>
@@ -531,7 +532,8 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aBt-sI-kKf"/>
+        <segue reference="NhF-Fu-9pE"/>
+        <segue reference="eh5-8h-Qoz"/>
         <segue reference="C4x-Y6-WQ7"/>
         <segue reference="vfs-GS-SpZ"/>
     </inferredMetricsTieBreakers>

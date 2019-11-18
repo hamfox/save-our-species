@@ -13,26 +13,29 @@ class ReportViewController: UIViewController {
     @IBOutlet weak var DirectionLabel: UILabel!
     @IBOutlet weak var RepDescrpBox: UITextView!
     
-    //Buttons
+    // Button Actions
     @IBAction func UploadButton(_ sender: UIButton) {
-    //    addReport(reportText: descriptionTextField.text!)
         addReport(reportText: RepDescrpBox.text!)
     }
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        descriptionText = RepDescrpBox.text!
+    }
     
-    //Buttons with images
-    @IBAction func LocationButton(_ sender: UIButton) {}
-    @IBAction func cameraButton(_ sender: UIButton) {}
-
     @IBOutlet weak var ReportLabel: UILabel!
     @IBOutlet weak var descriptionTextField: UITextField!
     
     let reportService = ReportService()
+    var descriptionText: String?
     var longValue: Double? = 0
     var latValue: Double? = 0
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "sendDescription"){
-            
+            let displayVC = segue.destination as! CameraViewController
+
+            displayVC.latValue = latValue
+            displayVC.longValue = longValue
+            displayVC.descriptionText = descriptionText
         }
     }
     
@@ -56,9 +59,9 @@ class ReportViewController: UIViewController {
     }
     
     //Handle swipes function
-       @objc func handleSwipes(sender:UISwipeGestureRecognizer){
-           performSegue(withIdentifier: "reportToDataPassing", sender: self)
-       }
+    @objc func handleSwipes(sender:UISwipeGestureRecognizer){
+        performSegue(withIdentifier: "reportToDataPassing", sender: self)
+    }
     
     func addReport(reportText: String) {
         reportService.addToList(description: reportText, completion: { (status) in
