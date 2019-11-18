@@ -12,11 +12,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-Mp-QtL">
                                 <rect key="frame" x="184" y="442.5" width="46" height="21"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-Mp-QtL">
+                                <rect key="frame" x="164.66666666666666" y="351.66666666666669" width="46" height="21"/>
+>>>>>>> master
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="J5N-Bp-DxD"/>
                                     <constraint firstAttribute="height" constant="21" id="USD-mb-IGD"/>
@@ -26,7 +34,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5O-D2-jQE">
+<<<<<<< HEAD
                                 <rect key="frame" x="93" y="580" width="228" height="36"/>
+=======
+                                <rect key="frame" x="73.666666666666686" y="489" width="228" height="36"/>
+>>>>>>> master
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="BZn-uS-MM0"/>
@@ -42,7 +54,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-27-etS">
+<<<<<<< HEAD
                                 <rect key="frame" x="93" y="525" width="228" height="36"/>
+=======
+                                <rect key="frame" x="73.666666666666686" y="434" width="228" height="36"/>
+>>>>>>> master
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
@@ -72,6 +88,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gTj-9h-o3z"/>
                     <connections>
                         <outlet property="HomeLabel" destination="pKH-Mp-QtL" id="zZV-a4-cZ7"/>
                         <outlet property="LoginButton" destination="j5O-D2-jQE" id="JIW-xP-ZmP"/>
@@ -116,6 +133,7 @@
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <action selector="reportButton:" destination="V8V-Nn-D0k" eventType="touchUpInside" id="v80-e5-xZQ"/>
+                                    <segue destination="MyH-SZ-KIL" kind="show" identifier="sendLocation" id="aBt-sI-kKf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -134,13 +152,13 @@
                     <connections>
                         <outlet property="addressLabel" destination="C4t-aw-kgJ" id="smB-zz-Y4J"/>
                         <outlet property="mapView" destination="zzV-V2-OFh" id="MWb-s4-F5v"/>
-                        <segue destination="X9b-GA-CGs" kind="show" identifier="sendData" id="jBp-KK-bbr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dym-Te-mxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="880"/>
         </scene>
+<<<<<<< HEAD
         <!--Data Passing Test View Controller-->
         <scene sceneID="Lyy-iE-Cxn">
             <objects>
@@ -186,6 +204,8 @@
             </objects>
             <point key="canvasLocation" x="1742" y="879"/>
         </scene>
+=======
+>>>>>>> master
         <!--Login View Controller-->
         <scene sceneID="vhu-87-wqK">
             <objects>
@@ -255,6 +275,7 @@
                     <navigationItem key="navigationItem" id="smS-hj-Ota"/>
                     <connections>
                         <outlet property="ClientButton" destination="0oe-XJ-0tZ" id="gEG-KI-pTR"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginToHome" id="nEG-NU-44h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wF6-Ny-fAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -364,6 +385,7 @@
                                     <action selector="UploadButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="FCX-qO-7bi"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter description of STRANDING" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-AU-SLv">
                                 <rect key="frame" x="72" y="359.5" width="270" height="187"/>
                                 <constraints>
@@ -376,37 +398,59 @@
                                     <action selector="descrField:" destination="MyH-SZ-KIL" eventType="editingDidEnd" id="ZMo-92-wVq"/>
                                 </connections>
                             </textField>
+=======
+>>>>>>> master
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-bw-gkS">
                                 <rect key="frame" x="191" y="583" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="hqT-6r-0j8" kind="show" id="NhF-Fu-9pE"/>
+                                    <action selector="nextButtonPressed:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="Q0A-YI-Fr4"/>
+                                    <segue destination="hqT-6r-0j8" kind="show" identifier="sendDescription" id="NhF-Fu-9pE"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="onDrag" text="This is a multi-line textfield Box." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-8R-SbR">
+                                <rect key="frame" x="123" y="207" width="109" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88646052549244314" green="0.9952294787216287" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Description Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stC-eQ-eCQ">
+                                <rect key="frame" x="99" y="165" width="183" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ZSr-AU-SLv" firstAttribute="centerY" secondItem="8rh-mL-H2C" secondAttribute="centerY" id="5wc-uw-YOr"/>
                             <constraint firstItem="ZLM-dg-khO" firstAttribute="top" secondItem="8rh-mL-H2C" secondAttribute="top" constant="76" id="6qy-n7-8su"/>
                             <constraint firstItem="8rh-mL-H2C" firstAttribute="bottom" secondItem="iNn-UE-eVy" secondAttribute="bottom" constant="64" id="77D-pb-DLL"/>
-                            <constraint firstAttribute="top" secondItem="ZSr-AU-SLv" secondAttribute="bottom" constant="30.5" id="NHy-07-dv1"/>
                             <constraint firstItem="ZLM-dg-khO" firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="X9V-Op-2il"/>
                             <constraint firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="myu-Kr-dDr"/>
-                            <constraint firstItem="ZSr-AU-SLv" firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="pL4-pr-wdj"/>
                             <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="iNn-UE-eVy" secondAttribute="trailing" constant="72" id="uhV-XN-8Qa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8rh-mL-H2C"/>
                     </view>
                     <navigationItem key="navigationItem" id="eBl-Fm-Xm0"/>
                     <connections>
+                        <outlet property="DirectionLabel" destination="stC-eQ-eCQ" id="QIJ-FF-6JZ"/>
+                        <outlet property="RepDescrpBox" destination="TOP-8R-SbR" id="jcE-ht-75Q"/>
                         <outlet property="ReportLabel" destination="ZLM-dg-khO" id="P3x-lI-C9Y"/>
-                        <outlet property="descriptionTextField" destination="ZSr-AU-SLv" id="JRI-I2-hc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="879"/>
+            <point key="canvasLocation" x="2504.8000000000002" y="878.57142857142856"/>
         </scene>
         <!--Reports Table View Controller-->
         <scene sceneID="d14-01-B7v">
@@ -457,6 +501,7 @@
                             <outlet property="delegate" destination="gwV-xh-5YC" id="dzZ-HW-YRu"/>
                         </connections>
                     </tableView>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Reports" id="CZ0-D0-dty">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="4iw-1n-OkB">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ckU-tA-9UF">
@@ -466,32 +511,51 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+=======
+                    <navigationItem key="navigationItem" id="CZ0-D0-dty"/>
+                    <connections>
+                        <segue destination="7Ac-ZC-va2" kind="show" identifier="reportTableToClientView" id="C4x-Y6-WQ7"/>
+                    </connections>
+>>>>>>> master
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7Q-fU-qV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3264.8000000000002" y="136.69950738916256"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="Y66-pT-r4h">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="hqT-6r-0j8" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hqT-6r-0j8" customClass="CameraViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpo-bW-uFt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
+<<<<<<< HEAD
                                 <rect key="frame" x="137" y="151" width="101" height="21"/>
+=======
+                                <rect key="frame" x="137" y="125" width="101" height="21"/>
+>>>>>>> master
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-z1-GjM">
                                 <rect key="frame" x="171" y="612" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="8li-Lr-Hra" kind="show" id="EYD-OJ-nEb"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-nm-EWb">
+                                <rect key="frame" x="164" y="635" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="8li-Lr-Hra" kind="show" identifier="sendPhoto" id="iVd-s8-C5f"/>
+>>>>>>> master
                                 </connections>
                             </button>
                         </subviews>
@@ -499,15 +563,19 @@
                         <viewLayoutGuide key="safeArea" id="thW-i5-Opf"/>
                     </view>
                     <navigationItem key="navigationItem" id="0yG-R1-usm"/>
+                    <connections>
+                        <outlet property="cameraViewLabel" destination="rKh-g1-vMI" id="Fau-gf-KeW"/>
+                        <segue destination="MyH-SZ-KIL" kind="show" identifier="cameraToReport" id="eh5-8h-Qoz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwH-XD-QxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3265" y="879"/>
+            <point key="canvasLocation" x="3264.8000000000002" y="878.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Report Confirmation View Controller-->
         <scene sceneID="to4-gj-GwR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8li-Lr-Hra" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8li-Lr-Hra" customClass="ReportConfirmationViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYB-fK-vUf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -603,6 +671,8 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eh5-8h-Qoz"/>
+        <segue reference="C4x-Y6-WQ7"/>
         <segue reference="vfs-GS-SpZ"/>
     </inferredMetricsTieBreakers>
 </document>

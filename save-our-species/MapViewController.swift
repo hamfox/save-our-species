@@ -11,6 +11,7 @@ import CoreLocation
 import MapKit
 
 class MapViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +23,13 @@ class MapViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     //setting up to send data
     @IBAction func reportButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "sendData", sender: self)
+        self.performSegue(withIdentifier: "sendLocation", sender: self)
     }
     
     //function that sends the data
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "sendData"){
-                let displayVC = segue.destination as! dataPassingTestViewController
+        if(segue.identifier == "sendLocation"){
+                let displayVC = segue.destination as! ReportViewController
                 let centerCoords = getCenterLocation(for: mapView)
                 let longitude = centerCoords.coordinate.longitude
                 displayVC.longValue = longitude
