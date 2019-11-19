@@ -10,6 +10,11 @@ import UIKit
 
 class ReportDetailViewController: UIViewController {
 
+    @IBOutlet weak var UIImageLabel: UIImageView!
+    @IBOutlet weak var timeFieldLabel: UILabel!
+    @IBOutlet weak var DescriptionFieldLabel: UILabel!
+    @IBOutlet weak var LocationFieldLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
