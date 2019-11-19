@@ -587,15 +587,41 @@
                                     <segue destination="t5t-yP-XNd" kind="show" id="k40-JA-UBe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYT-Fe-MDM">
+                                <rect key="frame" x="42" y="235" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-dF-hJr">
+                                <rect key="frame" x="42" y="291" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yql-Fe-0MD">
+                                <rect key="frame" x="42" y="361" width="283" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BXr-7x-Xjt"/>
                     </view>
                     <navigationItem key="navigationItem" id="A5y-tN-RRz"/>
+                    <connections>
+                        <outlet property="descriptionField" destination="uYT-Fe-MDM" id="U0N-wN-U6G"/>
+                        <outlet property="latitudeField" destination="3sO-dF-hJr" id="JVP-5x-gkV"/>
+                        <outlet property="longitudeField" destination="yql-Fe-0MD" id="Ite-vu-u5u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAz-8E-dzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4015" y="879"/>
+            <point key="canvasLocation" x="4013.5999999999999" y="878.57142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="edD-VN-Ifr">
@@ -649,7 +675,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="NhF-Fu-9pE"/>
         <segue reference="eh5-8h-Qoz"/>
-        <segue reference="C4x-Y6-WQ7"/>
+        <segue reference="bhw-eB-VN9"/>
         <segue reference="vfs-GS-SpZ"/>
     </inferredMetricsTieBreakers>
 </document>
