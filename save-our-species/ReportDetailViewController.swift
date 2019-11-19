@@ -20,6 +20,7 @@ class ReportDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        DescriptionFieldLabel.text = detailReport?.description
         print("DETAILVIEW: Received report description:",detailReport?.description)
     }
 }
