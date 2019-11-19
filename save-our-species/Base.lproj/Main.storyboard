@@ -263,7 +263,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gwV-xh-5YC" kind="show" id="imw-7Q-6HK"/>
+                                    <segue destination="iI9-9E-7KR" kind="show" id="imw-7Q-6HK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -378,7 +378,7 @@
             <objects>
                 <tableViewController modalPresentationStyle="fullScreen" id="gwV-xh-5YC" userLabel="Reports Table View Controller" customClass="ReportsTableViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RCd-8W-2RR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -413,6 +413,7 @@
                                     <outlet property="descriptionPreviewLabel" destination="54r-lD-406" id="4FY-zx-Pye"/>
                                     <outlet property="photoImageView" destination="xyS-Yr-Kek" id="eFP-8R-hTF"/>
                                     <outlet property="timestampLabel" destination="BzL-k2-yIG" id="t9y-XB-k6O"/>
+                                    <segue destination="gtZ-Ch-JHe" kind="show" id="ttS-yb-h39"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -421,14 +422,30 @@
                             <outlet property="delegate" destination="gwV-xh-5YC" id="dzZ-HW-YRu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="CZ0-D0-dty"/>
+                    <navigationItem key="navigationItem" title="Reports" id="CZ0-D0-dty"/>
                     <connections>
                         <segue destination="7Ac-ZC-va2" kind="show" identifier="reportTableToClientView" id="C4x-Y6-WQ7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7Q-fU-qV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="137"/>
+            <point key="canvasLocation" x="3447.1999999999998" y="136.69950738916256"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nen-Rd-Ukc">
+            <objects>
+                <viewController id="gtZ-Ch-JHe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVB-RJ-Z8N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xuc-rf-QQV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RIl-Er-MBU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMJ-JM-xow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4352" y="146"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="Y66-pT-r4h">
@@ -524,6 +541,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqE-Mk-7uj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4788" y="879"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y9d-vz-XYh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="iI9-9E-7KR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="rab-EH-ITt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QGV-hv-sGa">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gwV-xh-5YC" kind="relationship" relationship="rootViewController" id="Nzf-Ev-ZoY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0b-Lb-NsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2504.8000000000002" y="136.69950738916256"/>
         </scene>
     </scenes>
     <resources>
