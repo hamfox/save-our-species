@@ -431,10 +431,10 @@
             </objects>
             <point key="canvasLocation" x="3447.1999999999998" y="136.69950738916256"/>
         </scene>
-        <!--View Controller-->
+        <!--Report Detail View Controller-->
         <scene sceneID="Nen-Rd-Ukc">
             <objects>
-                <viewController id="gtZ-Ch-JHe" sceneMemberID="viewController">
+                <viewController id="gtZ-Ch-JHe" customClass="ReportDetailViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVB-RJ-Z8N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

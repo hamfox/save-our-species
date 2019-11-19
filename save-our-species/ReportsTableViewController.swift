@@ -23,23 +23,18 @@ class ReportsTableViewController: UITableViewController {
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
         rightSwipe.direction = .right
         view.addGestureRecognizer(rightSwipe)
-        
-        
     }
     
     //Handle swipes function
       @objc func handleSwipes(sender:UISwipeGestureRecognizer){
           performSegue(withIdentifier: "reportTableToClientView", sender: self)
       }
-
-    // MARK: - Table view data source
     
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
             for report in reports {
                 self.reports.append(report)
             }
-            
             self.tableView.reloadData()
         })
     }
