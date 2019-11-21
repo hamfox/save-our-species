@@ -546,32 +546,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
-                                <rect key="frame" x="137" y="125" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
+                                <rect key="frame" x="137" y="195.66666666666666" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-nm-EWb">
-                                <rect key="frame" x="164" y="635" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
+                                <rect key="frame" x="5" y="222.66666666666663" width="365" height="379"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vxy-iE-GRk" appends="YES" id="hK5-pF-c8u"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-sR-AaC">
+                                <rect key="frame" x="148" y="706" width="78" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="8li-Lr-Hra" kind="show" identifier="sendPhoto" id="iVd-s8-C5f"/>
+                                    <segue destination="8li-Lr-Hra" kind="show" id="Wnr-Gv-Xbf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rKh-g1-vMI" firstAttribute="top" secondItem="thW-i5-Opf" secondAttribute="top" constant="151.66999999999999" id="65n-mC-74i"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="bottom" secondItem="fal-sR-AaC" secondAttribute="bottom" constant="42" id="6Ce-nE-jdi"/>
+                            <constraint firstItem="rKh-g1-vMI" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="137" id="7T2-Ml-ig4"/>
+                            <constraint firstItem="fal-sR-AaC" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="148" id="Jdh-G1-2md"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="fal-sR-AaC" secondAttribute="trailing" constant="149" id="NqU-Qw-2Xz"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="top" secondItem="rKh-g1-vMI" secondAttribute="bottom" constant="6" id="UO6-3X-JmA"/>
+                            <constraint firstItem="fal-sR-AaC" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="104.33" id="ahA-PQ-u6Q"/>
+                            <constraint firstItem="fal-sR-AaC" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="104.33" id="hLJ-qt-0QS"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="5" id="hpb-HK-kYU"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="QAP-GX-4ET" secondAttribute="trailing" constant="5" id="qTj-UY-vLx"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="top" secondItem="rKh-g1-vMI" secondAttribute="bottom" constant="6" id="qVR-qm-Bu5"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="rKh-g1-vMI" secondAttribute="trailing" constant="137" id="s0x-mY-4Al"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="thW-i5-Opf"/>
                     </view>
                     <navigationItem key="navigationItem" id="0yG-R1-usm"/>
                     <connections>
                         <outlet property="cameraViewLabel" destination="rKh-g1-vMI" id="Fau-gf-KeW"/>
+                        <outlet property="photoImageView" destination="QAP-GX-4ET" id="Mvx-hR-ReW"/>
                         <segue destination="MyH-SZ-KIL" kind="show" identifier="cameraToReport" id="eh5-8h-Qoz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwH-XD-QxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vxy-iE-GRk">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="hqT-6r-0j8" id="Fcb-pw-Jwh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3264.8000000000002" y="878.57142857142856"/>
         </scene>
@@ -681,11 +706,13 @@
     </scenes>
     <resources>
         <image name="Pin" width="16" height="46"/>
+        <image name="chonkboi" width="640" height="480"/>
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eh5-8h-Qoz"/>
         <segue reference="C4x-Y6-WQ7"/>
+        <segue reference="vkG-0m-OY1"/>
         <segue reference="pV8-Vm-WHW"/>
     </inferredMetricsTieBreakers>
 </document>
