@@ -24,7 +24,9 @@ class ReportService {
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
                         let description = document.get("description") as! String
-                        let report = Report(description: description) as! Report
+                        let latitude = document.get("latitude") as! Double
+                        let longitude = document.get("longitude") as! Double
+                        let report = Report(description: description, latitude: latitude, longitude: longitude) as! Report
                         reports += [report]
                     }
                     completion(true,reports)

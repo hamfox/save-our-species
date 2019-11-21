@@ -9,6 +9,9 @@
 import UIKit
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    var longValue: Double? = 0
+    var latValue: Double? = 0
+    var descriptionText: String?
 
     @IBOutlet weak var cameraViewLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
@@ -25,6 +28,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
         rightSwipe.direction = .right
         view.addGestureRecognizer(rightSwipe)
+        
+        print("LONG: ", longValue)
+        print("LAT: ", latValue)
+        print("DESCRIPTION: ",descriptionText)
     }
     
     
@@ -61,6 +68,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         dismiss(animated: true, completion: nil)
     }
     
+  
     //Tap gesture goes to this funcion
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         //UIImgePickerController is a view controller tha allows user to pick photo from library
@@ -74,5 +82,16 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         imagePickerController.delegate = self
 
         present(imagePickerController, animated: true, completion: nil)
+    }
+  
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "sendPhoto"){
+            let displayVC = segue.destination as! ReportConfirmationViewController
+
+            displayVC.latValue = latValue
+            displayVC.longValue = longValue
+            displayVC.descriptionText = descriptionText
+        }
     }
 }

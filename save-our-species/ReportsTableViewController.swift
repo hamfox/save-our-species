@@ -13,6 +13,7 @@ class ReportsTableViewController: UITableViewController {
 
     // MARK: Properties
     var reports = [Report]()
+    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,43 +24,32 @@ class ReportsTableViewController: UITableViewController {
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
         rightSwipe.direction = .right
         view.addGestureRecognizer(rightSwipe)
-        
-        
     }
     
     //Handle swipes function
       @objc func handleSwipes(sender:UISwipeGestureRecognizer){
           performSegue(withIdentifier: "reportTableToClientView", sender: self)
       }
-
-    // MARK: - Table view data source
-    
-    func loadSampleReports() {
-        /*
-        let photo1 = UIImage(named: "gerald.jpg")
-        let photo2 = UIImage(named: "gerald.jpg")
-        */
-        
-        guard let report1 = Report(description: "foobar") else {
-            fatalError("Unable to instantiate report1")
-        }
-        
-        guard let report2 = Report(description: "foobar2") else {
-            fatalError("Unable to instantiate report2")
-        }
-        
-        reports += [report1,report2]
-
-    }
     
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
             for report in reports {
                 self.reports.append(report)
             }
-            
             self.tableView.reloadData()
         })
+    }
+    
+    // Send report to be viewed in detail view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "sendDetail"){
+            let displayVC = segue.destination as! ReportDetailViewController
+            let detailReport = reports[tableView.indexPathForSelectedRow!.row]
+
+            displayVC.detailReport = detailReport
+            
+            print("TABLEVIEW: Description of selected cell:", detailReport.description)
+        }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -69,7 +59,8 @@ class ReportsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return reports.count
     }
-
+    
+    // Populate table with cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "ReportTableViewCell"
 
