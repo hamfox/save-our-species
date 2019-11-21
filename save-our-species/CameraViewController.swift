@@ -53,11 +53,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
            
-       // photoImageView displays the selected image
-       photoImageView.image = selectedImage
-       
-       // Dismiss the picker once user chooses photo
-       dismiss(animated: true, completion: nil)
+        // photoImageView displays the selected image
+        photoImageView.image = selectedImage
+        
+
+        // Dismiss the picker once user chooses photo
+        dismiss(animated: true, completion: nil)
     }
     
     //Tap gesture goes to this funcion
