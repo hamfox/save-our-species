@@ -11,12 +11,10 @@ import UIKit
 class ReportConfirmationViewController: UIViewController {
     var longValue: Double? = 0
     var latValue: Double? = 0
-    var descriptionText: String?
+    var descriptionText: String? = ""
 
     @IBOutlet weak var descriptionField: UILabel!
-    
     @IBOutlet weak var latitudeField: UILabel!
-    
     @IBOutlet weak var longitudeField: UILabel!
     
     override func viewDidLoad() {
