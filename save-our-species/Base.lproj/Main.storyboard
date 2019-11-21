@@ -111,9 +111,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-Ia-AHv">
-                                <rect key="frame" x="285" y="776" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-Ia-AHv">
+                                <rect key="frame" x="285" y="444" width="47" height="30"/>
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <action selector="reportButton:" destination="V8V-Nn-D0k" eventType="touchUpInside" id="v80-e5-xZQ"/>
@@ -125,6 +124,7 @@
                         <constraints>
                             <constraint firstItem="zzV-V2-OFh" firstAttribute="leading" secondItem="O1s-Zl-aoe" secondAttribute="leading" id="0Uq-uL-dDG"/>
                             <constraint firstItem="mXC-4F-Z0D" firstAttribute="centerX" secondItem="i8o-nt-d6o" secondAttribute="centerX" id="2QG-w6-raz"/>
+                            <constraint firstItem="6tB-Ia-AHv" firstAttribute="top" secondItem="O1s-Zl-aoe" secondAttribute="top" constant="400" id="IzC-fo-V71"/>
                             <constraint firstItem="zzV-V2-OFh" firstAttribute="top" secondItem="O1s-Zl-aoe" secondAttribute="top" id="JGT-Qh-Slk"/>
                             <constraint firstItem="O1s-Zl-aoe" firstAttribute="bottom" secondItem="zzV-V2-OFh" secondAttribute="bottom" id="d38-Nm-Esv"/>
                             <constraint firstItem="mXC-4F-Z0D" firstAttribute="centerY" secondItem="i8o-nt-d6o" secondAttribute="centerY" constant="-20" id="gWU-FW-RF8"/>
@@ -710,7 +710,7 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eh5-8h-Qoz"/>
+        <segue reference="aBt-sI-kKf"/>
         <segue reference="C4x-Y6-WQ7"/>
         <segue reference="pV8-Vm-WHW"/>
     </inferredMetricsTieBreakers>
