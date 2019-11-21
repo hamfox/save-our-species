@@ -46,4 +46,7 @@ class LoginViewController: UIViewController {
     @objc func handleSwipes(sender:UISwipeGestureRecognizer){
         performSegue(withIdentifier: "loginToHome", sender: self)
     }
+    
+    
+    
 }
