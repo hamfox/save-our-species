@@ -484,7 +484,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-z1-GjM">
-                                <rect key="frame" x="171.66666666666666" y="605.66666666666663" width="32" height="30"/>
+                                <rect key="frame" x="171.66666666666666" y="606.66666666666663" width="32" height="151.33333333333337"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="buttonNext:" destination="hqT-6r-0j8" eventType="touchUpInside" id="x9b-3Z-51N"/>
@@ -501,11 +501,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="6" id="4Gb-io-MfP"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="ZHi-z1-GjM" secondAttribute="trailing" constant="171.33000000000001" id="84k-7Y-kbW"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="bottom" secondItem="ZHi-z1-GjM" secondAttribute="bottom" constant="20" id="Cq0-7P-OvL"/>
                             <constraint firstItem="QAP-GX-4ET" firstAttribute="top" secondItem="rKh-g1-vMI" secondAttribute="bottom" constant="5" id="CvM-rn-tDK"/>
                             <constraint firstItem="QAP-GX-4ET" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="J0n-rc-KoK"/>
                             <constraint firstItem="QAP-GX-4ET" firstAttribute="centerY" secondItem="thW-i5-Opf" secondAttribute="centerY" id="KHk-9b-OMY"/>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="171.66999999999999" id="NaZ-Yi-HPE"/>
                             <constraint firstItem="QAP-GX-4ET" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="5" id="P4x-Fe-uFr"/>
-                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="5" id="TCs-RN-Eec"/>
                             <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="QAP-GX-4ET" secondAttribute="trailing" constant="5" id="Zje-8m-aCl"/>
                             <constraint firstItem="ZHi-z1-GjM" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="mbv-b2-rNx"/>
                         </constraints>
