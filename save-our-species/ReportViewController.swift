@@ -39,6 +39,8 @@ class ReportViewController: UIViewController {
         }
     }
     
+    
+    
     // Functions
     override func viewDidLoad() {
         super.viewDidLoad()
