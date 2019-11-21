@@ -24,6 +24,7 @@
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
 		6F357BD1237612DD00EB83B5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F357BD0237612DD00EB83B5 /* CameraViewController.swift */; };
+		6F89938D23874A4800B68958 /* UITextView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89938C23874A4800B68958 /* UITextView+Additions.swift */; };
 		6F932EC12387145400D887A2 /* sealLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F932EC02387145400D887A2 /* sealLogo.png */; };
 		6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA519DC2363742E0062A85B /* MapViewController.swift */; };
 		6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */; };
@@ -51,6 +52,7 @@
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		6F357BD0237612DD00EB83B5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6F89938C23874A4800B68958 /* UITextView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Additions.swift"; sourceTree = "<group>"; };
 		6F932EC02387145400D887A2 /* sealLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sealLogo.png; sourceTree = "<group>"; };
 		6FA519DC2363742E0062A85B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				6FA519DC2363742E0062A85B /* MapViewController.swift */,
 				6F2F51D2236156CA00163F21 /* LoginViewController.swift */,
 				6F2F51D623615A4E00163F21 /* ReportViewController.swift */,
+				6F89938C23874A4800B68958 /* UITextView+Additions.swift */,
 				47174FBB2365087600AB6C20 /* ReportService.swift */,
 				473306012361482D0015EF38 /* Assets.xcassets */,
 				473306032361482D0015EF38 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */,
 				6F2F51D3236156CA00163F21 /* LoginViewController.swift in Sources */,
 				47180A7F23839F4600F9FDB8 /* ReportDetailViewController.swift in Sources */,
+				6F89938D23874A4800B68958 /* UITextView+Additions.swift in Sources */,
 				47991FB323832AFA0036609A /* ReportConfirmationViewController.swift in Sources */,
 				473305FD236148270015EF38 /* ViewController.swift in Sources */,
 				6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */,
