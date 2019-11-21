@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseUI
+import GoogleSignIn
 
 class ClientViewController: UIViewController {
     
@@ -26,6 +28,10 @@ class ClientViewController: UIViewController {
     }
     
     @IBOutlet weak var ClientViewLabel: UILabel!
+    
+    
+    @IBAction func LogOutTapped(_ sender: UIButton) {
+        GIDSignIn.sharedInstance()?.signOut()    }
     /*
     // MARK: - Navigation
 
