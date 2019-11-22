@@ -19,8 +19,8 @@ class ReportDetailViewController: UIViewController {
     @IBOutlet weak var LocationFieldLabel: UILabel!
     
     @IBAction func getDirections(_ sender: Any) {
-        let latitude = detailReport!.latitude
-        let longitude = detailReport!.longitude
+        let latitude = 36.9502
+        let longitude = 122.0576
         
         let regionDistance:CLLocationDistance = 750;
         let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
