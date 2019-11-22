@@ -22,11 +22,7 @@ class ReportViewController: UIViewController {
     }
     
     @IBOutlet weak var ReportLabel: UILabel!
-    
-    func dismissKeyboard(RepDescrpBox: UITextView) -> Bool {
-        RepDescrpBox.resignFirstResponder()
-        return true
-    }
+    @IBOutlet weak var descriptionTextField: UITextField!
     
     let reportService = ReportService()
     var descriptionText: String?
@@ -43,16 +39,9 @@ class ReportViewController: UIViewController {
         }
     }
     
-
-    @objc func tapDone(sender: Any) {
-        self.view.endEditing(true)
-    }
     // Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.RepDescrpBox.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
-
         
         print("LONG: ", longValue)
         print("LAT:", latValue)
