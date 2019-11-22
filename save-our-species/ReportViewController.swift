@@ -10,6 +10,7 @@ import UIKit
 
 class ReportViewController: UIViewController {
     
+    @IBOutlet weak var backButtonRV: UIButton!
     @IBOutlet weak var DirectionLabel: UILabel!
     @IBOutlet weak var RepDescrpBox: UITextView!
     

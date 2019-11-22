@@ -26,6 +26,7 @@ class ClientViewController: UIViewController {
     }
     
     @IBOutlet weak var ClientViewLabel: UILabel!
+    @IBOutlet weak var backButtonC: UIButton!
     /*
     // MARK: - Navigation
 

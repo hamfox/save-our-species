@@ -14,6 +14,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         ClientButton.layer.cornerRadius = 10
         ClientButton.clipsToBounds = true
         
@@ -30,6 +33,15 @@ class LoginViewController: UIViewController {
         view.addGestureRecognizer(rightSwipe)
     }
     
+    func application(_ application:UIApplication, didFinishLaunchingWithOptions launchoptions: [UIApplication.LaunchOptionsKey:Any]?) -> Bool {
+        let barButtonAppearance = UIBarButtonItem.appearance()
+        
+        let backButton = UIImage(named: "back")
+        let backButtonImage = backButton?.stretchableImage(withLeftCapWidth: 0, topCapHeight: 0)
+        barButtonAppearance.setBackButtonBackgroundImage(backButtonImage, for: .normal, barMetrics: .default)
+        
+        return true
+    }
     
     @IBAction func GoogleSignInTapped(_ sender: UIButton) {
         GIDSignIn.sharedInstance().signIn()
@@ -39,6 +51,7 @@ class LoginViewController: UIViewController {
     @IBAction func userField(_ sender: UITextField) {
     }
     
+    @IBOutlet weak var backButton: UIButton!
     //Handle swipes function
     @objc func handleSwipes(sender:UISwipeGestureRecognizer){
         performSegue(withIdentifier: "loginToHome", sender: self)

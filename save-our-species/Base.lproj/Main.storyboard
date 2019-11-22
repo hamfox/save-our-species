@@ -192,6 +192,14 @@
                                     <action selector="GoogleSignInTapped:" destination="eG1-9s-IJy" eventType="touchUpInside" id="tV1-Xq-Ip9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJd-9d-kP2">
+                                <rect key="frame" x="43" y="748" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bFj-Wy-Key"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -211,6 +219,7 @@
                     <navigationItem key="navigationItem" id="smS-hj-Ota"/>
                     <connections>
                         <outlet property="ClientButton" destination="0oe-XJ-0tZ" id="gEG-KI-pTR"/>
+                        <outlet property="backButton" destination="tJd-9d-kP2" id="W20-EZ-Iht"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="loginToHome" id="nEG-NU-44h"/>
                     </connections>
                 </viewController>
@@ -266,6 +275,14 @@
                                     <segue destination="iI9-9E-7KR" kind="show" id="imw-7Q-6HK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTf-XL-7e3">
+                                <rect key="frame" x="37" y="766" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="eG1-9s-IJy" kind="show" id="hOH-69-9Nt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -283,6 +300,7 @@
                         <outlet property="ClientViewLabel" destination="9IM-8p-QkW" id="elh-N5-PnQ"/>
                         <outlet property="ReportButton" destination="cKN-gD-SUJ" id="6Fv-NR-yrx"/>
                         <outlet property="ReportScreenButton" destination="hEG-h6-7Qc" id="Rz2-Oo-1oP"/>
+                        <outlet property="backButtonC" destination="sTf-XL-7e3" id="mgJ-Ph-PgH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA7-RL-a29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -351,6 +369,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1F-RM-wPi">
+                                <rect key="frame" x="22" y="742" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="V8V-Nn-D0k" kind="show" id="E7e-Yy-F1b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -367,6 +393,7 @@
                         <outlet property="DirectionLabel" destination="stC-eQ-eCQ" id="QIJ-FF-6JZ"/>
                         <outlet property="RepDescrpBox" destination="TOP-8R-SbR" id="jcE-ht-75Q"/>
                         <outlet property="ReportLabel" destination="ZLM-dg-khO" id="P3x-lI-C9Y"/>
+                        <outlet property="backButtonRV" destination="L1F-RM-wPi" id="IKe-02-PDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2U-EU-ueW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -685,7 +712,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eh5-8h-Qoz"/>
-        <segue reference="C4x-Y6-WQ7"/>
-        <segue reference="pV8-Vm-WHW"/>
+        <segue reference="bhw-eB-VN9"/>
+        <segue reference="hOH-69-9Nt"/>
+        <segue reference="E7e-Yy-F1b"/>
+        <segue reference="nEG-NU-44h"/>
     </inferredMetricsTieBreakers>
 </document>
