@@ -20,6 +20,7 @@
 		47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */; };
 		47E73697236FC8280026AF22 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E73696236FC8280026AF22 /* ReportTableViewCell.swift */; };
 		47E73699236FC9240026AF22 /* gerald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E73698236FC9230026AF22 /* gerald.jpg */; };
+		6F09FF4023832A6C000CA08A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F09FF3F23832A6C000CA08A /* GoogleService-Info.plist */; };
 		6F2F51D3236156CA00163F21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D2236156CA00163F21 /* LoginViewController.swift */; };
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
@@ -430,13 +431,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R2DW9R6CSV;
 				INFOPLIST_FILE = "save-our-species/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species.1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,13 +449,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R2DW9R6CSV;
 				INFOPLIST_FILE = "save-our-species/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species.1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
