@@ -13,6 +13,9 @@ class ReportViewController: UIViewController {
     @IBOutlet weak var DirectionLabel: UILabel!
     @IBOutlet weak var RepDescrpBox: UITextView!
     
+    
+    
+    
     // Button Actions
     @IBAction func UploadButton(_ sender: UIButton) {
         addReport(reportText: RepDescrpBox.text!)
