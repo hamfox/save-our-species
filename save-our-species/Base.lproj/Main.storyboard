@@ -546,41 +546,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
                                 <rect key="frame" x="137" y="195.66666666666666" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-z1-GjM">
+                                <rect key="frame" x="171.66666666666666" y="606.66666666666663" width="32" height="151.33333333333337"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="buttonNext:" destination="hqT-6r-0j8" eventType="touchUpInside" id="x9b-3Z-51N"/>
+                                    <segue destination="8li-Lr-Hra" kind="show" id="EYD-OJ-nEb"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
-                                <rect key="frame" x="5" y="222.66666666666663" width="365" height="379"/>
+                                <rect key="frame" x="5" y="221.66666666666663" width="365" height="379"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vxy-iE-GRk" appends="YES" id="hK5-pF-c8u"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-sR-AaC">
-                                <rect key="frame" x="148" y="706" width="78" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="8li-Lr-Hra" kind="show" id="Wnr-Gv-Xbf"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="rKh-g1-vMI" firstAttribute="top" secondItem="thW-i5-Opf" secondAttribute="top" constant="151.66999999999999" id="65n-mC-74i"/>
-                            <constraint firstItem="thW-i5-Opf" firstAttribute="bottom" secondItem="fal-sR-AaC" secondAttribute="bottom" constant="42" id="6Ce-nE-jdi"/>
-                            <constraint firstItem="rKh-g1-vMI" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="137" id="7T2-Ml-ig4"/>
-                            <constraint firstItem="fal-sR-AaC" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="148" id="Jdh-G1-2md"/>
-                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="fal-sR-AaC" secondAttribute="trailing" constant="149" id="NqU-Qw-2Xz"/>
-                            <constraint firstItem="QAP-GX-4ET" firstAttribute="top" secondItem="rKh-g1-vMI" secondAttribute="bottom" constant="6" id="UO6-3X-JmA"/>
-                            <constraint firstItem="fal-sR-AaC" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="104.33" id="ahA-PQ-u6Q"/>
-                            <constraint firstItem="fal-sR-AaC" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="104.33" id="hLJ-qt-0QS"/>
-                            <constraint firstItem="QAP-GX-4ET" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="5" id="hpb-HK-kYU"/>
-                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="QAP-GX-4ET" secondAttribute="trailing" constant="5" id="qTj-UY-vLx"/>
-                            <constraint firstItem="QAP-GX-4ET" firstAttribute="top" secondItem="rKh-g1-vMI" secondAttribute="bottom" constant="6" id="qVR-qm-Bu5"/>
-                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="rKh-g1-vMI" secondAttribute="trailing" constant="137" id="s0x-mY-4Al"/>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="top" secondItem="QAP-GX-4ET" secondAttribute="bottom" constant="6" id="4Gb-io-MfP"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="ZHi-z1-GjM" secondAttribute="trailing" constant="171.33000000000001" id="84k-7Y-kbW"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="bottom" secondItem="ZHi-z1-GjM" secondAttribute="bottom" constant="20" id="Cq0-7P-OvL"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="top" secondItem="rKh-g1-vMI" secondAttribute="bottom" constant="5" id="CvM-rn-tDK"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="J0n-rc-KoK"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="centerY" secondItem="thW-i5-Opf" secondAttribute="centerY" id="KHk-9b-OMY"/>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="171.66999999999999" id="NaZ-Yi-HPE"/>
+                            <constraint firstItem="QAP-GX-4ET" firstAttribute="leading" secondItem="thW-i5-Opf" secondAttribute="leading" constant="5" id="P4x-Fe-uFr"/>
+                            <constraint firstItem="thW-i5-Opf" firstAttribute="trailing" secondItem="QAP-GX-4ET" secondAttribute="trailing" constant="5" id="Zje-8m-aCl"/>
+                            <constraint firstItem="ZHi-z1-GjM" firstAttribute="centerX" secondItem="thW-i5-Opf" secondAttribute="centerX" id="mbv-b2-rNx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="thW-i5-Opf"/>
                     </view>
@@ -589,6 +588,7 @@
                         <outlet property="cameraViewLabel" destination="rKh-g1-vMI" id="Fau-gf-KeW"/>
                         <outlet property="photoImageView" destination="QAP-GX-4ET" id="Mvx-hR-ReW"/>
                         <segue destination="MyH-SZ-KIL" kind="show" identifier="cameraToReport" id="eh5-8h-Qoz"/>
+                        <segue destination="8li-Lr-Hra" kind="show" identifier="goNext" id="FwI-Jh-duz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwH-XD-QxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -710,6 +710,7 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="FwI-Jh-duz"/>
         <segue reference="eh5-8h-Qoz"/>
         <segue reference="C4x-Y6-WQ7"/>
         <segue reference="pV8-Vm-WHW"/>
