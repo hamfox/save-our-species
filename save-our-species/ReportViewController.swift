@@ -39,6 +39,9 @@ class ReportViewController: UIViewController {
             displayVC.latValue = latValue
             displayVC.longValue = longValue
             displayVC.descriptionText = descriptionText
+            
+            
+            
         }
     }
     
