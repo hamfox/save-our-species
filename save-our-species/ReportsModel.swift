@@ -13,6 +13,7 @@ class Report {
     var description: String
     var latitude: Double
     var longitude: Double
+    var reportTime: Date
     
     /*
     var timestamp: String
@@ -20,10 +21,11 @@ class Report {
     */
     
     
-    init?(description: String, latitude: Double, longitude: Double ) {
+    init?(description: String, latitude: Double, longitude: Double, reportTime: Date) {
         self.description = description
         self.latitude = latitude
         self.longitude = longitude
+        self.reportTime = reportTime
     }
     
     func setDescription(description: String){
@@ -36,6 +38,9 @@ class Report {
     
     func setLatitude(latitude: Double){
         self.latitude = latitude
+    }
+    func setReportTime(reportTime: Date){
+        self.reportTime = reportTime
     }
 }
 
