@@ -9,6 +9,7 @@ target 'save-our-species' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   pod 'FirebaseFirestoreSwift'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Google'
