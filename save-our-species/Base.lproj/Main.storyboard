@@ -620,6 +620,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Report"/>
                                 <connections>
+                                    <action selector="sendReportButtonTapped:" destination="8li-Lr-Hra" eventType="touchUpInside" id="I9b-D7-qBv"/>
                                     <segue destination="t5t-yP-XNd" kind="show" id="k40-JA-UBe"/>
                                 </connections>
                             </button>

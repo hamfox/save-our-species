@@ -18,6 +18,10 @@ class ReportConfirmationViewController: UIViewController {
     @IBOutlet weak var latitudeField: UILabel!
     @IBOutlet weak var longitudeField: UILabel!
     
+    @IBAction func sendReportButtonTapped(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let report = Report(description: descriptionText!, latitude: latValue!, longitude: longValue!, reportTime: reportTime!)
