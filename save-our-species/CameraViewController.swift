@@ -102,7 +102,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     func getCurrentTime () -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        formatter.dateFormat = "dd-MM-yyyy HH:mm"
         return (formatter.string(from: Date()) as NSString) as String
     }
 }

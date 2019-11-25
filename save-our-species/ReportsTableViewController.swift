@@ -70,11 +70,9 @@ class ReportsTableViewController: UITableViewController {
         
         let report = reports[indexPath.row]
         
-        /*
-        cell.timestampLabel.text = report.timestamp
-        cell.photoImageView.image = report.photo
-        */
+        //cell.photoImageView.image = report.photo
         
+        cell.timestampLabel.text = report.reportTime
         cell.descriptionPreviewLabel.text = report.description
 
         return cell
