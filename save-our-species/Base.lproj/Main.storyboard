@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,13 +10,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5O-D2-jQE">
-                                <rect key="frame" x="93" y="489" width="228" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5O-D2-jQE">
+                                <rect key="frame" x="93" y="393" width="228" height="36"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="BZn-uS-MM0"/>
@@ -31,8 +31,21 @@
                                     <segue destination="eG1-9s-IJy" kind="show" id="qps-Ci-mWX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-27-etS">
-                                <rect key="frame" x="93" y="434" width="228" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBA-zj-1m9">
+                                <rect key="frame" x="16" y="60.000000000000014" width="382" height="223.33333333333337"/>
+                                <string key="text">Every day marine mammals including dolphins, whales, seals, and sea lions strand on beaches across the United States.
+
+This app is not affiliated with the UCSC Long Marine Lab and therefore if you come across a stranding:
+
+For live animals call: 831-633-6298
+For dead animals call: 831-212-1272
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-27-etS">
+                                <rect key="frame" x="93" y="299.33333333333331" width="228" height="36"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" adjustable="YES"/>
@@ -50,27 +63,18 @@
                                     <segue destination="V8V-Nn-D0k" kind="show" id="pV8-Vm-WHW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBA-zj-1m9">
-                                <rect key="frame" x="16" y="82" width="382" height="376"/>
-                                <string key="text">Every day marine mammals including dolphins, whales, seals, and sea lions strand on beaches across the United States.
-
-This app is not affiliated with the UCSC Long Marine Lab and therefore if you come across a stranding:
-
-For live animals call: 831-633-6298
-For dead animals call: 831-212-1272
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBA-zj-1m9" secondAttribute="trailing" constant="16" id="1yz-dB-PBp"/>
                             <constraint firstItem="j5O-D2-jQE" firstAttribute="top" secondItem="MyB-27-etS" secondAttribute="bottom" constant="19" id="Bm1-9T-awO"/>
                             <constraint firstItem="j5O-D2-jQE" firstAttribute="top" secondItem="oBA-zj-1m9" secondAttribute="bottom" constant="31" id="Jf0-nD-eMg"/>
                             <constraint firstItem="j5O-D2-jQE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N6m-Io-GVh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBA-zj-1m9" secondAttribute="trailing" constant="16" id="XxS-52-7X6"/>
                             <constraint firstItem="MyB-27-etS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hoM-4i-IQS"/>
+                            <constraint firstItem="MyB-27-etS" firstAttribute="top" secondItem="oBA-zj-1m9" secondAttribute="bottom" constant="16" id="hx8-aK-VuK"/>
+                            <constraint firstItem="oBA-zj-1m9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="tGg-rF-mkH"/>
+                            <constraint firstItem="oBA-zj-1m9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="taf-OY-zK6"/>
                             <constraint firstItem="oBA-zj-1m9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="v1B-lp-9AX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -93,8 +97,9 @@ For dead animals call: 831-212-1272
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-V2-OFh">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-V2-OFh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="V8V-Nn-D0k" id="Tr9-ae-raZ"/>
                                 </connections>
@@ -106,15 +111,14 @@ For dead animals call: 831-212-1272
                                     <constraint firstAttribute="width" constant="40" id="iev-fp-Xgn"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude/latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-aw-kgJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude/latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-aw-kgJ">
                                 <rect key="frame" x="138" y="862" width="139" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-Ia-AHv">
-                                <rect key="frame" x="285" y="444" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-Ia-AHv">
+                                <rect key="frame" x="336" y="857" width="47" height="30"/>
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <action selector="reportButton:" destination="V8V-Nn-D0k" eventType="touchUpInside" id="v80-e5-xZQ"/>
@@ -124,13 +128,16 @@ For dead animals call: 831-212-1272
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="zzV-V2-OFh" firstAttribute="leading" secondItem="O1s-Zl-aoe" secondAttribute="leading" id="0Uq-uL-dDG"/>
-                            <constraint firstItem="mXC-4F-Z0D" firstAttribute="centerX" secondItem="i8o-nt-d6o" secondAttribute="centerX" id="2QG-w6-raz"/>
-                            <constraint firstItem="6tB-Ia-AHv" firstAttribute="top" secondItem="O1s-Zl-aoe" secondAttribute="top" constant="400" id="IzC-fo-V71"/>
-                            <constraint firstItem="zzV-V2-OFh" firstAttribute="top" secondItem="O1s-Zl-aoe" secondAttribute="top" id="JGT-Qh-Slk"/>
-                            <constraint firstItem="O1s-Zl-aoe" firstAttribute="bottom" secondItem="zzV-V2-OFh" secondAttribute="bottom" id="d38-Nm-Esv"/>
-                            <constraint firstItem="mXC-4F-Z0D" firstAttribute="centerY" secondItem="i8o-nt-d6o" secondAttribute="centerY" constant="-20" id="gWU-FW-RF8"/>
-                            <constraint firstItem="O1s-Zl-aoe" firstAttribute="trailing" secondItem="zzV-V2-OFh" secondAttribute="trailing" id="rB3-Aa-Zdv"/>
+                            <constraint firstItem="O1s-Zl-aoe" firstAttribute="trailing" secondItem="mXC-4F-Z0D" secondAttribute="trailing" constant="187" id="9OS-2c-lPt"/>
+                            <constraint firstAttribute="bottom" secondItem="C4t-aw-kgJ" secondAttribute="bottom" constant="13" id="LeE-v8-aEt"/>
+                            <constraint firstItem="mXC-4F-Z0D" firstAttribute="top" secondItem="O1s-Zl-aoe" secondAttribute="top" constant="364" id="OK0-Pv-mkT"/>
+                            <constraint firstItem="6tB-Ia-AHv" firstAttribute="leading" secondItem="C4t-aw-kgJ" secondAttribute="trailing" constant="59" id="QKQ-Of-bde"/>
+                            <constraint firstItem="C4t-aw-kgJ" firstAttribute="leading" secondItem="i8o-nt-d6o" secondAttribute="leading" constant="138" id="QTU-7c-e9l"/>
+                            <constraint firstItem="mXC-4F-Z0D" firstAttribute="leading" secondItem="O1s-Zl-aoe" secondAttribute="leading" constant="187" id="Sfi-5S-Tng"/>
+                            <constraint firstItem="6tB-Ia-AHv" firstAttribute="leading" secondItem="C4t-aw-kgJ" secondAttribute="trailing" constant="59" id="sxw-aC-2Be"/>
+                            <constraint firstItem="C4t-aw-kgJ" firstAttribute="top" secondItem="mXC-4F-Z0D" secondAttribute="bottom" constant="414" id="vNx-3b-sfF"/>
+                            <constraint firstItem="O1s-Zl-aoe" firstAttribute="trailing" secondItem="6tB-Ia-AHv" secondAttribute="trailing" constant="31" id="xh0-di-b03"/>
+                            <constraint firstAttribute="bottom" secondItem="6tB-Ia-AHv" secondAttribute="bottom" constant="9" id="yTM-se-t7v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1s-Zl-aoe"/>
                     </view>
@@ -152,10 +159,8 @@ For dead animals call: 831-212-1272
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-XJ-0tZ">
-                                <rect key="frame" x="143.33333333333334" y="475" width="88.333333333333343" height="48"/>
-
+                                <rect key="frame" x="143.33333333333334" y="475" width="127.33333333333334" height="132"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Dpx-Sz-hPh"/>
@@ -168,8 +173,7 @@ For dead animals call: 831-212-1272
                                     <segue destination="7Ac-ZC-va2" kind="show" id="bhw-eB-VN9"/>
                                 </connections>
                             </button>
-
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-9R-7X4">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-9R-7X4">
                                 <rect key="frame" x="69.5" y="431" width="275" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="FWg-dL-4x7"/>
@@ -178,7 +182,6 @@ For dead animals call: 831-212-1272
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-17-ape">
                                 <rect key="frame" x="138" y="563" width="139" height="114"/>
                                 <state key="normal" title="Google Sign In"/>
@@ -236,7 +239,7 @@ For dead animals call: 831-212-1272
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IM-8p-QkW">
-                                <rect key="frame" x="164" y="126" width="86" height="20.5"/>
+                                <rect key="frame" x="164" y="126.00000000000001" width="86" height="20.666666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="3rA-6s-f8Q"/>
                                     <constraint firstAttribute="width" constant="86" id="vyl-wj-APO"/>
@@ -261,7 +264,7 @@ For dead animals call: 831-212-1272
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-Oe-qnf">
-                                <rect key="frame" x="161" y="581" width="52" height="30"/>
+                                <rect key="frame" x="161" y="581" width="91" height="114"/>
                                 <state key="normal" title="Log out"/>
                                 <connections>
                                     <action selector="LogOutTapped:" destination="7Ac-ZC-va2" eventType="touchUpInside" id="Vxk-D7-14A"/>
@@ -303,16 +306,16 @@ For dead animals call: 831-212-1272
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stC-eQ-eCQ">
-                                <rect key="frame" x="16" y="44" width="382" height="158"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stC-eQ-eCQ">
+                                <rect key="frame" x="16" y="60" width="382" height="61"/>
                                 <string key="text">Please describe the location, time you saw the animal, description of the animal (size, color, spots), and if the anaimal is dead or alive.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-8R-SbR">
-                                <rect key="frame" x="16" y="223" width="382" height="334"/>
-                                <color key="backgroundColor" red="0.88646052549244314" green="0.9952294787216287" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-8R-SbR">
+                                <rect key="frame" x="16" y="171" width="382" height="397"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -323,9 +326,8 @@ For dead animals call: 831-212-1272
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-bw-gkS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-bw-gkS">
                                 <rect key="frame" x="191" y="583" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="Q0A-YI-Fr4"/>
@@ -335,12 +337,17 @@ For dead animals call: 831-212-1272
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="stC-eQ-eCQ" firstAttribute="leading" secondItem="8rh-mL-H2C" secondAttribute="leading" constant="16" id="4Qp-gr-00H"/>
-                            <constraint firstItem="TOP-8R-SbR" firstAttribute="leading" secondItem="8rh-mL-H2C" secondAttribute="leading" constant="16" id="LtB-Sy-2S9"/>
-                            <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="stC-eQ-eCQ" secondAttribute="trailing" constant="16" id="Sny-AP-S0X"/>
-                            <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="stC-eQ-eCQ" secondAttribute="trailing" constant="16" id="Zcg-2Z-24S"/>
-                            <constraint firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="myu-Kr-dDr"/>
-                            <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="TOP-8R-SbR" secondAttribute="trailing" constant="16" id="y6f-Ik-k6b"/>
+                            <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="stC-eQ-eCQ" secondAttribute="trailing" constant="16" id="0Xf-IA-nXD"/>
+                            <constraint firstItem="cHC-bw-gkS" firstAttribute="top" secondItem="TOP-8R-SbR" secondAttribute="bottom" constant="15" id="7Rn-i7-S3Q"/>
+                            <constraint firstItem="8rh-mL-H2C" firstAttribute="bottom" secondItem="cHC-bw-gkS" secondAttribute="bottom" constant="249" id="BmF-A0-NTY"/>
+                            <constraint firstItem="stC-eQ-eCQ" firstAttribute="leading" secondItem="8rh-mL-H2C" secondAttribute="leading" constant="16" id="Cgp-yv-Qfo"/>
+                            <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="TOP-8R-SbR" secondAttribute="trailing" constant="16" id="Os8-Ou-FUi"/>
+                            <constraint firstItem="TOP-8R-SbR" firstAttribute="top" secondItem="stC-eQ-eCQ" secondAttribute="bottom" constant="25" id="QCi-pn-5TD"/>
+                            <constraint firstItem="TOP-8R-SbR" firstAttribute="top" secondItem="stC-eQ-eCQ" secondAttribute="bottom" constant="50" id="TAR-w4-q7D"/>
+                            <constraint firstItem="cHC-bw-gkS" firstAttribute="leading" secondItem="8rh-mL-H2C" secondAttribute="leading" constant="191" id="ZO9-Iq-fvT"/>
+                            <constraint firstItem="stC-eQ-eCQ" firstAttribute="top" secondItem="8rh-mL-H2C" secondAttribute="top" constant="16" id="ivT-8q-KFQ"/>
+                            <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="cHC-bw-gkS" secondAttribute="trailing" constant="191" id="war-Mv-p0M"/>
+                            <constraint firstItem="TOP-8R-SbR" firstAttribute="leading" secondItem="8rh-mL-H2C" secondAttribute="leading" constant="16" id="zxU-zW-3gu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8rh-mL-H2C"/>
                     </view>
@@ -528,13 +535,13 @@ For dead animals call: 831-212-1272
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-g1-vMI">
-                                <rect key="frame" x="137" y="195.5" width="140" height="21"/>
+                                <rect key="frame" x="137" y="195.66666666666666" width="140" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="379" image="chonkboi" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-GX-4ET">
-                                <rect key="frame" x="5" y="222.5" width="404" height="379"/>
+                                <rect key="frame" x="5" y="222.66666666666663" width="404" height="379"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vxy-iE-GRk" appends="YES" id="hK5-pF-c8u"/>
@@ -589,36 +596,45 @@ For dead animals call: 831-212-1272
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Report Confirmation View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnD-Yk-2oO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report Confirmation View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnD-Yk-2oO">
                                 <rect key="frame" x="89" y="123" width="197" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74S-hj-Ozm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74S-hj-Ozm">
                                 <rect key="frame" x="144" y="589" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Report"/>
                                 <connections>
                                     <action selector="sendReportButtonTapped:" destination="8li-Lr-Hra" eventType="touchUpInside" id="I9b-D7-qBv"/>
                                     <segue destination="t5t-yP-XNd" kind="show" id="k40-JA-UBe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYT-Fe-MDM">
-                                <rect key="frame" x="16" y="168" width="382" height="206"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYT-Fe-MDM">
+                                <rect key="frame" x="16" y="168" width="382" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Y1K-r7-4UP"/>
+                                    <constraint firstAttribute="width" constant="382" id="YRc-w9-rM2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-dF-hJr">
-                                <rect key="frame" x="16" y="403" width="63" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-dF-hJr">
+                                <rect key="frame" x="16" y="442.66666666666669" width="63" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="1jS-10-ZeK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="351" id="VkP-cj-h8Y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yql-Fe-0MD">
-                                <rect key="frame" x="16" y="473" width="76.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yql-Fe-0MD">
+                                <rect key="frame" x="16" y="512.66666666666663" width="76.666666666666671" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="351" id="QKf-qi-p4M"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -626,11 +642,30 @@ For dead animals call: 831-212-1272
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3sO-dF-hJr" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="7pa-tE-Mcm"/>
-                            <constraint firstItem="3sO-dF-hJr" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="29" id="SHY-Tv-d4I"/>
-                            <constraint firstItem="yql-Fe-0MD" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="la5-0u-yeW"/>
-                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="uYT-Fe-MDM" secondAttribute="trailing" constant="16" id="q2d-Jx-YhY"/>
-                            <constraint firstItem="uYT-Fe-MDM" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="zFs-xQ-7cL"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="74S-hj-Ozm" secondAttribute="trailing" constant="184" id="22b-DC-O3y"/>
+                            <constraint firstItem="yql-Fe-0MD" firstAttribute="top" secondItem="3sO-dF-hJr" secondAttribute="bottom" constant="49" id="2M5-2k-bXc"/>
+                            <constraint firstItem="3sO-dF-hJr" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="2mI-kR-jFw"/>
+                            <constraint firstItem="yql-Fe-0MD" firstAttribute="top" secondItem="3sO-dF-hJr" secondAttribute="bottom" constant="49" id="6om-Aa-HB3"/>
+                            <constraint firstItem="AnD-Yk-2oO" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="89" id="7FW-Jl-hGI"/>
+                            <constraint firstItem="74S-hj-Ozm" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="144" id="7mJ-J9-WF3"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="bottom" secondItem="74S-hj-Ozm" secondAttribute="bottom" constant="243" id="EGd-gM-1XB"/>
+                            <constraint firstItem="uYT-Fe-MDM" firstAttribute="top" secondItem="AnD-Yk-2oO" secondAttribute="bottom" constant="24" id="MEo-R4-YuI"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="uYT-Fe-MDM" secondAttribute="trailing" constant="16" id="Qbh-WZ-Md4"/>
+                            <constraint firstItem="yql-Fe-0MD" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="RWT-KR-shL"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="AnD-Yk-2oO" secondAttribute="trailing" constant="128" id="TAy-pR-EBQ"/>
+                            <constraint firstItem="yql-Fe-0MD" firstAttribute="top" secondItem="3sO-dF-hJr" secondAttribute="bottom" constant="49" id="dwA-aB-YX9"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="3sO-dF-hJr" secondAttribute="trailing" constant="335" id="g75-1S-pWB"/>
+                            <constraint firstItem="AnD-Yk-2oO" firstAttribute="top" secondItem="BXr-7x-Xjt" secondAttribute="top" constant="79" id="h3j-hn-wQf"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="yql-Fe-0MD" secondAttribute="trailing" constant="321.32999999999998" id="kcx-yM-Svc"/>
+                            <constraint firstItem="3sO-dF-hJr" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="214.66999999999999" id="njB-4e-TbW"/>
+                            <constraint firstItem="3sO-dF-hJr" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="214.66999999999999" id="nyT-9Q-ESL"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="bottom" secondItem="yql-Fe-0MD" secondAttribute="bottom" constant="328.32999999999998" id="ql9-U3-GWt"/>
+                            <constraint firstItem="3sO-dF-hJr" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="rdP-GD-zKC"/>
+                            <constraint firstItem="74S-hj-Ozm" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="361" id="spN-LU-9Up"/>
+                            <constraint firstItem="3sO-dF-hJr" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="214.66999999999999" id="xq4-va-HB4"/>
+                            <constraint firstItem="uYT-Fe-MDM" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="yg5-wy-RdS"/>
+                            <constraint firstItem="uYT-Fe-MDM" firstAttribute="top" secondItem="AnD-Yk-2oO" secondAttribute="bottom" constant="24" id="yvb-nY-7IK"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="3sO-dF-hJr" secondAttribute="trailing" constant="335" id="zLR-nt-ZdU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BXr-7x-Xjt"/>
                     </view>
@@ -653,27 +688,39 @@ For dead animals call: 831-212-1272
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thank you for reporting a marine stranding. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE6-Bg-FYX">
-                                <rect key="frame" x="16" y="139" width="382" height="254"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for reporting a marine stranding. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE6-Bg-FYX">
+                                <rect key="frame" x="16" y="139" width="382" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="XTA-NV-kx0"/>
+                                    <constraint firstAttribute="width" constant="382" id="tQY-Am-lw5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-KF-oeE">
-                                <rect key="frame" x="124" y="690" width="167" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Report another standing"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3N-fS-uPd">
-                                <rect key="frame" x="187" y="652" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3N-fS-uPd">
+                                <rect key="frame" x="187" y="506" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-KF-oeE">
+                                <rect key="frame" x="124" y="544" width="167" height="30"/>
+                                <state key="normal" title="Report another standing"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="T2b-3Z-eF3" firstAttribute="trailing" secondItem="iE6-Bg-FYX" secondAttribute="trailing" constant="16" id="AKE-NA-mvj"/>
-                            <constraint firstItem="iE6-Bg-FYX" firstAttribute="leading" secondItem="T2b-3Z-eF3" secondAttribute="leading" constant="16" id="CWa-cD-9bn"/>
+                            <constraint firstItem="R3N-fS-uPd" firstAttribute="leading" secondItem="T2b-3Z-eF3" secondAttribute="leading" constant="187" id="AEC-sS-XK1"/>
+                            <constraint firstItem="T2b-3Z-eF3" firstAttribute="trailing" secondItem="iE6-Bg-FYX" secondAttribute="trailing" constant="16" id="K38-F2-Nv3"/>
+                            <constraint firstItem="A3K-KF-oeE" firstAttribute="top" secondItem="R3N-fS-uPd" secondAttribute="bottom" constant="154" id="Lrg-fu-9b0"/>
+                            <constraint firstItem="iE6-Bg-FYX" firstAttribute="leading" secondItem="T2b-3Z-eF3" secondAttribute="leading" constant="16" id="VYM-ge-sUp"/>
+                            <constraint firstItem="A3K-KF-oeE" firstAttribute="leading" secondItem="T2b-3Z-eF3" secondAttribute="leading" constant="124" id="dC5-wp-Jcp"/>
+                            <constraint firstItem="T2b-3Z-eF3" firstAttribute="trailing" secondItem="A3K-KF-oeE" secondAttribute="trailing" constant="123" id="hS7-aq-5Sw"/>
+                            <constraint firstItem="iE6-Bg-FYX" firstAttribute="top" secondItem="T2b-3Z-eF3" secondAttribute="top" constant="95" id="hjv-1d-JNV"/>
+                            <constraint firstItem="R3N-fS-uPd" firstAttribute="top" secondItem="iE6-Bg-FYX" secondAttribute="bottom" constant="259" id="i6Q-xA-BUZ"/>
+                            <constraint firstItem="R3N-fS-uPd" firstAttribute="top" secondItem="iE6-Bg-FYX" secondAttribute="bottom" constant="259" id="o3N-AG-jIE"/>
+                            <constraint firstItem="A3K-KF-oeE" firstAttribute="top" secondItem="R3N-fS-uPd" secondAttribute="bottom" constant="8" id="pjB-QZ-YHD"/>
+                            <constraint firstItem="T2b-3Z-eF3" firstAttribute="trailing" secondItem="R3N-fS-uPd" secondAttribute="trailing" constant="186" id="xII-o9-9mi"/>
+                            <constraint firstItem="T2b-3Z-eF3" firstAttribute="bottom" secondItem="A3K-KF-oeE" secondAttribute="bottom" constant="288" id="xbO-qD-UN5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="T2b-3Z-eF3"/>
                     </view>
@@ -711,7 +758,7 @@ For dead animals call: 831-212-1272
     <inferredMetricsTieBreakers>
         <segue reference="eh5-8h-Qoz"/>
         <segue reference="bhw-eB-VN9"/>
-        <segue reference="8cm-qP-pZb"/>
-        <segue reference="vfs-GS-SpZ"/>
+        <segue reference="qps-Ci-mWX"/>
+        <segue reference="pV8-Vm-WHW"/>
     </inferredMetricsTieBreakers>
 </document>
