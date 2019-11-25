@@ -40,7 +40,7 @@ class ReportService {
     func addToList(report: Report, completion: @escaping (Bool) -> ()) {
         var ref: DocumentReference? = nil
         
-        uploadImage(image: report.image!, completion: { (err) in
+        uploadImage(image: report.image!, timeStamp: report.reportTime, completion: { (err) in
             if err != nil {
                 print("Error:", err)
             }
@@ -59,9 +59,9 @@ class ReportService {
         }
     }
     
-    func uploadImage(image: UIImage, completion: @escaping(Bool) -> ()) {
+    func uploadImage(image: UIImage, timeStamp: String, completion: @escaping(Bool) -> ()) {
         let storage = Storage.storage()
-        storage.reference().child("test123").putData((image.jpegData(compressionQuality: 0.35))!)
+        storage.reference().child("\(timeStamp).jpeg").putData((image.jpegData(compressionQuality: 0.35))!)
     }
 }
 
