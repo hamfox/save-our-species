@@ -77,6 +77,14 @@ class ReportsTableViewController: UITableViewController {
 
         return cell
     }
+    
+    func convertToDate(dateString: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        let date = dateFormatter.date(from:dateString)!
+        return date as Date
+    }
 
     /*
     // Override to support conditional editing of the table view.
