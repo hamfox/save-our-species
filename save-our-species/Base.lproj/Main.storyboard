@@ -307,20 +307,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNn-UE-eVy">
-                                <rect key="frame" x="237" y="678" width="66" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="M26-LI-IKT"/>
-                                    <constraint firstAttribute="width" constant="66" id="a4o-BF-odB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Upload"/>
-                                <connections>
-                                    <action selector="LocationButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="j6V-3g-rED"/>
-                                    <action selector="UploadButton:" destination="MyH-SZ-KIL" eventType="touchUpInside" id="FCX-qO-7bi"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-bw-gkS">
                                 <rect key="frame" x="171" y="581" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -355,10 +341,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZLM-dg-khO" firstAttribute="top" secondItem="8rh-mL-H2C" secondAttribute="top" constant="76" id="6qy-n7-8su"/>
-                            <constraint firstItem="8rh-mL-H2C" firstAttribute="bottom" secondItem="iNn-UE-eVy" secondAttribute="bottom" constant="64" id="77D-pb-DLL"/>
                             <constraint firstItem="ZLM-dg-khO" firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="X9V-Op-2il"/>
                             <constraint firstAttribute="centerX" secondItem="8rh-mL-H2C" secondAttribute="centerX" id="myu-Kr-dDr"/>
-                            <constraint firstItem="8rh-mL-H2C" firstAttribute="trailing" secondItem="iNn-UE-eVy" secondAttribute="trailing" constant="72" id="uhV-XN-8Qa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8rh-mL-H2C"/>
                     </view>
@@ -620,6 +604,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Report"/>
                                 <connections>
+                                    <action selector="sendReportButtonTapped:" destination="8li-Lr-Hra" eventType="touchUpInside" id="I9b-D7-qBv"/>
                                     <segue destination="t5t-yP-XNd" kind="show" id="k40-JA-UBe"/>
                                 </connections>
                             </button>
@@ -710,6 +695,7 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="NhF-Fu-9pE"/>
         <segue reference="eh5-8h-Qoz"/>
         <segue reference="C4x-Y6-WQ7"/>
         <segue reference="pV8-Vm-WHW"/>

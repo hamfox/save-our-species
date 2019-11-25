@@ -47,7 +47,6 @@
 		47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
 		47E73696236FC8280026AF22 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		47E73698236FC9230026AF22 /* gerald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gerald.jpg; sourceTree = "<group>"; };
-		6F09FF3F23832A6C000CA08A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6F2F51D2236156CA00163F21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -102,25 +101,24 @@
 		473305F7236148270015EF38 /* save-our-species */ = {
 			isa = PBXGroup;
 			children = (
-				47E73698236FC9230026AF22 /* gerald.jpg */,
-				473305F8236148270015EF38 /* AppDelegate.swift */,
-				47174FB92365058D00AB6C20 /* ReportsModel.swift */,
-				473305FA236148270015EF38 /* SceneDelegate.swift */,
-				6F09FF3F23832A6C000CA08A /* GoogleService-Info.plist */,
-				473305FC236148270015EF38 /* ViewController.swift */,
+				473306062361482D0015EF38 /* Info.plist */,
 				6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */,
-				6F2F51D4236158F800163F21 /* ClientViewController.swift */,
+				47E73698236FC9230026AF22 /* gerald.jpg */,
+				6F932EC02387145400D887A2 /* sealLogo.png */,
+				473306012361482D0015EF38 /* Assets.xcassets */,
 				473305FE236148270015EF38 /* Main.storyboard */,
+				473305F8236148270015EF38 /* AppDelegate.swift */,
+				473305FA236148270015EF38 /* SceneDelegate.swift */,
+				473305FC236148270015EF38 /* ViewController.swift */,
+				6F2F51D4236158F800163F21 /* ClientViewController.swift */,
 				6F357BD0237612DD00EB83B5 /* CameraViewController.swift */,
 				6FA519DC2363742E0062A85B /* MapViewController.swift */,
 				6F2F51D2236156CA00163F21 /* LoginViewController.swift */,
 				6F2F51D623615A4E00163F21 /* ReportViewController.swift */,
 				6F89938C23874A4800B68958 /* UITextView+Additions.swift */,
-				47174FBB2365087600AB6C20 /* ReportService.swift */,
-				473306012361482D0015EF38 /* Assets.xcassets */,
 				473306032361482D0015EF38 /* LaunchScreen.storyboard */,
-				473306062361482D0015EF38 /* Info.plist */,
-				6F932EC02387145400D887A2 /* sealLogo.png */,
+				47174FBB2365087600AB6C20 /* ReportService.swift */,
+				47174FB92365058D00AB6C20 /* ReportsModel.swift */,
 				47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */,
 				47E73696236FC8280026AF22 /* ReportTableViewCell.swift */,
 				47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */,

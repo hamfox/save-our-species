@@ -35,11 +35,11 @@ class ReportService {
         }
     }
     
-    func addToList(description: String, completion: @escaping (Bool) -> ()) {
+    func addToList(report: Report, completion: @escaping (Bool) -> ()) {
         var ref: DocumentReference? = nil
 
         ref = db.collection("reports").addDocument(data: [
-            "description": description,
+            "description": report.description, "latitude": report.latitude, "longitude": report.longitude, "reportTime": report.reportTime
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")
