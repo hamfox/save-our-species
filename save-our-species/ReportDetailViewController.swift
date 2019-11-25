@@ -35,7 +35,7 @@ class ReportDetailViewController: UIViewController {
     }
     
     
-    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "")
+    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
     
     
     override func viewDidLoad() {

@@ -27,7 +27,8 @@ class ReportService {
                         let latitude = document.get("latitude") as! Double
                         let longitude = document.get("longitude") as! Double
                         let reportTime = document.get("reportTime") as! String
-                        let report = Report(description: description, latitude: latitude, longitude: longitude, reportTime: reportTime) as! Report
+                        let imageURL = document.get("imageURL") as! String
+                        let report = Report(description: description, latitude: latitude, longitude: longitude, reportTime: reportTime, imageURL: imageURL, image: nil ) as! Report
                         reports += [report]
                     }
                     completion(true,reports)
