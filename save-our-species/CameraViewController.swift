@@ -12,6 +12,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     var longValue: Double? = 0
     var latValue: Double? = 0
     var descriptionText: String?
+    var reportTime: String?
 
     @IBOutlet weak var cameraViewLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
@@ -29,9 +30,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         rightSwipe.direction = .right
         view.addGestureRecognizer(rightSwipe)
         
+        reportTime = getCurrentTime()
+        
         print("LONG: ", longValue)
         print("LAT: ", latValue)
         print("DESCRIPTION: ",descriptionText)
+        print("TIME: ", reportTime)
     }
     
     
@@ -92,6 +96,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             displayVC.latValue = latValue
             displayVC.longValue = longValue
             displayVC.descriptionText = descriptionText
+            displayVC.reportTime = reportTime
         }
+    }
+    
+    func getCurrentTime () -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy_MM_dd_hh_mm_ss"
+        return (formatter.string(from: Date()) as NSString) as String
     }
 }

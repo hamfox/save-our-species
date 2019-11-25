@@ -27,7 +27,7 @@ class ReportConfirmationViewController: UIViewController {
         latitudeField.text = latAsString
         longitudeField.text = longAsString
         
-        
+        print(descriptionText)
         print("REPORTED AT: ",reportTime)
     }
 }
