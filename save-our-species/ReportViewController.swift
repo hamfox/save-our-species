@@ -12,26 +12,24 @@ class ReportViewController: UIViewController {
     
     @IBOutlet weak var DirectionLabel: UILabel!
     @IBOutlet weak var RepDescrpBox: UITextView!
-    
-    // Button Actions
-    @IBAction func UploadButton(_ sender: UIButton) {
-        addReport(reportText: RepDescrpBox.text!)
-    }
-    @IBAction func nextButtonPressed(_ sender: Any) {
-        descriptionText = RepDescrpBox.text!
-    }
-    
     @IBOutlet weak var ReportLabel: UILabel!
-    
-    func dismissKeyboard(RepDescrpBox: UITextView) -> Bool {
-        RepDescrpBox.resignFirstResponder()
-        return true
-    }
     
     let reportService = ReportService()
     var descriptionText: String?
     var longValue: Double? = 0
     var latValue: Double? = 0
+    
+    
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        descriptionText = RepDescrpBox.text!
+    }
+    
+    
+    func dismissKeyboard(RepDescrpBox: UITextView) -> Bool {
+        RepDescrpBox.resignFirstResponder()
+        return true
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "sendDescription"){
@@ -47,53 +45,27 @@ class ReportViewController: UIViewController {
     @objc func tapDone(sender: Any) {
         self.view.endEditing(true)
     }
-    // Functions
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.RepDescrpBox.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
 
-        
         print("LONG: ", longValue)
         print("LAT:", latValue)
 
-        
         RepDescrpBox.layer.borderColor=UIColor.brown.cgColor
-            //UIcolor.brown.cgColor
-        //reportToDataPassing
+        
         //Add naviagtion from login page back to home page by swiping to the right
-               let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
-               rightSwipe.direction = .right
-               view.addGestureRecognizer(rightSwipe)
-        
-        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
+        rightSwipe.direction = .right
+        view.addGestureRecognizer(rightSwipe)
     }
     
-    //Handle swipes function
+    
+    // Handle swipes
     @objc func handleSwipes(sender:UISwipeGestureRecognizer){
         performSegue(withIdentifier: "reportToDataPassing", sender: self)
     }
-    
-    func addReport(reportText: String) {
-        reportService.addToList(description: reportText, completion: { (status) in
-            if status {
-                print("Status", status)
-                print("Text", reportText)
-            }})
-    }
-    
-    // Actions
-//    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
-//       print(sender.text!)
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
