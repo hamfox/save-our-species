@@ -37,7 +37,7 @@ class ReportsTableViewController: UITableViewController {
                 self.reports.append(report)
             }
             // sort reports by timestamp with .compate operator on report dates converted to NSDate objects
-            self.reports.sort { self.convertToDate(dateString: $0.reportTime).compare(self.convertToDate(dateString: $1.reportTime)) == .orderedAscending }
+            self.reports.sort { self.convertToDate(dateString: $0.reportTime).compare(self.convertToDate(dateString: $1.reportTime)) == .orderedDescending }
             self.tableView.reloadData()
         })
     }
