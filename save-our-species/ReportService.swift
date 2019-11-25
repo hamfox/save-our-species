@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import FirebaseStorage
  
 class ReportService {
     let db = Firestore.firestore()
@@ -38,6 +39,12 @@ class ReportService {
     
     func addToList(report: Report, completion: @escaping (Bool) -> ()) {
         var ref: DocumentReference? = nil
+        
+        uploadImage(image: report.image!, completion: { (err) in
+            if err != nil {
+                print("Error:", err)
+            }
+        })
 
         ref = db.collection("reports").addDocument(data: [
             "description": report.description, "latitude": report.latitude, "longitude": report.longitude, "reportTime": report.reportTime
@@ -50,6 +57,11 @@ class ReportService {
                     completion(true)
                 }
         }
+    }
+    
+    func uploadImage(image: UIImage, completion: @escaping(Bool) -> ()) {
+        let storage = Storage.storage()
+        storage.reference().child("test123").putData((image.jpegData(compressionQuality: 0.35))!)
     }
 }
 
