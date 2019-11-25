@@ -22,6 +22,7 @@ class ReportConfirmationViewController: UIViewController {
     @IBOutlet weak var descriptionField: UILabel!
     @IBOutlet weak var latitudeField: UILabel!
     @IBOutlet weak var longitudeField: UILabel!
+    @IBOutlet weak var strandingImageView: UIImageView!
     
     @IBAction func sendReportButtonTapped(_ sender: UIButton) {
         addReport(report: report!)
@@ -36,6 +37,7 @@ class ReportConfirmationViewController: UIViewController {
         let longAsString:String = String(format:"%f", longValue!)
         latitudeField.text = latAsString
         longitudeField.text = longAsString
+        strandingImageView.image = image
         
         print(descriptionText)
         print("REPORTED AT: ",reportTime)

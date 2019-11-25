@@ -14,6 +14,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     var descriptionText: String?
     var reportTime: String?
 
+
     @IBOutlet weak var cameraViewLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBAction func buttonNext(_ sender: Any) {
@@ -67,7 +68,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         // photoImageView displays the selected image
         photoImageView.image = selectedImage
         
-
         // Dismiss the picker once user chooses photo
         dismiss(animated: true, completion: nil)
     }
@@ -97,6 +97,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             displayVC.longValue = longValue
             displayVC.descriptionText = descriptionText
             displayVC.reportTime = reportTime
+            displayVC.image = photoImageView.image
         }
     }
     
