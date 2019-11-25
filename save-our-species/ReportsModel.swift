@@ -14,18 +14,17 @@ class Report {
     var latitude: Double
     var longitude: Double
     var reportTime: String
-    
-    /*
-    var timestamp: String
+    var photoURL: String
     var photo: UIImage?
-    */
     
     
-    init?(description: String, latitude: Double, longitude: Double, reportTime: String) {
+    init?(description: String, latitude: Double, longitude: Double, reportTime: String, photoURL: String, photo: UIImage) {
         self.description = description
         self.latitude = latitude
         self.longitude = longitude
         self.reportTime = reportTime
+        self.photoURL = photoURL
+        self.photo = photo
     }
     
     func setDescription(description: String){
@@ -39,8 +38,17 @@ class Report {
     func setLatitude(latitude: Double){
         self.latitude = latitude
     }
+    
     func setReportTime(reportTime: String){
         self.reportTime = reportTime
+    }
+    
+    func setPhotoURL(photoURL: String){
+        self.photoURL = photoURL
+    }
+    
+    func setPhoto(photo: UIImage){
+        self.photo = photo
     }
 }
 
