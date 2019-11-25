@@ -15,7 +15,9 @@ class ReportConfirmationViewController: UIViewController {
     var latValue: Double? = 0
     var descriptionText: String? = ""
     var reportTime: String? = ""
-    var report = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "")
+    var image: UIImage? = UIImage(named: "redQuestionMark")
+    var imageURL: String? = ""
+    var report = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
 
     @IBOutlet weak var descriptionField: UILabel!
     @IBOutlet weak var latitudeField: UILabel!
@@ -28,7 +30,7 @@ class ReportConfirmationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        report = Report(description: descriptionText!, latitude: latValue!, longitude: longValue!, reportTime: reportTime!)
+        report = Report(description: descriptionText!, latitude: latValue!, longitude: longValue!, reportTime: reportTime!, imageURL: imageURL!, image: image!)
         descriptionField.text = descriptionText
         let latAsString:String = String(format:"%f", latValue!)
         let longAsString:String = String(format:"%f", longValue!)
