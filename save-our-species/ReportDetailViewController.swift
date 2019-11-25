@@ -42,6 +42,7 @@ class ReportDetailViewController: UIViewController {
         super.viewDidLoad()
         getReadableLocation()
         DescriptionFieldLabel.text = detailReport?.description
+        timeFieldLabel.text = detailReport?.reportTime
         
         print("DETAILVIEW: Received report description:",detailReport?.description)
     }
