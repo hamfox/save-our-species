@@ -61,7 +61,7 @@ class ReportService {
     
     func uploadImage(image: UIImage, timeStamp: String, completion: @escaping(Bool) -> ()) {
         let storage = Storage.storage()
-        storage.reference().child("\(timeStamp).jpeg").putData((image.jpegData(compressionQuality: 0.35))!)
+        storage.reference().child("images/\(timeStamp).jpeg").putData((image.jpegData(compressionQuality: 0.35))!)
     }
 }
 
