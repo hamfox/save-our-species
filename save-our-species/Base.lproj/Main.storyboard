@@ -160,7 +160,7 @@ For dead animals call: 831-212-1272
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-XJ-0tZ">
-                                <rect key="frame" x="143.33333333333334" y="475" width="127.33333333333334" height="132"/>
+                                <rect key="frame" x="143.33333333333334" y="475" width="88" height="48"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Dpx-Sz-hPh"/>
@@ -183,7 +183,7 @@ For dead animals call: 831-212-1272
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-17-ape">
-                                <rect key="frame" x="138" y="563" width="139" height="114"/>
+                                <rect key="frame" x="138" y="563" width="99.666666666666686" height="30"/>
                                 <state key="normal" title="Google Sign In"/>
                                 <connections>
                                     <action selector="GoogleSignInTapped:" destination="eG1-9s-IJy" eventType="touchUpInside" id="tV1-Xq-Ip9"/>
@@ -639,6 +639,9 @@ For dead animals call: 831-212-1272
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxk-D3-THh">
+                                <rect key="frame" x="87" y="271" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -656,12 +659,16 @@ For dead animals call: 831-212-1272
                             <constraint firstItem="yql-Fe-0MD" firstAttribute="top" secondItem="3sO-dF-hJr" secondAttribute="bottom" constant="49" id="dwA-aB-YX9"/>
                             <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="3sO-dF-hJr" secondAttribute="trailing" constant="335" id="g75-1S-pWB"/>
                             <constraint firstItem="AnD-Yk-2oO" firstAttribute="top" secondItem="BXr-7x-Xjt" secondAttribute="top" constant="79" id="h3j-hn-wQf"/>
+                            <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="Hxk-D3-THh" secondAttribute="trailing" constant="87" id="h8Y-Pp-kqK"/>
+                            <constraint firstItem="Hxk-D3-THh" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="87" id="hBg-f7-QVx"/>
                             <constraint firstItem="BXr-7x-Xjt" firstAttribute="trailing" secondItem="yql-Fe-0MD" secondAttribute="trailing" constant="321.32999999999998" id="kcx-yM-Svc"/>
                             <constraint firstItem="3sO-dF-hJr" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="214.66999999999999" id="njB-4e-TbW"/>
                             <constraint firstItem="3sO-dF-hJr" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="214.66999999999999" id="nyT-9Q-ESL"/>
                             <constraint firstItem="BXr-7x-Xjt" firstAttribute="bottom" secondItem="yql-Fe-0MD" secondAttribute="bottom" constant="328.32999999999998" id="ql9-U3-GWt"/>
+                            <constraint firstItem="Hxk-D3-THh" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="43" id="rJf-MK-1Qq"/>
                             <constraint firstItem="3sO-dF-hJr" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="rdP-GD-zKC"/>
                             <constraint firstItem="74S-hj-Ozm" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="361" id="spN-LU-9Up"/>
+                            <constraint firstItem="yql-Fe-0MD" firstAttribute="top" secondItem="Hxk-D3-THh" secondAttribute="bottom" constant="113.67" id="tmO-5V-tzK"/>
                             <constraint firstItem="3sO-dF-hJr" firstAttribute="top" secondItem="uYT-Fe-MDM" secondAttribute="bottom" constant="214.66999999999999" id="xq4-va-HB4"/>
                             <constraint firstItem="uYT-Fe-MDM" firstAttribute="leading" secondItem="BXr-7x-Xjt" secondAttribute="leading" constant="16" id="yg5-wy-RdS"/>
                             <constraint firstItem="uYT-Fe-MDM" firstAttribute="top" secondItem="AnD-Yk-2oO" secondAttribute="bottom" constant="24" id="yvb-nY-7IK"/>
@@ -674,6 +681,7 @@ For dead animals call: 831-212-1272
                         <outlet property="descriptionField" destination="uYT-Fe-MDM" id="U0N-wN-U6G"/>
                         <outlet property="latitudeField" destination="3sO-dF-hJr" id="JVP-5x-gkV"/>
                         <outlet property="longitudeField" destination="yql-Fe-0MD" id="Ite-vu-u5u"/>
+                        <outlet property="strandingImageView" destination="Hxk-D3-THh" id="NQv-Hu-SIz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAz-8E-dzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

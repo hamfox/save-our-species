@@ -13,7 +13,7 @@ class ReportsTableViewController: UITableViewController {
 
     // MARK: Properties
     var reports = [Report]()
-    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "")
+    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
