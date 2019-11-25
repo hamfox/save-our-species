@@ -36,6 +36,8 @@ class ReportsTableViewController: UITableViewController {
             for report in reports {
                 self.reports.append(report)
             }
+            // sort reports by timestamp with .compate operator on report dates converted to NSDate objects
+            self.reports.sort { self.convertToDate(dateString: $0.reportTime).compare(self.convertToDate(dateString: $1.reportTime)) == .orderedDescending }
             self.tableView.reloadData()
         })
     }
@@ -76,6 +78,14 @@ class ReportsTableViewController: UITableViewController {
         cell.descriptionPreviewLabel.text = report.description
 
         return cell
+    }
+    
+    func convertToDate(dateString: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        let date = dateFormatter.date(from:dateString)!
+        return date as Date
     }
 
     /*
