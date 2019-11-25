@@ -12,6 +12,7 @@ class ReportConfirmationViewController: UIViewController {
     var longValue: Double? = 0
     var latValue: Double? = 0
     var descriptionText: String? = ""
+    var reportTime: String? = ""
 
     @IBOutlet weak var descriptionField: UILabel!
     @IBOutlet weak var latitudeField: UILabel!
@@ -19,14 +20,14 @@ class ReportConfirmationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let report = Report(description: descriptionText!, latitude: latValue!, longitude: longValue!)
+        let report = Report(description: descriptionText!, latitude: latValue!, longitude: longValue!, reportTime: reportTime!)
         descriptionField.text = descriptionText
         let latAsString:String = String(format:"%f", latValue!)
         let longAsString:String = String(format:"%f", longValue!)
         latitudeField.text = latAsString
         longitudeField.text = longAsString
         
-        
-        //print(report?.description,report?.latitude,report?.longitude)
+        print(descriptionText)
+        print("REPORTED AT: ",reportTime)
     }
 }

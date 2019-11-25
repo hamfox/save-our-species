@@ -563,7 +563,7 @@
                                 <rect key="frame" x="148" y="706" width="78" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="8li-Lr-Hra" kind="show" id="Wnr-Gv-Xbf"/>
+                                    <segue destination="8li-Lr-Hra" kind="show" identifier="sendPhoto" id="Wnr-Gv-Xbf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -710,7 +710,7 @@
         <image name="gerald.jpg" width="409" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aBt-sI-kKf"/>
+        <segue reference="eh5-8h-Qoz"/>
         <segue reference="C4x-Y6-WQ7"/>
         <segue reference="pV8-Vm-WHW"/>
     </inferredMetricsTieBreakers>

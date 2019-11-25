@@ -35,17 +35,16 @@ class ReportDetailViewController: UIViewController {
     }
     
     
+    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "")
     
-    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getReadableLocation()
         DescriptionFieldLabel.text = detailReport?.description
+        timeFieldLabel.text = detailReport?.reportTime
         
         print("DETAILVIEW: Received report description:",detailReport?.description)
-        
-        
     }
     
     func getReadableLocation() {
