@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseUI
+import GoogleSignIn
 
 class ClientViewController: UIViewController {
     
@@ -35,5 +37,8 @@ class ClientViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func LogOutTapped(_ sender: UIButton) {
+        GIDSignIn.sharedInstance().signOut();
+    }
+    
 }

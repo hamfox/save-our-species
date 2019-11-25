@@ -36,8 +36,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBOutlet weak var ClientButton: UIButton!
-    @IBAction func userField(_ sender: UITextField) {
-    }
+   
     
     //Handle swipes function
     @objc func handleSwipes(sender:UISwipeGestureRecognizer){
