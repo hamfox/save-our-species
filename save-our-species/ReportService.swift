@@ -41,24 +41,7 @@ class ReportService {
     func addToList(report: Report, completion: @escaping (Bool) -> ()) {
         var ref: DocumentReference? = nil
         
-        let str = uploadImage(image: report.image!, timeStamp: report.reportTime) { (url) in
-            print("YO", url)
-            
-            let washingtonRef = self.db.collection("reports").document(ref!.documentID)
-
-            // Set the "capital" field of the city 'DC'
-            washingtonRef.updateData([
-                "imageURL": url
-            ]) { err in
-                if let err = err {
-                    print("Error updating document: \(err)")
-                } else {
-                    print("Document successfully updated")
-                }
-            }
-            
-        }
-
+        // upload report to Firestore
         ref = db.collection("reports").addDocument(data: [
             "description": report.description, "latitude": report.latitude, "longitude": report.longitude, "reportTime": report.reportTime, "imageURL": urlString
             ]) { err in
@@ -71,9 +54,26 @@ class ReportService {
                 }
         }
         
-        print(ref!.documentID)
+        // upload image to Firebase Storage and update Firestore with image reference URL
+        // https://firebase.google.com/docs/firestore/manage-data/add-data
+        let str = uploadImage(image: report.image!, timeStamp: report.reportTime) { (url) in
+            let reportRef = self.db.collection("reports").document(ref!.documentID)
+
+            reportRef.updateData([
+                "imageURL": url
+            ]) { err in
+                if let err = err {
+                    print("Error updating document: \(err)")
+                } else {
+                    print("Document successfully updated")
+                }
+            }
+        }
+
     }
     
+    // thank you internet stranger!
+    // https://stackoverflow.com/questions/46152326/i-want-to-get-the-download-url-of-image-from-firebase-storage-ios-swift
     func uploadImage(image : UIImage, timeStamp: String,completion: @escaping ((String) -> Void)) {
         let storageRef = Storage.storage()
         var strURL = ""
@@ -83,16 +83,14 @@ class ReportService {
             storeImage.putData(uploadImageData, metadata: nil, completion: { (metaData, error) in
                 storeImage.downloadURL(completion: { (url, error) in
                     if let urlText = url?.absoluteString {
-
                         strURL = urlText
-                        print("///////////tttttttt//////// \(strURL)   ////////")
-
                         completion(strURL)
                     }
                 })
             })
         }
     }
+    
 }
 
 
