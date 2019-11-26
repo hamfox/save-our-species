@@ -15,16 +15,14 @@ class Report {
     var longitude: Double
     var reportTime: String
     var imageURL: String
-    var image: UIImage?
     
     
-    init?(description: String, latitude: Double, longitude: Double, reportTime: String, imageURL: String, image: UIImage?) {
+    init?(description: String, latitude: Double, longitude: Double, reportTime: String, imageURL: String) {
         self.description = description
         self.latitude = latitude
         self.longitude = longitude
         self.reportTime = reportTime
         self.imageURL = imageURL
-        self.image = image
     }
     
     func setDescription(description: String){
@@ -45,10 +43,6 @@ class Report {
     
     func setImageURL(imageURL: String){
         self.imageURL = imageURL
-    }
-    
-    func setImage(image: UIImage){
-        self.image = image
     }
 }
 
