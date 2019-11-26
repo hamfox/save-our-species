@@ -18,6 +18,7 @@ class ReportDetailViewController: UIViewController {
     @IBOutlet weak var DescriptionFieldLabel: UILabel!
     @IBOutlet weak var LocationFieldLabel: UILabel!
     
+    
     @IBAction func getDirections(_ sender: Any) {
         let latitude = detailReport!.latitude
         let longitude = detailReport!.longitude
@@ -34,7 +35,7 @@ class ReportDetailViewController: UIViewController {
         mapItem.openInMaps(launchOptions: options)
     }
     
-    
+    let image = UIImage(named: "gerald")
     var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
     
     
@@ -43,6 +44,7 @@ class ReportDetailViewController: UIViewController {
         getReadableLocation()
         DescriptionFieldLabel.text = detailReport?.description
         timeFieldLabel.text = detailReport?.reportTime
+        UIImageLabel.image = image
         
         print("DETAILVIEW: Received report description:",detailReport?.description)
     }
