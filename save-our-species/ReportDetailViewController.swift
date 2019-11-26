@@ -44,7 +44,7 @@ class ReportDetailViewController: UIViewController {
         getReadableLocation()
         DescriptionFieldLabel.text = detailReport?.description
         timeFieldLabel.text = detailReport?.reportTime
-        UIImageLabel.image = image
+        UIImageLabel.image = detailReport?.image
         
         print("DETAILVIEW: Received report description:",detailReport?.description)
     }
