@@ -14,6 +14,7 @@ import FirebaseStorage
 class ReportService {
     let db = Firestore.firestore()
     var urlString = ""
+    let image = UIImage(named: "gerald")
     
     func getList(completion: @escaping (Bool, [Report]) -> ()){
         var reports = [Report]()
@@ -30,7 +31,7 @@ class ReportService {
                         let longitude = document.get("longitude") as! Double
                         let reportTime = document.get("reportTime") as! String
                         let imageURL = document.get("imageURL") as! String
-                        let report = Report(description: description, latitude: latitude, longitude: longitude, reportTime: reportTime, imageURL: imageURL, image: nil ) as! Report
+                        let report = Report(description: description, latitude: latitude, longitude: longitude, reportTime: reportTime, imageURL: imageURL, image: self.image) as! Report
                         reports += [report]
                     }
                     completion(true,reports)

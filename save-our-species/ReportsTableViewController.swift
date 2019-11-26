@@ -14,6 +14,7 @@ class ReportsTableViewController: UITableViewController {
     // MARK: Properties
     var reports = [Report]()
     var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
+    var img : UIImage? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +77,19 @@ class ReportsTableViewController: UITableViewController {
         
         cell.timestampLabel.text = report.reportTime
         cell.descriptionPreviewLabel.text = report.description
+        
+        print("Download Started")
+        
+        let url = URL(string: report.imageURL)
+
+        getData(from: url!) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url!.lastPathComponent)
+            print("Download Finished")
+            DispatchQueue.main.async() {
+                cell.photoImageView.image = UIImage(data: data)
+            }
+        }
 
         return cell
     }
@@ -86,6 +100,9 @@ class ReportsTableViewController: UITableViewController {
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         let date = dateFormatter.date(from:dateString)!
         return date as Date
+    }
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
 
     /*
