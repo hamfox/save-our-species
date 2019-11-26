@@ -45,7 +45,6 @@ class ReportsTableViewController: UITableViewController {
                     DispatchQueue.main.async() {
                         report.image = UIImage(data: data)
                         self.tableView.reloadData()
-
                     }
                 }
                 self.reports.append(report)
