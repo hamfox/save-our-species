@@ -80,7 +80,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         //allow photos to be picked
         //source type is photoLibrary because we are using photo lib instead of camera
-        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.sourceType = .camera
         
         //ViewController is notified when user picks an image
         imagePickerController.delegate = self
