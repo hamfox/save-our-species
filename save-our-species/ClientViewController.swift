@@ -23,7 +23,7 @@ class ClientViewController: UIViewController {
         ReportButton.clipsToBounds = true
         ReportScreenButton.layer.cornerRadius = 10
         ReportScreenButton.clipsToBounds = true
-
+        
         // Do any additional setup after loading the view.
     }
     

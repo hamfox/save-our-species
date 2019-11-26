@@ -7,16 +7,27 @@
 //
 
 import UIKit
+import GoogleSignIn
+import FirebaseUI
 
 class ViewController: UIViewController {
     //Labels
     @IBOutlet weak var HomeLabel: UILabel!
+    
     //Buttons
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var ReportButton: UIButton!
     
+    //Actions
+    @IBAction func LoginTapped(_ sender: UIButton) {
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        
         //make button rounded
         //this code doesn't make the borders rounded
         LoginButton.layer.cornerRadius = 10
@@ -24,12 +35,6 @@ class ViewController: UIViewController {
         
         ReportButton.layer.cornerRadius = 10
         ReportButton.clipsToBounds = true
-        
-        
-        
-        
-        
-        
     }
 }
 

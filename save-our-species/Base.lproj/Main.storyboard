@@ -28,6 +28,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="LoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9f-Be-5ax"/>
                                     <segue destination="7Ac-ZC-va2" kind="show" id="LCM-Ew-N2O"/>
                                 </connections>
                             </button>
