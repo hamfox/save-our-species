@@ -38,7 +38,14 @@ class ClientViewController: UIViewController {
     }
     */
     @IBAction func LogOutTapped(_ sender: UIButton) {
-        GIDSignIn.sharedInstance().signOut();
+        GIDSignIn.sharedInstance().signOut()
+        
+        do {
+            try Auth.auth().signOut()}
+        catch let signOutError as NSError {
+            print("Error signing out")
+        }
+        print("signing out..")
     }
     
 }

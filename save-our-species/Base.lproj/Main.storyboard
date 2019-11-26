@@ -29,7 +29,6 @@
                                 </state>
                                 <connections>
                                     <action selector="LoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9f-Be-5ax"/>
-                                    <segue destination="7Ac-ZC-va2" kind="show" id="LCM-Ew-N2O"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBA-zj-1m9">
@@ -84,6 +83,7 @@ For dead animals call: 831-212-1272
                     <connections>
                         <outlet property="LoginButton" destination="j5O-D2-jQE" id="JIW-xP-ZmP"/>
                         <outlet property="ReportButton" destination="MyB-27-etS" id="YXf-Fi-xhp"/>
+                        <segue destination="7Ac-ZC-va2" kind="show" identifier="showClientView" id="qft-L3-wBS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -700,7 +700,7 @@ For dead animals call: 831-212-1272
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aBt-sI-kKf"/>
-        <segue reference="LCM-Ew-N2O"/>
+        <segue reference="qft-L3-wBS"/>
         <segue reference="pV8-Vm-WHW"/>
     </inferredMetricsTieBreakers>
 </document>
