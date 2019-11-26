@@ -44,6 +44,8 @@ class ReportsTableViewController: UITableViewController {
                     print("Download Finished")
                     DispatchQueue.main.async() {
                         report.image = UIImage(data: data)
+                        self.tableView.reloadData()
+
                     }
                 }
                 self.reports.append(report)
@@ -84,22 +86,9 @@ class ReportsTableViewController: UITableViewController {
         
         let report = reports[indexPath.row]
         
-        //cell.photoImageView.image = report.photo
-        
+        cell.photoImageView.image = report.image
         cell.timestampLabel.text = report.reportTime
         cell.descriptionPreviewLabel.text = report.description
-        
-        
-        print("Download Started")
-        let url = URL(string: report.imageURL)
-        getData(from: url!) { data, response, error in
-            guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url!.lastPathComponent)
-            print("Download Finished")
-            DispatchQueue.main.async() {
-                cell.photoImageView.image = UIImage(data: data)
-            }
-        }
 
         return cell
     }
