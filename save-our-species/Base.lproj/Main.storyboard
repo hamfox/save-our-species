@@ -28,7 +28,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eG1-9s-IJy" kind="show" id="qps-Ci-mWX"/>
+                                    <segue destination="7Ac-ZC-va2" kind="show" id="LCM-Ew-N2O"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBA-zj-1m9">
@@ -149,70 +149,6 @@ For dead animals call: 831-212-1272
             </objects>
             <point key="canvasLocation" x="952.17391304347836" y="879.91071428571422"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="vhu-87-wqK">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="eG1-9s-IJy" customClass="LoginViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tvL-t3-Xx4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-XJ-0tZ">
-                                <rect key="frame" x="143.33333333333334" y="475" width="127.33333333333334" height="132"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Dpx-Sz-hPh"/>
-                                    <constraint firstAttribute="width" constant="88" id="JLe-pE-PlA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="7Ac-ZC-va2" kind="show" id="bhw-eB-VN9"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-9R-7X4">
-                                <rect key="frame" x="69.5" y="431" width="275" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="275" id="FWg-dL-4x7"/>
-                                    <constraint firstAttribute="height" constant="34" id="dn5-5n-uCB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-17-ape">
-                                <rect key="frame" x="138" y="563" width="139" height="114"/>
-                                <state key="normal" title="Google Sign In"/>
-                                <connections>
-                                    <action selector="GoogleSignInTapped:" destination="eG1-9s-IJy" eventType="touchUpInside" id="tV1-Xq-Ip9"/>
-                                    <segue destination="7Ac-ZC-va2" kind="show" id="YJe-J0-Io9"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="0oe-XJ-0tZ" firstAttribute="top" secondItem="9Ci-Ad-hh4" secondAttribute="top" constant="431" id="4HL-3n-BEP"/>
-                            <constraint firstItem="0oe-XJ-0tZ" firstAttribute="leading" secondItem="9Ci-Ad-hh4" secondAttribute="leading" constant="143.33333333333334" id="GCL-b3-LIB"/>
-                            <constraint firstItem="9Ci-Ad-hh4" firstAttribute="bottom" secondItem="0oe-XJ-0tZ" secondAttribute="bottom" constant="255" id="KmS-S2-ewf"/>
-                            <constraint firstItem="aEi-17-ape" firstAttribute="top" secondItem="9Ci-Ad-hh4" secondAttribute="top" constant="519" id="L5k-Yy-YvN"/>
-                            <constraint firstItem="9Ci-Ad-hh4" firstAttribute="trailing" secondItem="aEi-17-ape" secondAttribute="trailing" constant="137" id="dRF-eO-cax"/>
-                            <constraint firstItem="9Ci-Ad-hh4" firstAttribute="trailing" secondItem="0oe-XJ-0tZ" secondAttribute="trailing" constant="143.33333333333334" id="iT1-J0-jeC"/>
-                            <constraint firstItem="9Ci-Ad-hh4" firstAttribute="bottom" secondItem="aEi-17-ape" secondAttribute="bottom" constant="185" id="pxC-98-G6S"/>
-                            <constraint firstItem="aEi-17-ape" firstAttribute="leading" secondItem="9Ci-Ad-hh4" secondAttribute="leading" constant="138" id="tqh-GN-gbE"/>
-                            <constraint firstItem="0oe-XJ-0tZ" firstAttribute="centerX" secondItem="9Ci-Ad-hh4" secondAttribute="centerX" id="vLA-4I-WCG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="9Ci-Ad-hh4"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="smS-hj-Ota"/>
-                    <connections>
-                        <outlet property="ClientButton" destination="0oe-XJ-0tZ" id="gEG-KI-pTR"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginToHome" id="nEG-NU-44h"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wF6-Ny-fAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="953" y="137"/>
-        </scene>
         <!--Client View Controller-->
         <scene sceneID="VrL-nw-grs">
             <objects>
@@ -266,7 +202,7 @@ For dead animals call: 831-212-1272
                                 <state key="normal" title="Log out"/>
                                 <connections>
                                     <action selector="LogOutTapped:" destination="7Ac-ZC-va2" eventType="touchUpInside" id="Vxk-D7-14A"/>
-                                    <segue destination="eG1-9s-IJy" kind="show" id="8cm-qP-pZb"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="OzU-Bf-fhC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -763,8 +699,7 @@ For dead animals call: 831-212-1272
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aBt-sI-kKf"/>
-        <segue reference="bhw-eB-VN9"/>
-        <segue reference="qps-Ci-mWX"/>
+        <segue reference="LCM-Ew-N2O"/>
         <segue reference="pV8-Vm-WHW"/>
     </inferredMetricsTieBreakers>
 </document>
