@@ -35,6 +35,19 @@ class ReportsTableViewController: UITableViewController {
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
             for report in reports {
+                // repeated code...not clean but works for now.
+                // this sets each report image according to the ref url
+                let url = URL(string: report.imageURL)
+                self.getData(from: url!) { data, response, error in
+                    guard let data = data, error == nil else { return }
+                    print(response?.suggestedFilename ?? url!.lastPathComponent)
+                    print("Download Finished")
+                    DispatchQueue.main.async() {
+                        report.image = UIImage(data: data)
+                        self.tableView.reloadData()
+
+                    }
+                }
                 self.reports.append(report)
             }
             // sort reports by timestamp with .compate operator on report dates converted to NSDate objects
@@ -73,23 +86,9 @@ class ReportsTableViewController: UITableViewController {
         
         let report = reports[indexPath.row]
         
-        //cell.photoImageView.image = report.photo
-        
+        cell.photoImageView.image = report.image
         cell.timestampLabel.text = report.reportTime
         cell.descriptionPreviewLabel.text = report.description
-        
-        print("Download Started")
-        
-        let url = URL(string: report.imageURL)
-
-        getData(from: url!) { data, response, error in
-            guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url!.lastPathComponent)
-            print("Download Finished")
-            DispatchQueue.main.async() {
-                cell.photoImageView.image = UIImage(data: data)
-            }
-        }
 
         return cell
     }
