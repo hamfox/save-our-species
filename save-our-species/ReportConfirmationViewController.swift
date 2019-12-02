@@ -11,8 +11,10 @@ import UIKit
 class ReportConfirmationViewController: UIViewController {
     let reportService = ReportService()
 
-    var longValue: Double? = 0
-    var latValue: Double? = 0
+    var longValue: Double? = 0.0
+    var latValue: Double? = 0.0
+    var latAsString: String? = ""
+    var longAsString: String? = ""
     var descriptionText: String? = ""
     var reportTime: String? = ""
     var image: UIImage? = UIImage(named: "redQuestionMark")
