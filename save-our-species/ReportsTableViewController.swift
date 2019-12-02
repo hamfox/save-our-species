@@ -35,7 +35,7 @@ class ReportsTableViewController: UITableViewController {
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
             for report in reports {
-                // repeated code...not clean but works for now.
+                
                 // this sets each report image according to the ref url
                 let url = URL(string: report.imageURL)
                 self.getData(from: url!) { data, response, error in
