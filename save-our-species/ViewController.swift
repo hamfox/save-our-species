@@ -20,14 +20,15 @@ class ViewController: UIViewController {
     
     //Actions
     @IBAction func LoginTapped(_ sender: UIButton) {
-        GIDSignIn.sharedInstance().signIn()
         
         Auth.auth().addStateDidChangeListener{ auth, user in
             if user != nil {
                 print("signed in with \(Auth.auth().currentUser?.uid)")
                 self.performSegue(withIdentifier: "showClientView", sender: self)
             } else {
-                print("Not signed in")
+                GIDSignIn.sharedInstance().signIn()
+
+                print("Not signed in...opening sign in dialogue")
             }
         }
     }
