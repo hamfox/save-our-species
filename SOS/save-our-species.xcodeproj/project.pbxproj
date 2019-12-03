@@ -26,7 +26,7 @@
 		6F357BD1237612DD00EB83B5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F357BD0237612DD00EB83B5 /* CameraViewController.swift */; };
 		6F89938D23874A4800B68958 /* UITextView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89938C23874A4800B68958 /* UITextView+Additions.swift */; };
 		6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA519DC2363742E0062A85B /* MapViewController.swift */; };
-		6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */; };
+		6FBB01852396F1FE00723191 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FBB01842396F1FE00723191 /* GoogleService-Info.plist */; };
 		AB57F4E9CF8505516B8D3F1F /* Pods_save_our_species.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED29304EAAEABEE0ADD090EE /* Pods_save_our_species.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,7 @@
 		6F357BD0237612DD00EB83B5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6F89938C23874A4800B68958 /* UITextView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Additions.swift"; sourceTree = "<group>"; };
 		6FA519DC2363742E0062A85B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6FBB01842396F1FE00723191 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		853708C1A12F8F23D8DDC573 /* Pods-save-our-species.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-save-our-species.release.xcconfig"; path = "Target Support Files/Pods-save-our-species/Pods-save-our-species.release.xcconfig"; sourceTree = "<group>"; };
 		CB9446BF1FF96F016BE9F5EA /* Pods-save-our-species.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-save-our-species.debug.xcconfig"; path = "Target Support Files/Pods-save-our-species/Pods-save-our-species.debug.xcconfig"; sourceTree = "<group>"; };
 		ED29304EAAEABEE0ADD090EE /* Pods_save_our_species.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_save_our_species.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,12 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				473306062361482D0015EF38 /* Info.plist */,
-				6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */,
 				473306012361482D0015EF38 /* Assets.xcassets */,
 				473305FE236148270015EF38 /* Main.storyboard */,
 				473305F8236148270015EF38 /* AppDelegate.swift */,
 				473305FA236148270015EF38 /* SceneDelegate.swift */,
 				473305FC236148270015EF38 /* ViewController.swift */,
+				6FBB01842396F1FE00723191 /* GoogleService-Info.plist */,
 				6F2F51D4236158F800163F21 /* ClientViewController.swift */,
 				6F357BD0237612DD00EB83B5 /* CameraViewController.swift */,
 				6FA519DC2363742E0062A85B /* MapViewController.swift */,
@@ -196,7 +196,7 @@
 			files = (
 				477279692395DCAF00F16A63 /* images in Resources */,
 				473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */,
-				6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */,
+				6FBB01852396F1FE00723191 /* GoogleService-Info.plist in Resources */,
 				473306022361482D0015EF38 /* Assets.xcassets in Resources */,
 				47330600236148270015EF38 /* Main.storyboard in Resources */,
 			);
@@ -427,15 +427,18 @@
 			baseConfigurationReference = CB9446BF1FF96F016BE9F5EA /* Pods-save-our-species.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2DW9R6CSV;
 				INFOPLIST_FILE = "save-our-species/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species.1";
 				PRODUCT_NAME = SOS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,15 +449,18 @@
 			baseConfigurationReference = 853708C1A12F8F23D8DDC573 /* Pods-save-our-species.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2DW9R6CSV;
 				INFOPLIST_FILE = "save-our-species/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species.1";
 				PRODUCT_NAME = SOS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
