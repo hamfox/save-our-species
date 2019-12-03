@@ -7,12 +7,27 @@ An iOS app to streamline the process of reporting marine mammal strandings.
 * Report stranding events with GPS location, description, and a photo.
 * Log in and view a list of reported strandings.
 
-## Getting Started
+## This project uses
+* Cocoapods for dependency management
+* Firebase Firestore to store reports
+* Firebase Storage to store report images
+* Firebase Auth to authenticate users
 
-1. `git clone https://github.com/hamfox/save-our-species.git`
-2. `cd SOS`
-3. `open save-our-species.xcworkspace/` to open in Xcode
-4. Run the project!
+## Building the code
+
+1. Install the latest [Xcode developer tools](https://developer.apple.com/xcode/downloads/) from Apple.
+2. Clone the repository:
+   ```shell
+   $ git clone https://github.com/hamfox/save-our-species.git`
+   ```
+3. Obtain the Firebase configuration file, `GoogleService-Info.plist` and add it the source directory: 
+   `save-our-species/SOS/save-our-species/GoogleService-Info.plist`
+4. Open the project in XCode:
+   ```shell
+   $ cd save-our-species/SOS
+   $ open save-our-species.xcworkspace/
+   ```
+5. Build the project!
 
 
 ## Screenshots
