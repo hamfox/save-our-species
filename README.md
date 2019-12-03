@@ -36,8 +36,9 @@ An iOS app to streamline the process of reporting marine mammal strandings.
 
 ## Screenshots
 
-![Main View](/Assets/login-screen.png)
-![Browser View]()
+![Login View](/Assets/login-screen.png)
+![GPS View](/Assets/gps-view.png)
+![Description View](/Assets/description-view.png)
 
 ## License
 
