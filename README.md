@@ -1,12 +1,11 @@
-# HackerNews
+# Save Our Species
 
-An iOS app to report marine mammal strandings.
+An iOS app to streamline the process of reporting marine mammal strandings.
 
 ## Features
 
-* View "top", "newest", and "show" posts from Hacker News.
-* Read posts using the `SFSafariViewController` component.
-* Uses the official [Firebase-based Hacker News API](https://github.com/HackerNews/API).
+* Report stranding events with GPS location, description, and a photo.
+* Log in and view a list of recent reports.
 
 ## Getting Started
 
