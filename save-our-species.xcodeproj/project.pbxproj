@@ -24,6 +24,7 @@
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
 		6F357BD1237612DD00EB83B5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F357BD0237612DD00EB83B5 /* CameraViewController.swift */; };
+		6F51BAFA2396074900FC4FC6 /* SOS_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F51BAF92396074800FC4FC6 /* SOS_logo.png */; };
 		6F89938D23874A4800B68958 /* UITextView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89938C23874A4800B68958 /* UITextView+Additions.swift */; };
 		6F932EC12387145400D887A2 /* sealLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F932EC02387145400D887A2 /* sealLogo.png */; };
 		6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA519DC2363742E0062A85B /* MapViewController.swift */; };
@@ -35,7 +36,7 @@
 		47174FB92365058D00AB6C20 /* ReportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsModel.swift; sourceTree = "<group>"; };
 		47174FBB2365087600AB6C20 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
 		47180A7E23839F4600F9FDB8 /* ReportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailViewController.swift; sourceTree = "<group>"; };
-		473305F5236148270015EF38 /* save-our-species.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "save-our-species.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		473305F5236148270015EF38 /* SOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		473305F8236148270015EF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473305FA236148270015EF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		473305FC236148270015EF38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		6F357BD0237612DD00EB83B5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6F51BAF32396059A00FC4FC6 /* sealLogo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sealLogo_placeholder.png; sourceTree = "<group>"; };
+		6F51BAF4239605B100FC4FC6 /* sealLogo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sealLogo_black.png; sourceTree = "<group>"; };
+		6F51BAF92396074800FC4FC6 /* SOS_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SOS_logo.png; path = ../../Desktop/SOS_logo.png; sourceTree = "<group>"; };
 		6F89938C23874A4800B68958 /* UITextView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Additions.swift"; sourceTree = "<group>"; };
 		6F932EC02387145400D887A2 /* sealLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sealLogo.png; sourceTree = "<group>"; };
 		6FA519DC2363742E0062A85B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +98,7 @@
 		473305F6236148270015EF38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				473305F5236148270015EF38 /* save-our-species.app */,
+				473305F5236148270015EF38 /* SOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,8 +106,11 @@
 		473305F7236148270015EF38 /* save-our-species */ = {
 			isa = PBXGroup;
 			children = (
+				6F51BAF92396074800FC4FC6 /* SOS_logo.png */,
 				473306062361482D0015EF38 /* Info.plist */,
 				6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */,
+				6F51BAF32396059A00FC4FC6 /* sealLogo_placeholder.png */,
+				6F51BAF4239605B100FC4FC6 /* sealLogo_black.png */,
 				6F932EC02387145400D887A2 /* sealLogo.png */,
 				473306012361482D0015EF38 /* Assets.xcassets */,
 				473305FE236148270015EF38 /* Main.storyboard */,
@@ -156,7 +163,7 @@
 			);
 			name = "save-our-species";
 			productName = "save-our-species";
-			productReference = 473305F5236148270015EF38 /* save-our-species.app */;
+			productReference = 473305F5236148270015EF38 /* SOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -201,6 +208,7 @@
 				473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */,
 				6F932EC12387145400D887A2 /* sealLogo.png in Resources */,
 				6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */,
+				6F51BAFA2396074900FC4FC6 /* SOS_logo.png in Resources */,
 				473306022361482D0015EF38 /* Assets.xcassets in Resources */,
 				47330600236148270015EF38 /* Main.storyboard in Resources */,
 			);
@@ -439,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species.1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SOS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marinevp.save-our-species.1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SOS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
