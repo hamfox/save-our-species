@@ -20,7 +20,6 @@
 		47991FB323832AFA0036609A /* ReportConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */; };
 		47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */; };
 		47E73697236FC8280026AF22 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E73696236FC8280026AF22 /* ReportTableViewCell.swift */; };
-		47E73699236FC9240026AF22 /* gerald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47E73698236FC9230026AF22 /* gerald.jpg */; };
 		6F2F51D3236156CA00163F21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D2236156CA00163F21 /* LoginViewController.swift */; };
 		6F2F51D5236158F800163F21 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D4236158F800163F21 /* ClientViewController.swift */; };
 		6F2F51D723615A4E00163F21 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F51D623615A4E00163F21 /* ReportViewController.swift */; };
@@ -48,7 +47,6 @@
 		47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportConfirmationViewController.swift; sourceTree = "<group>"; };
 		47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
 		47E73696236FC8280026AF22 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
-		47E73698236FC9230026AF22 /* gerald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gerald.jpg; sourceTree = "<group>"; };
 		6F2F51D2236156CA00163F21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F2F51D4236158F800163F21 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		6F2F51D623615A4E00163F21 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			children = (
 				473306062361482D0015EF38 /* Info.plist */,
 				6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */,
-				47E73698236FC9230026AF22 /* gerald.jpg */,
 				6F932EC02387145400D887A2 /* sealLogo.png */,
 				473306012361482D0015EF38 /* Assets.xcassets */,
 				473305FE236148270015EF38 /* Main.storyboard */,
@@ -203,7 +200,6 @@
 				477279692395DCAF00F16A63 /* images in Resources */,
 				473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */,
 				6F932EC12387145400D887A2 /* sealLogo.png in Resources */,
-				47E73699236FC9240026AF22 /* gerald.jpg in Resources */,
 				6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */,
 				473306022361482D0015EF38 /* Assets.xcassets in Resources */,
 				47330600236148270015EF38 /* Main.storyboard in Resources */,
