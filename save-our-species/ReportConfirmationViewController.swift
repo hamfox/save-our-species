@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class ReportConfirmationViewController: UIViewController {
     let reportService = ReportService()
@@ -26,6 +28,8 @@ class ReportConfirmationViewController: UIViewController {
     @IBOutlet weak var longitudeField: UILabel!
     @IBOutlet weak var strandingImageView: UIImageView!
     
+    @IBOutlet weak var locationField: UILabel!
+    
     @IBAction func sendReportButtonTapped(_ sender: UIButton) {
         addReport(report: report!)
     }
@@ -40,10 +44,24 @@ class ReportConfirmationViewController: UIViewController {
         latitudeField.text = latAsString
         longitudeField.text = longAsString
         strandingImageView.image = image
-        
-        print(descriptionText)
-        print("REPORTED AT: ",reportTime)
+        getReadableLocation()
     }
+    
+    func getReadableLocation() {
+        let address = CLGeocoder.init()
+
+        address.reverseGeocodeLocation(CLLocation.init(latitude: report!.latitude, longitude: report!.longitude)) { (placeMarks, error) in
+            if error == nil{
+                    if let placeMark = placeMarks?[0]{
+
+                        print(placeMark)
+                        print("THIS THE PLACE:",placeMark.name)
+                        self.locationField.text = placeMark.name
+                    }
+            }
+        }
+    }
+    
     
     func addReport(report: Report) {
         reportService.addToList(report: report, completion: { (status) in
