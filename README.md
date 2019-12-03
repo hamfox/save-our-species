@@ -2,6 +2,10 @@
 
 An iOS app to streamline the process of reporting marine mammal strandings.
 
+## Requirements
+* iOS 13.0+
+* Xcode 11.0+
+
 ## Features
 
 * Report stranding events with GPS location, description, and a photo.
@@ -32,7 +36,7 @@ An iOS app to streamline the process of reporting marine mammal strandings.
 
 ## Screenshots
 
-![Main View]()
+![Main View](/Assets/login-screen.png)
 ![Browser View]()
 
 ## License
