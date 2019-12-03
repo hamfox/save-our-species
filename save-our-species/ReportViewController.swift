@@ -61,18 +61,6 @@ class ReportViewController: UIViewController {
                RepDescrpBox.layer.borderWidth = 1.5
                RepDescrpBox.layer.borderColor = borderColor.cgColor
                RepDescrpBox.layer.cornerRadius = 5.0
-        
-        //Add naviagtion from login page back to home page by swiping to the right
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
-        rightSwipe.direction = .right
-        view.addGestureRecognizer(rightSwipe)
-        
-       
-    }
     
-    
-    // Handle swipes
-    @objc func handleSwipes(sender:UISwipeGestureRecognizer){
-        performSegue(withIdentifier: "reportToDataPassing", sender: self)
     }
 }

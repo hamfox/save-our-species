@@ -22,14 +22,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
-        leftSwipe.direction = .left
-        view.addGestureRecognizer(leftSwipe)
-        
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
-        rightSwipe.direction = .right
-        view.addGestureRecognizer(rightSwipe)
         
         reportTime = getCurrentTime()
         
@@ -39,18 +31,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         print("TIME: ", reportTime)
     }
     
-    
-    @objc func handleSwipes(sender:UISwipeGestureRecognizer){
-        switch sender.direction.rawValue{
-            case 1:
-                performSegue(withIdentifier: "goNext", sender: self)
-                print("swipe left")
-            case 2:
-                performSegue(withIdentifier: "cameraToReport", sender: self)
-            default:
-                break
-        }
-    }
 
     
     //Source: Apple Food Tracker Tutorial

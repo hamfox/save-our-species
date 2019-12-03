@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
         <!--Map View Controller-->
         <scene sceneID="iN8-Wx-nMP">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="V8V-Nn-D0k" customClass="MapViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="V8V-Nn-D0k" customClass="MapViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i8o-nt-d6o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +126,7 @@
         <!--Client View Controller-->
         <scene sceneID="VrL-nw-grs">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="7Ac-ZC-va2" customClass="ClientViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7Ac-ZC-va2" customClass="ClientViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7wa-HN-lNF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +186,7 @@
         <!--Report View Controller-->
         <scene sceneID="2Am-10-AhH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="MyH-SZ-KIL" customClass="ReportViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="MyH-SZ-KIL" customClass="ReportViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ve-w2-7Fe" customClass="Report">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,13 +241,13 @@
         <!--Reports Table View Controller-->
         <scene sceneID="d14-01-B7v">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="gwV-xh-5YC" userLabel="Reports Table View Controller" customClass="ReportsTableViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="gwV-xh-5YC" userLabel="Reports Table View Controller" customClass="ReportsTableViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RCd-8W-2RR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportTableViewCell" rowHeight="90" id="qBQ-6C-fp8" customClass="ReportTableViewCell" customModule="save_our_species" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportTableViewCell" rowHeight="90" id="qBQ-6C-fp8" customClass="ReportTableViewCell" customModule="SOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qBQ-6C-fp8" id="TSV-QR-9mV">
@@ -300,7 +300,7 @@
         <!--Report Detail View Controller-->
         <scene sceneID="Nen-Rd-Ukc">
             <objects>
-                <viewController id="gtZ-Ch-JHe" customClass="ReportDetailViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gtZ-Ch-JHe" customClass="ReportDetailViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aVB-RJ-Z8N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -406,7 +406,7 @@
         <!--Camera View Controller-->
         <scene sceneID="Y66-pT-r4h">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="hqT-6r-0j8" customClass="CameraViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hqT-6r-0j8" customClass="CameraViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpo-bW-uFt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,7 +469,7 @@
         <!--Report Confirmation View Controller-->
         <scene sceneID="to4-gj-GwR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8li-Lr-Hra" customClass="ReportConfirmationViewController" customModule="save_our_species" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8li-Lr-Hra" customClass="ReportConfirmationViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYB-fK-vUf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -637,7 +637,6 @@
         <image name="sealLogo" width="1668" height="1668"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eh5-8h-Qoz"/>
         <segue reference="aBt-sI-kKf"/>
         <segue reference="qft-L3-wBS"/>
         <segue reference="vfs-GS-SpZ"/>
