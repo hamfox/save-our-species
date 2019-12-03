@@ -436,7 +436,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8li-Lr-Hra" kind="show" id="XHj-za-Ku4"/>
+                                    <segue destination="8li-Lr-Hra" kind="show" identifier="sendPhoto" id="XHj-za-Ku4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click the image below to open camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEt-6g-vYf">
@@ -485,7 +485,7 @@
                                 <state key="normal" title="Send Report"/>
                                 <connections>
                                     <action selector="sendReportButtonTapped:" destination="8li-Lr-Hra" eventType="touchUpInside" id="I9b-D7-qBv"/>
-                                    <segue destination="t5t-yP-XNd" kind="show" id="k40-JA-UBe"/>
+                                    <segue destination="t5t-yP-XNd" kind="show" identifier="" id="k40-JA-UBe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYT-Fe-MDM">

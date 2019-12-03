@@ -13,11 +13,11 @@ class ReportConfirmationViewController: UIViewController {
 
     var longValue: Double? = 0.0
     var latValue: Double? = 0.0
-    var latAsString: String? = ""
-    var longAsString: String? = ""
+//    var latAsString: String? = ""
+//    var longAsString: String? = ""
     var descriptionText: String? = ""
     var reportTime: String? = ""
-    var image: UIImage? = UIImage(named: "redQuestionMark")
+    var image: UIImage? = UIImage(named: "greySealLogo")
     var imageURL: String? = ""
     var report = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
 
