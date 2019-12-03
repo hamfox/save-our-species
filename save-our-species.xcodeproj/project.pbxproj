@@ -16,6 +16,7 @@
 		47330600236148270015EF38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473305FE236148270015EF38 /* Main.storyboard */; };
 		473306022361482D0015EF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473306012361482D0015EF38 /* Assets.xcassets */; };
 		473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473306032361482D0015EF38 /* LaunchScreen.storyboard */; };
+		477279692395DCAF00F16A63 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 477279682395DCAF00F16A63 /* images */; };
 		47991FB323832AFA0036609A /* ReportConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */; };
 		47A816A6236F78BC004F9B26 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */; };
 		47E73697236FC8280026AF22 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E73696236FC8280026AF22 /* ReportTableViewCell.swift */; };
@@ -26,8 +27,6 @@
 		6F357BD1237612DD00EB83B5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F357BD0237612DD00EB83B5 /* CameraViewController.swift */; };
 		6F89938D23874A4800B68958 /* UITextView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89938C23874A4800B68958 /* UITextView+Additions.swift */; };
 		6F932EC12387145400D887A2 /* sealLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F932EC02387145400D887A2 /* sealLogo.png */; };
-		6FA2D9862395A58E0012A5AA /* sealLogo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA2D9852395A58E0012A5AA /* sealLogo_black.png */; };
-		6FA2D9882395B4D20012A5AA /* sealLogo_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FA2D9872395B4D20012A5AA /* sealLogo_placeholder.png */; };
 		6FA519DD2363742E0062A85B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA519DC2363742E0062A85B /* MapViewController.swift */; };
 		6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */; };
 		AB57F4E9CF8505516B8D3F1F /* Pods_save_our_species.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED29304EAAEABEE0ADD090EE /* Pods_save_our_species.framework */; };
@@ -45,6 +44,7 @@
 		473306012361482D0015EF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		473306042361482D0015EF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		473306062361482D0015EF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		477279682395DCAF00F16A63 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		47991FB223832AFA0036609A /* ReportConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportConfirmationViewController.swift; sourceTree = "<group>"; };
 		47A816A5236F78BC004F9B26 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
 		47E73696236FC8280026AF22 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
@@ -55,8 +55,6 @@
 		6F357BD0237612DD00EB83B5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6F89938C23874A4800B68958 /* UITextView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Additions.swift"; sourceTree = "<group>"; };
 		6F932EC02387145400D887A2 /* sealLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sealLogo.png; sourceTree = "<group>"; };
-		6FA2D9852395A58E0012A5AA /* sealLogo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sealLogo_black.png; path = ../../../Downloads/sealLogo_black.png; sourceTree = "<group>"; };
-		6FA2D9872395B4D20012A5AA /* sealLogo_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sealLogo_placeholder.png; path = ../../../Desktop/sealLogo_placeholder.png; sourceTree = "<group>"; };
 		6FA519DC2363742E0062A85B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		853708C1A12F8F23D8DDC573 /* Pods-save-our-species.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-save-our-species.release.xcconfig"; path = "Target Support Files/Pods-save-our-species/Pods-save-our-species.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +89,7 @@
 				473305F6236148270015EF38 /* Products */,
 				BA0C1F285B7920890FB1444A /* Pods */,
 				2C8FBA9E42688E400F5331E8 /* Frameworks */,
+				477279682395DCAF00F16A63 /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,8 +107,6 @@
 				473306062361482D0015EF38 /* Info.plist */,
 				6FB0CF4A237B55E100617FC9 /* GoogleService-Info.plist */,
 				47E73698236FC9230026AF22 /* gerald.jpg */,
-				6FA2D9872395B4D20012A5AA /* sealLogo_placeholder.png */,
-				6FA2D9852395A58E0012A5AA /* sealLogo_black.png */,
 				6F932EC02387145400D887A2 /* sealLogo.png */,
 				473306012361482D0015EF38 /* Assets.xcassets */,
 				473305FE236148270015EF38 /* Main.storyboard */,
@@ -203,11 +200,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477279692395DCAF00F16A63 /* images in Resources */,
 				473306052361482D0015EF38 /* LaunchScreen.storyboard in Resources */,
 				6F932EC12387145400D887A2 /* sealLogo.png in Resources */,
 				47E73699236FC9240026AF22 /* gerald.jpg in Resources */,
-				6FA2D9882395B4D20012A5AA /* sealLogo_placeholder.png in Resources */,
-				6FA2D9862395A58E0012A5AA /* sealLogo_black.png in Resources */,
 				6FB0CF4B237B55E100617FC9 /* GoogleService-Info.plist in Resources */,
 				473306022361482D0015EF38 /* Assets.xcassets in Resources */,
 				47330600236148270015EF38 /* Main.storyboard in Resources */,
