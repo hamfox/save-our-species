@@ -135,14 +135,14 @@ extension MapViewController: MKMapViewDelegate {
                 return
             }
             
-            //let streetNumber = placemark.subThoroughfare ?? ""
+            let locationName = placemark.name!
             //let streetName = placemark.thoroughfare ?? ""
             let latitude = center.coordinate.latitude
             let longitude = center.coordinate.longitude
             
                 
             DispatchQueue.main.async {
-                self.addressLabel.text = "\(latitude) \(longitude)"
+                self.addressLabel.text = "\(locationName)"
             }
         }
     }

@@ -84,7 +84,7 @@
                                     <constraint firstAttribute="width" constant="40" id="iev-fp-Xgn"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude / Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-aw-kgJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stranding Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-aw-kgJ">
                                 <rect key="frame" x="20" y="714" width="374" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
@@ -617,6 +617,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="NhF-Fu-9pE"/>
         <segue reference="eh5-8h-Qoz"/>
+        <segue reference="aBt-sI-kKf"/>
         <segue reference="qft-L3-wBS"/>
         <segue reference="pV8-Vm-WHW"/>
         <segue reference="fSa-d4-0m7"/>
