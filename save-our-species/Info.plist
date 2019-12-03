@@ -8,7 +8,7 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>SOS_logo.png</string>
+		<string>images/SOS_logo.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
