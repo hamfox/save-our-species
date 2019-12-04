@@ -12,11 +12,23 @@ import CoreLocation
 
 
 class ReportDetailViewController: UIViewController {
-
+    
+    let image = UIImage(named: "gerald")
+    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
+    
     @IBOutlet weak var UIImageLabel: UIImageView!
     @IBOutlet weak var timeFieldLabel: UILabel!
     @IBOutlet weak var DescriptionFieldLabel: UILabel!
     @IBOutlet weak var LocationFieldLabel: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        getReadableLocation()
+        DescriptionFieldLabel.text = detailReport?.description
+        timeFieldLabel.text = detailReport?.reportTime
+        UIImageLabel.image = detailReport?.image
+    }
     
     
     @IBAction func getDirections(_ sender: Any) {
@@ -35,19 +47,6 @@ class ReportDetailViewController: UIViewController {
         mapItem.openInMaps(launchOptions: options)
     }
     
-    let image = UIImage(named: "gerald")
-    var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        getReadableLocation()
-        DescriptionFieldLabel.text = detailReport?.description
-        timeFieldLabel.text = detailReport?.reportTime
-        UIImageLabel.image = detailReport?.image
-        
-        print("DETAILVIEW: Received report description:",detailReport?.description)
-    }
     
     func getReadableLocation() {
         let address = CLGeocoder.init()
@@ -55,9 +54,6 @@ class ReportDetailViewController: UIViewController {
         address.reverseGeocodeLocation(CLLocation.init(latitude: detailReport!.latitude, longitude:detailReport!.longitude)) { (placeMarks, error) in
             if error == nil{
                     if let placeMark = placeMarks?[0]{
-
-                        print(placeMark)
-                        print("THIS THE PLACE:",placeMark.name)
                         self.LocationFieldLabel.text = placeMark.name
                     }
             }
