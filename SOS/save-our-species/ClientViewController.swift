@@ -15,7 +15,8 @@ class ClientViewController: UIViewController {
     //Buttons
     @IBOutlet weak var ReportButton: UIButton!
     @IBOutlet weak var ReportScreenButton: UIButton!
-
+    @IBOutlet weak var logOutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Make buttons round
@@ -23,6 +24,8 @@ class ClientViewController: UIViewController {
         ReportButton.clipsToBounds = true
         ReportScreenButton.layer.cornerRadius = 10
         ReportScreenButton.clipsToBounds = true
+        logOutButton.layer.cornerRadius = 10
+        logOutButton.clipsToBounds = true
         
         // Do any additional setup after loading the view.
     }
