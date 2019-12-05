@@ -9,34 +9,29 @@
 import UIKit
 
 class ReportsTableViewController: UITableViewController {
+    
     let reportsService = ReportService()
-
-    // MARK: Properties
     var reports = [Report]()
     var detailReport = Report(description: "", latitude: 0.0, longitude: 0.0, reportTime: "", imageURL: "", image: nil)
     var img : UIImage? = nil
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getAllReports()
-        
-        //reportTableToClientView
-        
     }
-    
-    //Handle swipes function
       
     
     func getAllReports() {
         reportsService.getList(completion: { (status, reports) in
             for report in reports {
                 
-                // this sets each report image according to the ref url
+                // Get the image for each cell
                 let url = URL(string: report.imageURL)
                 self.getData(from: url!) { data, response, error in
                     guard let data = data, error == nil else { return }
                     print(response?.suggestedFilename ?? url!.lastPathComponent)
-                    print("Download Finished")
+                    print("Image download Finished")
                     DispatchQueue.main.async() {
                         report.image = UIImage(data: data)
                         self.tableView.reloadData()
@@ -44,28 +39,27 @@ class ReportsTableViewController: UITableViewController {
                 }
                 self.reports.append(report)
             }
-            // sort reports by timestamp with .compate operator on report dates converted to NSDate objects
+            
+            // Sort reports by timestamp with .compare operator on report timestamps converted to NSDate objects
             self.reports.sort { self.convertToDate(dateString: $0.reportTime).compare(self.convertToDate(dateString: $1.reportTime)) == .orderedDescending }
             self.tableView.reloadData()
         })
     }
     
-    // Send report to be viewed in detail view
+    // Send report object via segue to ReportDetailView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "sendDetail"){
             let displayVC = segue.destination as! ReportDetailViewController
             let detailReport = reports[tableView.indexPathForSelectedRow!.row]
 
             displayVC.detailReport = detailReport
-            
-            print("TABLEVIEW: Description of selected cell:", detailReport.description)
         }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return reports.count
     }
@@ -87,6 +81,7 @@ class ReportsTableViewController: UITableViewController {
         return cell
     }
     
+    // Convert timestamp to Date object
     func convertToDate(dateString: String) -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
@@ -94,53 +89,8 @@ class ReportsTableViewController: UITableViewController {
         let date = dateFormatter.date(from:dateString)!
         return date as Date
     }
+    
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

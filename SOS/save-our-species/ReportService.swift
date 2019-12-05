@@ -12,9 +12,11 @@ import FirebaseFirestoreSwift
 import FirebaseStorage
  
 class ReportService {
+    
     let db = Firestore.firestore()
     var urlString = ""
     let image = UIImage(named: "gerald")
+    
     
     func getList(completion: @escaping (Bool, [Report]) -> ()){
         var reports = [Report]()
@@ -31,6 +33,8 @@ class ReportService {
                         let longitude = document.get("longitude") as! Double
                         let reportTime = document.get("reportTime") as! String
                         let imageURL = document.get("imageURL") as! String
+                        
+                        // Instantiate Report object and throw it into array of Reports
                         let report = Report(description: description, latitude: latitude, longitude: longitude, reportTime: reportTime, imageURL: imageURL, image: self.image) as! Report
                         reports += [report]
                     }
@@ -39,10 +43,11 @@ class ReportService {
         }
     }
     
+
     func addToList(report: Report, completion: @escaping (Bool) -> ()) {
         var ref: DocumentReference? = nil
         
-        // upload report to Firestore
+        // Add a document to our collection, imageURL is empty string for now
         ref = db.collection("reports").addDocument(data: [
             "description": report.description, "latitude": report.latitude, "longitude": report.longitude, "reportTime": report.reportTime, "imageURL": urlString
             ]) { err in
@@ -55,7 +60,7 @@ class ReportService {
                 }
         }
         
-        // upload image to Firebase Storage and update Firestore with image reference URL
+        // Upload image and then update imageURL field of the document in Firestore with the returned URL
         // https://firebase.google.com/docs/firestore/manage-data/add-data
         let str = uploadImage(image: report.image!, timeStamp: report.reportTime) { (url) in
             let reportRef = self.db.collection("reports").document(ref!.documentID)
@@ -73,11 +78,14 @@ class ReportService {
 
     }
     
+    // Upload the image to Firebase Storage, return URL to the image location
     // thank you internet stranger!
     // https://stackoverflow.com/questions/46152326/i-want-to-get-the-download-url-of-image-from-firebase-storage-ios-swift
     func uploadImage(image : UIImage, timeStamp: String,completion: @escaping ((String) -> Void)) {
         let storageRef = Storage.storage()
         var strURL = ""
+        
+        // upload the image into the /images directory and rename the photo with a timestamp
         let storeImage = storageRef.reference().child("images/\(timeStamp).jpeg")
 
         if let uploadImageData = (image).pngData(){
@@ -93,5 +101,3 @@ class ReportService {
     }
     
 }
-
-
